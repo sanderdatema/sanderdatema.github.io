@@ -1,7 +1,7 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
 export default defineConfig({
-    site: 'https://sanderdatema.github.io',
-    // base: '/',
+  site: "https://sanderdatema.github.io",
+  integrations: [sitemap()],
 });
