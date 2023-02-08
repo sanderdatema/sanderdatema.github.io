@@ -1,0 +1,414 @@
+<!-- ================================
+///// Begin latest news section /////
+================================= -->
+<section id="latest-news-section">
+
+    <!-- Begin tt-heading 
+    ====================== 
+    * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
+    * Use class "text-center" or "text-right" to align tt-heading.
+    * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
+    -->
+    <div class="tt-heading tt-heading-lg padding-on text-center">
+        <div class="tt-heading-inner tt-wrap">
+            <h1 class="tt-heading-title">Latest From Blog</h1>
+            <div class="tt-heading-subtitle">News, Reviews, Tips &amp; Tricks</div>
+            <hr class="hr-short">
+        </div>
+    </div>
+    <!-- End tt-heading -->
+
+    <div class="latest-news-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+        <!-- Begin latest news carousel
+        ================================ -->
+        <div class="latest-news-carousel">
+
+            <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+            ====================================================================
+            * Use class "nav-outside" for outside nav (requires boxed layout).
+            * Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
+            * Use class "nav-bottom-right" for bottom right nav.
+            * Use class "nav-rounded" for rounded nav.
+            * Use class "nav-light" to enable nav light style.
+            * Use class "dots-outside" for outside dots (requires enough space at the bottom of the carousel).
+            * Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
+            * Use class "dots-rounded" for rounded dots.
+            * Use class "owl-mousewheel" to enable mousewheel support.
+            * Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
+            * Use class "cc-hover-light", "cc-hover-dark" or "cc-hover-zoom" to enable carousel items hover effect.
+            * Use class "cc-height-1", "cc-height-2", "cc-height-3", "cc-height-4", "cc-height-5", "cc-height-6" or "cc-height-full" to set carousel height (do not use with data-autoheight="true"!!!).
+            * Use class "cc-height-m" to set full height for small screens (do not use with data-autoheight="true"!!!).
+            ================================================================
+            * Available carousel data attributes:
+                    data-items="5".......................(items visible on desktop)
+                    data-tablet-landscape="4"............(items visible on mobiles)
+                    data-tablet-portrait="3".............(items visible on mobiles)
+                    data-mobile-landscape="2"............(items visible on tablets)
+                    data-mobile-portrait="1".............(items visible on tablets)
+                    data-loop="true".....................(true/false)
+                    data-margin="10".....................(space between items)
+                    data-center="true"...................(true/false)
+                    data-start-position="0"..............(item start position)
+                    data-animate-in="fadeIn".............(fade-in animation)
+                    data-animate-out="fadeOut"...........(fade-out animation)
+                    data-mouse-drag="false"..............(true/false)
+                    data-touch-drag="false"..............(true/false)
+                    data-autoheight="true"...............(true/false)
+                    data-autoplay="true".................(true/false)
+                    data-autoplay-timeout="5000".........(milliseconds)
+                    data-autoplay-hover-pause="true".....(true/false)
+                    data-autoplay-speed="800"............(milliseconds)
+                    data-drag-end-speed="800"............(milliseconds)
+                    data-nav="true"......................(true/false)
+                    data-nav-speed="800".................(milliseconds)
+                    data-dots="false"....................(true/false)
+                    data-dots-speed="800"................(milliseconds)
+            -->
+            <div class="owl-carousel cursor-grab nav-outside-top" data-items="3" data-margin="30" data-loop="true" data-dots="false" data-nav="true" data-nav-speed="500" data-autoplay="true" data-autoplay-timeout="5000" data-autoplay-speed="500" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-1.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>5 Reasons You Should Fall In Love With Photography</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                            </div>
+
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 10</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn active">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">48</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-2.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Equipment</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>10 Top Choices for Aerial Photography</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">John Young</a></span>
+                            </div>
+                            
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 66</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">98</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-3.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Travel</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>How to Take Professional Travel Photos</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
+                            </div>
+                            
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 3</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn active">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">54</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-4.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Julia Beck</a></span>
+                            </div>
+                            
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 0</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">3</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-5.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                            </div>
+                            
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 8</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">71</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+                <!-- Begin carousel item 
+                ========================= -->
+                <div class="cc-item">
+
+                    <!-- Begin blog list item -->
+                    <article class="blog-list-item">
+                        
+                        <!-- Blog list item image -->
+                        <a href="blog-single.html" class="bl-item-image"><img src="assets/img/blog/list/blog-6.jpg" alt="image"></a>
+                        
+                        <!-- Begin blog list item info -->
+                        <div class="bl-item-info">
+                            <div class="bl-item-category"><a href="blog-archive.html">Food</a> <a href="#">Photography</a></div>
+                            <a href="blog-single.html" class="bl-item-title"><h2>The Serious Eats Guide to Food Photography</h2></a>
+                            <div class="bl-item-meta"> 
+                                <span class="published">May 26, 2017</span>
+                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                            </div>
+                            
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+
+                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+
+                            <!-- Begin blog list item attributes -->
+                            <ul class="bl-item-attr">
+                                <li>
+                                    <!-- Begin comments count -->
+                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 28</a>
+                                    <!-- End comments count -->
+                                </li>
+                                <li>
+                                    <!-- Begin favorite button -->
+                                    <div class="favorite-btn">
+                                        <div class="fav-inner">
+                                            <div class="icon-heart">
+                                                <span class="icon-heart-empty"></span>
+                                                <span class="icon-heart-filled"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fav-count">65</div>
+                                    </div>
+                                    <!-- End favorite button -->
+                                </li>
+                            </ul>
+                            <!-- End blog list item attributes -->
+
+                        </div>
+                        <!-- End blog list item info -->
+
+                    </article>
+                    <!-- End blog list item -->
+
+                </div>
+                <!-- End carousel item -->
+
+            </div>
+            <!-- End content carousel -->
+
+        </div> 
+        <!-- End latest news carousel -->
+
+    </div> <!-- /.latest-news-section-inner -->
+</section>
+<!-- End latest news section -->
