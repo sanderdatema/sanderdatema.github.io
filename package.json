@@ -15,6 +15,7 @@
     "@astrojs/mdx": "^0.16.0",
     "@astrojs/sitemap": "^1.0.1",
     "@astropub/flow": "^0.3.6",
-    "astro": "^2.0.8"
+    "astro": "^2.0.8",
+    "astro-compress": "^1.1.30"
   }
 }
