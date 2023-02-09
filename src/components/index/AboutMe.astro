@@ -1,88 +1,103 @@
 ---
-export interface Props {
-	tt_heading_title: string;
-}
-
-const { tt_heading_title } = "About";
+const tt_heading_title = "About";
+const tt_heading_subtitle = "Who I am and what I do";
+const about_text =
+  "Hi, my name is <strong>Martin Vegas</strong>. I am an artist and photographer. Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut fugit. Vivamus at nibh tincidunt, bibendum ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.";
 ---
+
 <!-- =============================
 ///// Begin about me section /////
 ============================== -->
 <section id="about-me-section">
-    <div class="about-me-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-            
-        <!-- ======================
+  <div class="about-me-inner">
+    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+    <!-- ======================
         ///// Begin split box /////
         based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
         ======================= -->
-        <div class="split-box about-me">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="row-lg-height">
-
-                        <!-- Column -->
-                        <div class="col-lg-5 col-lg-height split-box-image no-padding bg-image" style="background-image: url(assets/img/misc/me-2.jpg); background-position: 50% 50%;">
-
-                            <!-- Split box image height
+    <div class="split-box about-me">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="row-lg-height">
+            <!-- Column -->
+            <div
+              class="col-lg-5 col-lg-height split-box-image no-padding bg-image"
+              style="background-image: url(assets/img/misc/me-2.jpg); background-position: 50% 50%;"
+            >
+              <!-- Split box image height
                             ============================
                             * You can use prepared "padding-height-*" helper classes to set split box image height. Example: "padding-height-85" (useful if "split-box-content" contend/text is very short). Also you can use class "full-height-vh" for full height image. Find out "helper.css" file for more info. Note: class "sbi-height" is required.
                             -->
-                            <div class="sbi-height padding-height-80"></div>
+              <div class="sbi-height padding-height-80"></div>
+            </div>
+            <!-- /.col -->
 
-                        </div> <!-- /.col -->
+            <!-- Column -->
+            <div class="col-lg-7 col-lg-height col-lg-middle no-padding">
+              <div
+                class="full-cover for-light-style bg-gray-3 bg-image"
+                style="background-image: url(assets/img/pattern/bg-pattern-1-light.png); background-position: 50% 50%;"
+              >
+              </div>
+              <div
+                class="full-cover for-dark-style bg-gray-3 bg-image"
+                style="background-image: url(assets/img/pattern/bg-pattern-1-dark.png); background-position: 50% 50%;"
+              >
+              </div>
 
-                        <!-- Column -->
-                        <div class="col-lg-7 col-lg-height col-lg-middle no-padding">
-
-                            <div class="full-cover for-light-style bg-gray-3 bg-image" style="background-image: url(assets/img/pattern/bg-pattern-1-light.png); background-position: 50% 50%;"></div>
-                            <div class="full-cover for-dark-style bg-gray-3 bg-image" style="background-image: url(assets/img/pattern/bg-pattern-1-dark.png); background-position: 50% 50%;"></div>
-
-                            <!-- Begin split box content 
+              <!-- Begin split box content 
                             ============================= 
                             * Use class "shifted-left" or "shifted-right" to enable shifted content (do not use for long content).
                             -->
-                            <div class="split-box-content sb-content-right" >
-
-                                <!-- Begin tt-heading 
+              <div class="split-box-content sb-content-right">
+                <!-- Begin tt-heading 
                                 ====================== 
                                 * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
                                 * Use class "text-center" or "text-right" to align tt-heading.
                                 * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
                                 -->
-                                <div class="tt-heading">
-                                    <div class="tt-heading-inner">
-                                        <h1 class="tt-heading-title">{tt_heading_title}</h1>
-                                        <div class="tt-heading-subtitle">Who I am and what I do</div>
-                                        <hr class="hr-short">
-                                    </div> <!-- /.tt-heading-inner -->
-                                </div>
-                                <!-- End tt-heading -->
+                <div class="tt-heading">
+                  <div class="tt-heading-inner">
+                    <h1 class="tt-heading-title">{tt_heading_title}</h1>
+                    <div class="tt-heading-subtitle">{tt_heading_subtitle}</div>
+                    <hr class="hr-short" />
+                  </div>
+                  <!-- /.tt-heading-inner -->
+                </div>
+                <!-- End tt-heading -->
 
-                                <div class="margin-top-30">
-                                    <p>Hi, my name is <strong>Martin Vegas</strong>. I am an artist and photographer. Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut fugit. Vivamus at nibh tincidunt, bibendum ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
-                                </div>
+                <div class="margin-top-30">
+                  <p>{about_text}</p>
+                </div>
 
-                                <a href="about-me-fluid.html" class="btn btn-primary margin-top-20">Read More</a>
-                                <a href="contact.html" class="btn btn-dark margin-top-20">Hire Me!</a>
+                <a
+                  href="about-me-fluid.html"
+                  class="btn btn-primary margin-top-20">Read More</a
+                >
+                <a href="contact.html" class="btn btn-dark margin-top-20"
+                  >Hire Me!</a
+                >
 
-                                <!-- Begin signature -->
-                                <!-- <div class="signature">
+                <!-- Begin signature -->
+                <!-- <div class="signature">
                                     <img class="signature-dark" src="assets/img/signature-dark.png" alt="">
                                     <img class="signature-light" src="assets/img/signature-light.png" alt="">
                                 </div> -->
-                                <!-- End signature -->
-
-                            </div>
-                            <!-- End split box content -->
-
-                        </div> <!-- /.col -->
-
-                    </div> <!-- /.row-height -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
+                <!-- End signature -->
+              </div>
+              <!-- End split box content -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row-height -->
         </div>
-        <!-- End split box -->
-
-    </div> <!-- /.about-me-inner -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- End split box -->
+  </div>
+  <!-- /.about-me-inner -->
 </section>
 <!-- End about me section -->
