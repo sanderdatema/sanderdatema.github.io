@@ -1,17 +1,18 @@
 ---
-import SplitBox2 from "./SplitBox2.astro";
+import SplitBoxAboutMe from "./SplitBoxAboutMe.astro";
+import SplitBoxWhatIDo from "./SplitBoxWhatIDo.astro";
 
 ---
 
 <!-- =============================
 ///// Begin about me section /////
 ============================== -->
-<section id="about-me-section">
+<section id="about-me-section" class="about-me-simple">
 	<div class="about-me-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 			
-		<SplitBox2 />
+		<SplitBoxAboutMe />
 
-		<SplitBox2 />
+		<SplitBoxWhatIDo />
 
 	</div> <!-- /.about-me-inner -->
 </section>
