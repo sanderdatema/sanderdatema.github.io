@@ -1,22 +1,13 @@
+---
+import TTHeading from "../general/TTHeading.astro";
+---
+
 <!-- ================================
 ///// Begin latest news section /////
 ================================= -->
 <section id="latest-news-section">
 
-    <!-- Begin tt-heading 
-    ====================== 
-    * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-    * Use class "text-center" or "text-right" to align tt-heading.
-    * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-    -->
-    <div class="tt-heading tt-heading-lg padding-on text-center">
-        <div class="tt-heading-inner tt-wrap">
-            <h1 class="tt-heading-title">Latest From Blog</h1>
-            <div class="tt-heading-subtitle">News, Reviews, Tips &amp; Tricks</div>
-            <hr class="hr-short">
-        </div>
-    </div>
-    <!-- End tt-heading -->
+    <TTHeading title="Latest From Blog" subtitle="News, Reviews, Tips &amp; Tricks" wrap />
 
     <div class="latest-news-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 

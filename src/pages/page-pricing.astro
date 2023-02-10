@@ -1,3 +1,9 @@
+---
+import HR from "../components/general/HR.astro";
+import TTHeadingWithColumns from "../components/general/TTHeadingWithColumns.astro"
+
+---
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -34,7 +40,7 @@
 		-->
 		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
 			<h1 class="page-header-title">Pricing</h1>
-			<hr class="hr-short">
+			<HR size="short" />
 			<!-- <div class="page-header-description">
 				<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
 			</div> -->
@@ -54,34 +60,11 @@
 ============================ -->
 <section id="prices-section">
 
-	<!-- Begin tt-heading 
-	====================== 
-	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-	* Use class "text-center" or "text-right" to align tt-heading.
-	* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-	-->
-	<div class="tt-heading padding-on">
-		<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-			
-			<div class="row">
-				<div class="col-md-4">
-					
-					<h1 class="tt-heading-title">Please Choose Your Package</h1>
-					<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-					<hr class="hr-short">
+	<TTHeadingWithColumns title="Please Choose Your Package">
+		<p>Nunc euismod ipsum vel metus rhoncus, a accumsan sapien mollis. Donec malesuada lacus rhoncus ipsum dignissim, sed fringilla orci faucibus. Proin non odio dui. Donec ut tristique dolor, at interdum sem. Quisque finibus viverra lectus vitae pulvinar.</p>
 
-				</div> <!-- /.col -->
-
-				<div class="col-md-8">
-					<p>Nunc euismod ipsum vel metus rhoncus, a accumsan sapien mollis. Donec malesuada lacus rhoncus ipsum dignissim, sed fringilla orci faucibus. Proin non odio dui. Donec ut tristique dolor, at interdum sem. Quisque finibus viverra lectus vitae pulvinar.</p>
-
-					<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
-				</div> <!-- /.col -->
-			</div> <!-- /.row -->
-
-		</div> <!-- /.tt-heading-inner -->
-	</div>
-	<!-- End tt-heading -->
+		<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
+	</TTHeadingWithColumns>
 
 	<div class="prices-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 

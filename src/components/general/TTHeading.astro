@@ -1,0 +1,31 @@
+---
+import HR from "./HR.astro";
+
+const { title, subtitle, padding, alignment, size, wrap, css_class } =
+  Astro.props;
+---
+
+<!-- Begin tt-heading 
+====================== 
+* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
+* Use class "text-center" or "text-right" to align tt-heading.
+* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
+-->
+<div
+  class:list={[
+    "tt-heading",
+    { "padding-on": padding },
+    `tt-heading-${size}`,
+    `text-${alignment}`,
+    css_class,
+  ]}
+>
+  <div class:list={["tt-heading-inner", { "tt-wrap": wrap }]}>
+    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <h1 class="tt-heading-title">{title}</h1>
+    <div class="tt-heading-subtitle">{subtitle}</div>
+    <HR size="short" />
+  </div>
+  <!-- /.tt-heading-inner -->
+</div>
+<!-- End tt-heading -->

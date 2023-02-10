@@ -1,3 +1,9 @@
+---
+import HR from "../components/general/HR.astro";
+import TTHeading from "../components/general/TTHeading.astro"
+
+---
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -34,7 +40,7 @@
 		-->
 		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
 			<h1 class="page-header-title">Dummy Page</h1>
-			<hr class="hr-short">
+			<HR size="short" />
 									
 			<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
 			<div class="page-header-description" data-max-words="40">
@@ -87,6 +93,7 @@
 							-->
 							<div class="split-box-content sb-content-right">
 
+								<TTHeading title="Who I am?" subtitle="A little bit about me" />
 								<!-- Begin tt-heading 
 								====================== 
 								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -97,7 +104,7 @@
 									<div class="tt-heading-inner">
 										<h1 class="tt-heading-title">Your Content Here</h1>
 										<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-										<hr class="hr-short">
+										<HR size="short" />
 									</div> <!-- /.tt-heading-inner -->
 								</div>
 								<!-- End tt-heading -->
@@ -148,20 +155,7 @@
 							-->
 							<div class="split-box-content sb-content-left">
 								
-								<!-- Begin tt-heading 
-								====================== 
-								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-								* Use class "text-center" or "text-right" to align tt-heading.
-								* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-								-->
-								<div class="tt-heading tt-heading-sm">
-									<div class="tt-heading-inner">
-										<h1 class="tt-heading-title">Your Content Here</h1>
-										<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-										<hr class="hr-short">
-									</div> <!-- /.tt-heading-inner -->
-								</div>
-								<!-- End tt-heading -->
+								<TTHeading title="Your Content Here" size="sm" />
 
 								<div class="margin-top-30">
 									<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed viverra rhoncus placerat. Quisque sed auctor turpis. Etiam elementum malesuada felis, sit amet aliquet nibh laoreet et.</p>

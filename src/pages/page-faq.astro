@@ -1,3 +1,9 @@
+---
+import HR from "../components/general/HR.astro";
+import TTHeading from "../components/general/TTHeading.astro"
+
+---
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -34,7 +40,7 @@
 		-->
 		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
 			<h1 class="page-header-title">FAQ - Frequently Asked Questions</h1>
-			<hr class="hr-short">
+			<HR size="short" />
 			<!-- <div class="page-header-description">
 				<p>A Collection Of Common Questions And Answers.</p>
 			</div> -->
@@ -63,6 +69,7 @@
 				=================== -->
 				<div class="sidebar sidebar-right margin-bottom-50">
 
+					<TTHeading title="Who I am?" subtitle="A little bit about me" />
 					<!-- Begin tt-heading 
 					====================== 
 					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -73,13 +80,14 @@
 						<div class="tt-heading-inner">
 							<h1 class="tt-heading-title">FAQ</h1>
 							<div class="tt-heading-subtitle">Most common questions and answers</div>
-							<hr class="hr-short">
+							<HR size="short" />
 						</div> <!-- /.tt-heading-inner -->
 					</div>
 					<!-- End tt-heading -->
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nemo odit cupiditate nam maiores, accusantium quis doloribus expedita facilis illum aperiam modi laborum corporis quibusdam sapiente.</p>
 
+					<TTHeading title="Who I am?" subtitle="A little bit about me" />
 					<!-- Begin tt-heading 
 					====================== 
 					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -90,7 +98,7 @@
 						<div class="tt-heading-inner">
 							<h1 class="tt-heading-title">Useful Links</h1>
 							<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-							<hr class="hr-short">
+							<HR size="short" />
 						</div> <!-- /.tt-heading-inner -->
 					</div>
 					<!-- End tt-heading -->
@@ -113,6 +121,7 @@
 				===================== -->
 				<div class="panel-group accordion-wrap" id="accordion-76845678" role="tablist" aria-multiselectable="true">
 
+					<TTHeading title="Who I am?" subtitle="A little bit about me" />
 					<!-- Begin tt-heading 
 					====================== 
 					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -123,7 +132,7 @@
 						<div class="tt-heading-inner">
 							<h1 class="tt-heading-title">General Questions:</h1>
 							<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-							<hr class="hr-short">
+							<HR size="short" />
 						</div> <!-- /.tt-heading-inner -->
 					</div>
 					<!-- End tt-heading -->
@@ -218,7 +227,7 @@
 						</div>
 					</div>
 
-
+					<TTHeading title="Who I am?" subtitle="A little bit about me" />
 					<!-- Begin tt-heading 
 					====================== 
 					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -229,7 +238,7 @@
 						<div class="tt-heading-inner">
 							<h1 class="tt-heading-title">Pre-Order Questions:</h1>
 							<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-							<hr class="hr-short">
+							<HR size="short" />
 						</div> <!-- /.tt-heading-inner -->
 					</div>
 					<!-- End tt-heading -->
@@ -338,20 +347,7 @@
 ================================= -->
 <section id="latest-work-section" class="margin-top-40"> <!-- margin class is optional ) -->
 
-	<!-- Begin tt-heading 
-	====================== 
-	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-	* Use class "text-center" or "text-right" to align tt-heading.
-	* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-	-->
-	<div class="tt-heading padding-on text-center">
-		<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-			<h1 class="tt-heading-title">Latest Projects</h1>
-			<div class="tt-heading-subtitle">My latest photo projects</div>
-			<hr class="hr-short">
-		</div> <!-- /.tt-heading-inner -->
-	</div>
-	<!-- End tt-heading -->
+	<TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap />
 
 	<div class="latest-work-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 

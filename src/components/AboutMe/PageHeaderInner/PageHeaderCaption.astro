@@ -1,4 +1,6 @@
 ---
+import HR from "../HR.astro";
+
 const { caption_size, parallax_style, fade_out_style } = Astro.props
 ---
 
@@ -10,7 +12,7 @@ const { caption_size, parallax_style, fade_out_style } = Astro.props
 -->
 <div class={`page-header-caption ph-caption-${caption_size} parallax-${parallax_style} fade-out-scroll-${fade_out_style}`}>
     <h1 class="page-header-title">Martin Vegas</h1>
-    <hr class="hr-short">
+    <HR size="short" />
     
     <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
     <div class="page-header-description" data-max-words="40">

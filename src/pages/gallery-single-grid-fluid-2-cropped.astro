@@ -1,3 +1,8 @@
+---
+import TTHeading from "../components/general/TTHeading.astro"
+
+---
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -71,6 +76,7 @@
 							<!-- Begin modal body content -->
 							<div class="modal-body-content">
 								
+								<TTHeading title="Who I am?" subtitle="A little bit about me" />
 								<!-- Begin tt-heading 
 								====================== 
 								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -81,7 +87,7 @@
 									<div class="tt-heading-inner">
 										<h1 class="tt-heading-title">The Coolest Photo Project I've Ever Created</h1>
 										<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-										<!-- <hr class="hr-short"> -->
+										<!-- <HR size="short" /> -->
 									</div> <!-- /.tt-heading-inner -->
 								</div>
 								<!-- End tt-heading -->
@@ -689,20 +695,7 @@
 =================================== -->
 <section id="more-projects-section">
 
-	<!-- Begin tt-heading 
-	====================== 
-	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-	* Use class "text-center" or "text-right" to align tt-heading.
-	* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-	-->
-	<div class="tt-heading padding-on text-center">
-		<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-			<h1 class="tt-heading-title">More Projects You Might Like</h1>
-			<div class="tt-heading-subtitle">Please see my other projects</div>
-			<hr class="hr-short">
-		</div> <!-- /.tt-heading-inner -->
-	</div>
-	<!-- End tt-heading -->
+	<TTHeading title="More Projects You Might Like" subtitle="Please see my other projects" wrap padding alignment="center" />
 
 	<div class="more-projects-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 

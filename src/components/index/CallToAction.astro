@@ -1,4 +1,6 @@
 ---
+import TTHeading from "../general/TTHeading.astro";
+
 const tt_heading_title = "What Next?"
 const tt_heading_subtitle = "Interested in working with me?"
 ---
@@ -14,20 +16,7 @@ const tt_heading_subtitle = "Interested in working with me?"
         <div class="row">
             <div class="col-md-12 text-center">
 
-                <!-- Begin tt-heading 
-                ====================== 
-                * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-                * Use class "text-center" or "text-right" to align tt-heading.
-                * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-                -->
-                <div class="tt-heading tt-heading-lg text-center">
-                    <div class="tt-heading-inner tt-wrap">
-                        <h1 class="tt-heading-title">{tt_heading_title}</h1>
-                        <div class="tt-heading-subtitle">{tt_heading_subtitle}</div>
-                        <hr class="hr-short">
-                    </div>
-                </div>
-                <!-- End tt-heading -->
+                <TTHeading title={tt_heading_title} subtitle={tt_heading_subtitle} wrap size="lg" alignment="center"/>
 
                 <div class="margin-top-30 max-width-1000 margin-auto">
                     <p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.</p>

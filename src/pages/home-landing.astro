@@ -1,3 +1,9 @@
+---
+import HR from "../components/general/HR.astro";
+import TTHeading from "../components/general/TTHeading.astro"
+
+---
+
 <!-- ==========================
 ///// Begin intro section /////
 =========================== -->
@@ -252,6 +258,7 @@
 							-->
 							<div class="split-box-content sb-content-right" >
 
+								<TTHeading title="Who I am?" subtitle="A little bit about me" />
 								<!-- Begin tt-heading 
 								====================== 
 								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -262,7 +269,7 @@
 									<div class="tt-heading-inner">
 										<h1 class="tt-heading-title">About</h1>
 										<div class="tt-heading-subtitle">Who I am and what I do</div>
-										<hr class="hr-short">
+										<HR size="short" />
 									</div> <!-- /.tt-heading-inner -->
 								</div>
 								<!-- End tt-heading -->
@@ -302,6 +309,7 @@
 ================================== -->
 <section id="gallery-list-section">
 
+	<TTHeading title="Who I am?" subtitle="A little bit about me" />
 	<!-- Begin tt-heading 
 	====================== 
 	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -312,7 +320,7 @@
 		<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 			<h1 class="tt-heading-title">Latest Works</h1>
 			<div class="tt-heading-subtitle">My latest photo projects / <a href="categories-grid.html">View All</a></div>
-			<hr class="hr-short">
+			<HR size="short" />
 		</div> <!-- /.tt-heading-inner -->
 	</div>
 	<!-- End tt-heading -->
@@ -1081,6 +1089,7 @@
 ============================ -->
 <section id="prices-section">
 			
+	<TTHeading title="Who I am?" subtitle="A little bit about me" />
 	<!-- Begin tt-heading 
 	====================== 
 	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -1095,7 +1104,7 @@
 					
 					<h1 class="tt-heading-title">Services &amp; Pricing</h1>
 					<div class="tt-heading-subtitle">Please choose your package</div>
-					<hr class="hr-short">
+					<HR size="short" />
 
 				</div> <!-- /.col -->
 
@@ -1271,6 +1280,7 @@
 		-->
 		<div class="testimonials-carousel tm-center">
 
+			<TTHeading title="Who I am?" subtitle="A little bit about me" />
 			<!-- Begin tt-heading 
 			====================== 
 			* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -1281,7 +1291,7 @@
 				<div class="tt-heading-inner tt-wrap">
 					<h1 class="tt-heading-title text-white">Testimonials</h1>
 					<div class="tt-heading-subtitle text-gray-3">What customers say</div>
-					<hr class="hr-short">
+					<HR size="short" />
 				</div>
 			</div> -->
 			<!-- End tt-heading -->
@@ -1397,6 +1407,7 @@
 ================================= -->
 <section id="latest-news-section">
 
+	<TTHeading title="Who I am?" subtitle="A little bit about me" />
 	<!-- Begin tt-heading 
 	====================== 
 	* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
@@ -1407,7 +1418,7 @@
 		<div class="tt-heading-inner tt-wrap">
 			<h1 class="tt-heading-title">Latest From Blog</h1>
 			<div class="tt-heading-subtitle">News, Reviews, Tips &amp; Tricks</div>
-			<hr class="hr-short">
+			<HR size="short" />
 		</div>
 	</div>
 	<!-- End tt-heading -->
@@ -1820,20 +1831,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 
-				<!-- Begin tt-heading 
-				====================== 
-				* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-				* Use class "text-center" or "text-right" to align tt-heading.
-				* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-				-->
-				<div class="tt-heading tt-heading-lg text-center">
-					<div class="tt-heading-inner tt-wrap">
-						<h1 class="tt-heading-title">What Next?</h1>
-						<div class="tt-heading-subtitle">Interested in working with me?</div>
-						<hr class="hr-short">
-					</div>
-				</div>
-				<!-- End tt-heading -->
+				<TTHeading title="What Next?" subtitle="Interested in working with me?" wrap size="lg" alignment="center" />
 
 				<div class="margin-top-30 max-width-1000 margin-auto">
 					<p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.</p>

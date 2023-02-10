@@ -1,4 +1,6 @@
 ---
+import TTHeading from "../general/TTHeading.astro";
+
 const tt_heading_title = "About";
 const tt_heading_subtitle = "Who I am and what I do";
 const about_text =
@@ -51,21 +53,7 @@ const about_text =
                             * Use class "shifted-left" or "shifted-right" to enable shifted content (do not use for long content).
                             -->
               <div class="split-box-content sb-content-right">
-                <!-- Begin tt-heading 
-                                ====================== 
-                                * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-                                * Use class "text-center" or "text-right" to align tt-heading.
-                                * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-                                -->
-                <div class="tt-heading">
-                  <div class="tt-heading-inner">
-                    <h1 class="tt-heading-title">{tt_heading_title}</h1>
-                    <div class="tt-heading-subtitle">{tt_heading_subtitle}</div>
-                    <hr class="hr-short" />
-                  </div>
-                  <!-- /.tt-heading-inner -->
-                </div>
-                <!-- End tt-heading -->
+                <TTHeading title={tt_heading_title} subtitle={tt_heading_subtitle} />
 
                 <div class="margin-top-30">
                   <p>{about_text}</p>

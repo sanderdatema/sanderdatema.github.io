@@ -1,22 +1,14 @@
+---
+import TTHeading from "../general/TTHeading.astro";
+
+---
+
 <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
 <section id="gallery-list-section">
 
-    <!-- Begin tt-heading 
-    ====================== 
-    * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-    * Use class "text-center" or "text-right" to align tt-heading.
-    * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-    -->
-    <div class="tt-heading tt-heading-lg padding-on text-center">
-        <div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-            <h1 class="tt-heading-title">Latest Works</h1>
-            <div class="tt-heading-subtitle">My latest photo projects / <a href="categories-grid.html">View All</a></div>
-            <hr class="hr-short">
-        </div> <!-- /.tt-heading-inner -->
-    </div>
-    <!-- End tt-heading -->
+    <TTHeading title="Latest Works" subtitle='My latest photo projects / <a href="categories-grid.html">View All</a>' wrap />
 
     <div class="isotope-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
         

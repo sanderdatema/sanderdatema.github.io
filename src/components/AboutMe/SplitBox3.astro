@@ -1,3 +1,8 @@
+---
+import TTHeading from "./TTHeading.astro";
+
+---
+
 <!-- ======================
 ///// Begin split box /////
 based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
@@ -27,20 +32,7 @@ based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-respon
                     -->
                     <div class="split-box-content sb-content-left">
 
-                        <!-- Begin tt-heading 
-                        ====================== 
-                        * Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-                        * Use class "text-center" or "text-right" to align tt-heading.
-                        * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-                        -->
-                        <div class="tt-heading">
-                            <div class="tt-heading-inner">
-                                <h1 class="tt-heading-title">What I Do?</h1>
-                                <div class="tt-heading-subtitle">A little bit of my work</div>
-                                <hr class="hr-short">
-                            </div> <!-- /.tt-heading-inner -->
-                        </div>
-                        <!-- End tt-heading -->
+                        <TTHeading title="What I Do?" subtitle="A little bit of my work" />
 
                         <div class="margin-top-30">
                             <p>Pellentesque nec convallis nisi, in mollis nulla. Aliquam eget elit risus. Quisque vitae commodo libero, eu efficitur ligula. Cras vulputate arcu id interdum pretium. Cras eu blandit massa, at semper est. Curabitur id blandit purus. Curabitur egestas, lacus quis facilisis tempor.</p>
