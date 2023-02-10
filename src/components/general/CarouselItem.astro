@@ -1,0 +1,27 @@
+---
+const { image, category_link, category_link_title, category_title, position, size } = Astro.props
+---
+<!-- Begin carousel item 
+========================= -->
+<div class="cc-item">
+
+    <!-- Element cover -->
+    <span class="cover bg-transparent-3-dark"></span>
+
+    <!-- cc image -->
+    <div class="cc-image full-cover bg-image" style={`background-image: url(${image}); background-position: 50% 50%;`}></div>
+
+    <!-- Begin caption 
+    ===================
+    * Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+    * Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+    -->
+    <div class:list={["cc-caption", `cc-caption-${size}`, position]}>
+        <h2 class="cc-title">
+            <a href={category_link} title={category_link_title}>{category_title}</a>
+        </h2>
+    </div>
+    <!-- End caption -->
+
+</div>
+<!-- End carousel item -->

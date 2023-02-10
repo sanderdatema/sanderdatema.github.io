@@ -1,3 +1,12 @@
+---
+import CarouselItem from "../components/general/CarouselItem.astro"
+import HR from "../components/general/HR.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+---
+<BaseLayout title={title}>
+
 <!-- ====================================================
 ///// Begin blog list carousel section (categories) /////
 ===================================================== -->
@@ -46,156 +55,59 @@
 				data-dots-speed="800"................(milliseconds)
 		-->
 		<div class="owl-carousel cursor-grab nav-outside dots-rounded dots-right" data-items="4" data-margin="25" data-loop="true" data-nav="true" data-nav-speed="400" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="400" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-1.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Photography"
+			/>
 
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-2.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Equipment"
+			/>
 
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-3.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Travel"
+			/>
 
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-1.jpg); background-position: 50% 50%;"></div>
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-4.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Fashion"
+			/>
 
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Photography</a>
-					</h2>
-				</div>
-				<!-- End caption -->
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-5.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Food"
+			/>
 
-			</div>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
-
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
-
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-2.jpg); background-position: 50% 50%;"></div>
-
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Equipment</a>
-					</h2>
-				</div>
-				<!-- End caption -->
-
-			</div>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
-
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
-
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-3.jpg); background-position: 50% 50%;"></div>
-
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Travel</a>
-					</h2>
-				</div>
-				<!-- End caption -->
-
-			</div>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
-
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
-
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-4.jpg); background-position: 50% 50%;"></div>
-
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Fashion</a>
-					</h2>
-				</div>
-				<!-- End caption -->
-
-			</div>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
-
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
-
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-5.jpg); background-position: 50% 50%;"></div>
-
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Food</a>
-					</h2>
-				</div>
-				<!-- End caption -->
-
-			</div>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
-			========================= -->
-			<div class="cc-item">
-
-				<!-- Element cover -->
-				<span class="cover bg-transparent-3-dark"></span>
-
-				<!-- cc image -->
-				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-6.jpg); background-position: 50% 50%;"></div>
-
-				<!-- Begin caption 
-				===================
-				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
-				-->
-				<div class="cc-caption cc-caption-sm center">
-					<h2 class="cc-title">
-						<a href="blog-archive.html" title="View all entries in this category">Macro</a>
-					</h2>
-				</div>
-				<!-- End caption -->
-
-			</div>
-			<!-- End carousel item -->
+			<CarouselItem
+				image="/assets/img/blog/list/categories-carousel/blog-cat-6.jpg"
+				size="sm"
+				position="center"
+				category_link="blog-archive.html"
+				category_link_title="View all entries in this category"
+				category_title="Macro"
+			/>
 
 		</div>
 		<!-- End content carousel -->
@@ -917,3 +829,4 @@
 	</div> <!-- /.blog-list-inner -->
 </section>
 <!-- End blog list section -->
+</BaseLayout>

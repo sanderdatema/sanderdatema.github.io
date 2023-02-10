@@ -1,7 +1,10 @@
 ---
 import TTHeading from "../components/general/TTHeading.astro"
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const title = "Welcome to Sander Datema"
 ---
+<BaseLayout title={title}>
 
 <!-- ========================
 ///// Begin page header /////
@@ -881,3 +884,4 @@ import TTHeading from "../components/general/TTHeading.astro"
 	</div> <!-- /.more-projects-inner -->
 </section>
 <!-- End more projects cection -->
+</BaseLayout>

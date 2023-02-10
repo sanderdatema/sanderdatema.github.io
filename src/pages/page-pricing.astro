@@ -1,8 +1,11 @@
 ---
 import HR from "../components/general/HR.astro";
 import TTHeadingWithColumns from "../components/general/TTHeadingWithColumns.astro"
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const title = "Welcome to Sander Datema"
 ---
+<BaseLayout title={title}>
 
 <!-- ========================
 ///// Begin page header /////
@@ -210,3 +213,4 @@ import TTHeadingWithColumns from "../components/general/TTHeadingWithColumns.ast
 	</div> <!-- /.prices-section-inner -->
 </section>
 <!-- End prices section -->
+</BaseLayout>

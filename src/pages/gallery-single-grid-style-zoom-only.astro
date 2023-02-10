@@ -1,3 +1,11 @@
+---
+import TTHeading from '../components/general/TTHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+---
+<BaseLayout title={title}>
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -71,21 +79,7 @@
 							<!-- Begin modal body content -->
 							<div class="modal-body-content">
 								
-								<TTHeading title="Who I am?" subtitle="A little bit about me" />
-								<!-- Begin tt-heading 
-								====================== 
-								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-								* Use class "text-center" or "text-right" to align tt-heading.
-								* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-								-->
-								<div class="tt-heading tt-heading-lg">
-									<div class="tt-heading-inner">
-										<h1 class="tt-heading-title">The Coolest Photo Project I've Ever Created</h1>
-										<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-										<!-- <HR size="short" /> -->
-									</div> <!-- /.tt-heading-inner -->
-								</div>
-								<!-- End tt-heading -->
+								<TTHeading title="The Coolest Photo Project I've Ever Created" size="lg" />
 
 								<div class="margin-top-20">
 									<p>Integer viverra arcu ac facilisis interdum. Proin dignissim sagittis tellus. Duis et pharetra est, vel ullamcorper libero. Fusce sed leo in dolor ornare fermentum. Sed facilisis eu justo at mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue malesuada eros, ut varius metus accumsan non. Pellentesque facilisis tortor risus, quis convallis nunc faucibus et. Proin egestas pulvinar sem, sit amet auctor ligula faucibus quis. Maecenas in libero nec turpis molestie dictum. Suspendisse id mi eget mi suscipit faucibus vitae eu metus.</p>
@@ -608,3 +602,4 @@
 	</div> <!-- /.isotope-wrap -->
 </section>
 <!-- End gallery single section -->
+</BaseLayout>

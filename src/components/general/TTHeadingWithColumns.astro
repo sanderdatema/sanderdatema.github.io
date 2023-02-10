@@ -1,7 +1,7 @@
 ---
 import HR from "./HR.astro";
 
-const { title, subtitle, padding, alignment, size, css_class } =
+const { title, subtitle, padding, alignment, size, css_class, wrap } =
   Astro.props;
 ---
 
@@ -20,17 +20,23 @@ const { title, subtitle, padding, alignment, size, css_class } =
     css_class,
   ]}
 >
+  <div class:list={["tt-heading-inner", { "tt-wrap": wrap }]}>
+    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
     <div class="row">
-      <div class="col-md-4">        
+      <div class="col-md-4">
         <h1 class="tt-heading-title">{title}</h1>
         <div class="tt-heading-subtitle">{subtitle}</div>
         <HR size="short" />
-      </div> <!-- /.col -->
+      </div>
+      <!-- /.col -->
 
       <div class="col-md-8">
         <slot />
-      </div> <!-- /.col -->
-    </div> <!-- /.row -->
-  <!-- /.tt-heading-inner -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+    <!-- /.tt-heading-inner -->
+  </div>
 </div>
 <!-- End tt-heading -->

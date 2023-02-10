@@ -1,3 +1,12 @@
+---
+import HR from '../components/general/HR.astro';
+import TTHeading from '../components/general/TTHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+---
+<BaseLayout title={title}>
+
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -116,21 +125,7 @@
 
 										<div class="contact-form-info">
 
-											<TTHeading title="Who I am?" subtitle="A little bit about me" />
-											<!-- Begin tt-heading 
-											====================== 
-											* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-											* Use class "text-center" or "text-right" to align tt-heading.
-											* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-											-->
-											<div class="tt-heading">
-												<div class="tt-heading-inner">
-													<h1 class="tt-heading-title">Drop Me a Line</h1>
-													<!-- <div class="tt-heading-subtitle">Subtitle Here</div> -->
-													<HR size="short" />
-												</div> <!-- /.tt-heading-inner -->
-											</div>
-											<!-- End tt-heading -->
+											<TTHeading title="Drop Me a Line" />
 
 											<div class="margin-top-30">
 												<p>Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
@@ -224,3 +219,4 @@
 	</div> <!-- /.contact-section-inner -->
 </section>
 <!-- End contact section -->
+</BaseLayout>

@@ -1,7 +1,221 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+---
+<BaseLayout title={title}>
+
+<!-- ====================================================
+///// Begin blog list carousel section (categories) /////
+===================================================== -->
+<section id="blog-list-carousel-section" class="blc-categories">
+	<div class="bl-carousel-wrap padding-25 tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+		<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+		====================================================================
+		* Use class "nav-outside" for outside nav (requires boxed layout).
+		* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
+		* Use class "nav-bottom-right" for bottom right nav.
+		* Use class "nav-rounded" for rounded nav.
+		* Use class "nav-light" to enable nav light style.
+		* Use class "dots-outside" for outside dots (requires enough space at the bottom of the carousel).
+		* Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
+		* Use class "dots-rounded" for rounded dots.
+		* Use class "owl-mousewheel" to enable mousewheel support.
+		* Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
+		* Use class "cc-hover-light", "cc-hover-dark" or "cc-hover-zoom" to enable carousel items hover effect.
+		* Use class "cc-height-1", "cc-height-2", "cc-height-3", "cc-height-4", "cc-height-5", "cc-height-6" or "cc-height-full" to set carousel height (do not use with data-autoheight="true"!!!).
+		* Use class "cc-height-m" to set full height for small screens (do not use with data-autoheight="true"!!!).
+		================================================================
+		* Available carousel data attributes:
+				data-items="5".......................(items visible on desktop)
+				data-tablet-landscape="4"............(items visible on mobiles)
+				data-tablet-portrait="3".............(items visible on mobiles)
+				data-mobile-landscape="2"............(items visible on tablets)
+				data-mobile-portrait="1".............(items visible on tablets)
+				data-loop="true".....................(true/false)
+				data-margin="10".....................(space between items)
+				data-center="true"...................(true/false)
+				data-start-position="0"..............(item start position)
+				data-animate-in="fadeIn".............(fade-in animation)
+				data-animate-out="fadeOut"...........(fade-out animation)
+				data-mouse-drag="false"..............(true/false)
+				data-touch-drag="false"..............(true/false)
+				data-autoheight="true"...............(true/false)
+				data-autoplay="true".................(true/false)
+				data-autoplay-timeout="5000".........(milliseconds)
+				data-autoplay-hover-pause="true".....(true/false)
+				data-autoplay-speed="800"............(milliseconds)
+				data-drag-end-speed="800"............(milliseconds)
+				data-nav="true"......................(true/false)
+				data-nav-speed="800".................(milliseconds)
+				data-dots="false"....................(true/false)
+				data-dots-speed="800"................(milliseconds)
+		-->
+		<div class="owl-carousel cursor-grab nav-outside dots-rounded dots-right" data-items="4" data-margin="25" data-loop="true" data-nav="true" data-nav-speed="400" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="400" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-1.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Photography</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-2.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Equipment</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-3.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Travel</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-4.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Fashion</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-5.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Food</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+			<!-- Begin carousel item 
+			========================= -->
+			<div class="cc-item">
+
+				<!-- Element cover -->
+				<span class="cover bg-transparent-3-dark"></span>
+
+				<!-- cc image -->
+				<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/blog/list/categories-carousel/blog-cat-6.jpg); background-position: 50% 50%;"></div>
+
+				<!-- Begin caption 
+				===================
+				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+				-->
+				<div class="cc-caption cc-caption-sm center">
+					<h2 class="cc-title">
+						<a href="blog-archive.html" title="View all entries in this category">Macro</a>
+					</h2>
+				</div>
+				<!-- End caption -->
+
+			</div>
+			<!-- End carousel item -->
+
+		</div>
+		<!-- End content carousel -->
+
+	</div> <!-- /.gl-carousel-wrap -->
+</section>
+<!-- End blog list carousel section -->
+
+
 <!-- ==============================
 ///// Begin blog list section /////
 =============================== -->
-<section id="blog-list-section" class="blog-list-grid">
+<section id="blog-list-section" class="blog-list-classic">
 	<div class="blog-list-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
 		<div class="row no-margin">
@@ -10,26 +224,17 @@
 			<div class="col-md-8 no-padding-left no-padding-right">
 
 				<div class="isotope-wrap">
-
-					<!-- Begin archive info box -->
-					<div class="archive-info-box text-center">
-						<div class="ai-box-subtitle">Browsing Category:</div>
-						<!-- <div class="ai-box-subtitle">Browsing Tag:</div> -->
-						<h1 class="ai-box-title">Photography</h1>
-						<HR size="short" />
-					</div>
-					<!-- End archive info box -->
 					
 					<!-- Begin isotope
 					===================
 					* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 					* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 					-->
-					<div class="isotope col-2 gutter-3">
+					<div class="isotope col-1">
 
 						<!-- Begin isotope items wrap 
 						============================== -->
-						<div class="isotope-items-wrap no-margin">
+						<div class="isotope-items-wrap no-margin-top">
 
 							<!-- Grid sizer (do not remove!!!) -->
 							<div class="grid-sizer"></div>
@@ -48,17 +253,16 @@
 									
 									<!-- Begin blog list item info -->
 									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+										<div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
 										<a href="blog-single.html" class="bl-item-title"><h2>5 Reasons You Should Fall In Love With Photography</h2></a>
 										<div class="bl-item-meta"> 
 											<span class="published">May 26, 2017</span>
 											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
 										</div>
-
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+										<div class="bl-item-desc">
+											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl. Proin in cursus nisi, id feugiat magna. Aliquam nec elit a lorem egestas vehicula vel eu erat. Pellentesque a lacus sed risus cursus venenatis...
+										</div>
+										<a href="blog-single.html" class="btn btn-primary btn-sm margin-top-30">Read More</a>
 
 										<!-- Begin blog list item attributes -->
 										<ul class="bl-item-attr">
@@ -105,17 +309,16 @@
 									
 									<!-- Begin blog list item info -->
 									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Equipment</a></div>
+										<div class="bl-item-category"><a href="blog-archive.html">Equipment</a></div>
 										<a href="blog-single.html" class="bl-item-title"><h2>10 Top Choices for Aerial Photography</h2></a>
 										<div class="bl-item-meta"> 
 											<span class="published">May 26, 2017</span>
 											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">John Young</a></span>
 										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+										<div class="bl-item-desc">
+											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl. Proin in cursus nisi, id feugiat magna. Aliquam nec elit a lorem egestas vehicula vel eu erat. Pellentesque a lacus sed risus cursus venenatis...
+										</div>
+										<a href="blog-single.html" class="btn btn-primary btn-sm margin-top-30">Read More</a>
 
 										<!-- Begin blog list item attributes -->
 										<ul class="bl-item-attr">
@@ -162,17 +365,16 @@
 									
 									<!-- Begin blog list item info -->
 									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Travel</a></div>
+										<div class="bl-item-category"><a href="blog-archive.html">Travel</a></div>
 										<a href="blog-single.html" class="bl-item-title"><h2>How to Take Professional Travel Photos</h2></a>
 										<div class="bl-item-meta"> 
 											<span class="published">May 26, 2017</span>
 											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
 										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+										<div class="bl-item-desc">
+											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl. Proin in cursus nisi, id feugiat magna. Aliquam nec elit a lorem egestas vehicula vel eu erat. Pellentesque a lacus sed risus cursus venenatis...
+										</div>
+										<a href="blog-single.html" class="btn btn-primary btn-sm margin-top-30">Read More</a>
 
 										<!-- Begin blog list item attributes -->
 										<ul class="bl-item-attr">
@@ -219,17 +421,16 @@
 									
 									<!-- Begin blog list item info -->
 									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+										<div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
 										<a href="blog-single.html" class="bl-item-title"><h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2></a>
 										<div class="bl-item-meta"> 
 											<span class="published">May 26, 2017</span>
 											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Julia Beck</a></span>
 										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+										<div class="bl-item-desc">
+											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl. Proin in cursus nisi, id feugiat magna. Aliquam nec elit a lorem egestas vehicula vel eu erat. Pellentesque a lacus sed risus cursus venenatis...
+										</div>
+										<a href="blog-single.html" class="btn btn-primary btn-sm margin-top-30">Read More</a>
 
 										<!-- Begin blog list item attributes -->
 										<ul class="bl-item-attr">
@@ -240,7 +441,7 @@
 											</li>
 											<li>
 												<!-- Begin favorite button -->
-												<div class="favorite-btn">
+												<div class="favorite-btn active">
 													<div class="fav-inner">
 														<div class="icon-heart">
 															<span class="icon-heart-empty"></span>
@@ -276,17 +477,16 @@
 									
 									<!-- Begin blog list item info -->
 									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+										<div class="bl-item-category"><a href="blog-archive.html">Photography</a></div>
 										<a href="blog-single.html" class="bl-item-title"><h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2></a>
 										<div class="bl-item-meta"> 
 											<span class="published">May 26, 2017</span>
 											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
 										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+										<div class="bl-item-desc">
+											Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesent congue convallis...
+										</div>
+										<a href="blog-single.html" class="btn btn-primary btn-sm margin-top-30">Read More</a>
 
 										<!-- Begin blog list item attributes -->
 										<ul class="bl-item-attr">
@@ -305,291 +505,6 @@
 														</div>
 													</div>
 													<div class="fav-count">71</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
-							/// Begin isotope item ///
-							====================== -->
-							<div class="isotope-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-6.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Food</a> <a href="#">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>The Serious Eats Guide to Food Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 28</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">65</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
-							/// Begin isotope item ///
-							====================== -->
-							<div class="isotope-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-7.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>How to Become a Fashion Photographer</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Jack Jackson</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 2</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">14</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
-							/// Begin isotope item ///
-							====================== -->
-							<div class="isotope-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-8.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Best Lighting Tips For High Fashion Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 79</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">114</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
-							/// Begin isotope item ///
-							====================== -->
-							<div class="isotope-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-9.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Streets</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>These Ideas Will Get Your Street Photography Rocking</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Mike Leon</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 9</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">6</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
-							/// Begin isotope item ///
-							====================== -->
-							<div class="isotope-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-10.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Donec faucibus turpis ut egestas</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
-
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 14</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">90</div>
 												</div>
 												<!-- End favorite button -->
 											</li>
@@ -935,3 +850,4 @@
 	</div> <!-- /.blog-list-inner -->
 </section>
 <!-- End blog list section -->
+</BaseLayout>

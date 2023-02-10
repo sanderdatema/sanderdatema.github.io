@@ -1,10 +1,19 @@
+---
+import HR from '../components/general/HR.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+
+---
+<BaseLayout title={title}>
+
 <!-- ========================
 ///// Begin page header /////
 =============================
 * Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
 * Use class "ph-center" or "ph-right" to align page header caption.
 -->
-<section id="page-header" class="ph-xlg">
+<section id="page-header">
 
 	<!-- Begin page header image 
 	============================= 
@@ -12,7 +21,7 @@
 	* Use class "fade-out-scroll-3" to enable fade out effect if page scroll.
 	* Use class "hide-ph-image" to hide page header image without removing the code.
 	-->
-	<div class="page-header-image parallax-bg-3 bg-image" style="background-image: url(/assets/img/misc/page-header-bg-19.jpg);">
+	<div class="page-header-image hide-ph-image parallax-bg-3 bg-image" style="background-image: url(/assets/img/misc/page-header-bg-3.jpg);">
 		
 		<!-- Element cover 
 		===================
@@ -32,10 +41,15 @@
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption ph-caption-xlg parallax-5 fade-out-scroll-4">
-			<h3 class="page-header-subtitle">Browsing Category:</h3>
-			<h1 class="page-header-title">Outdoor</h1>
+		<div class="page-header-caption ph-caption-lg parallax-5">
+			<h1 class="page-header-title">Portfolio</h1>
 			<HR size="short" />
+									
+			<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+			<div class="page-header-description" data-max-words="40">
+				<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
+			</div>
+
 		</div>
 		<!-- End page header caption -->
 
@@ -50,14 +64,40 @@
 ///// Begin gallery list section /////
 ================================== -->
 <section id="gallery-list-section">
-	<div class="isotope-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+	<div class="isotope-wrap tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 		
 		<!-- Begin isotope
 		===================
 		* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 		* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 		-->
-		<div class="isotope col-3">
+		<div class="isotope col-3 gutter-3">
+			
+			<!-- Begin isotope top content -->
+			<div class="isotope-top-content">
+
+				<!-- Begin isotope filter
+				==========================
+				* Use class "fi-to-button" to enable isotope filter button syle.
+				* Use class "fi-center" or "fi-right" to align filter ("fi-center"= no effect on "fi-to-button").
+				-->
+				<div class="isotope-filter">
+					<div class="isotope-filter-button">
+						<span class="ifb-icon"><i class="fas fa-sliders-h"></i></span>
+						<span class="ifb-icon-close"><i class="fas fa-times"></i></span> <!-- effect on small screens!) -->
+					</div>
+					<ul class="isotope-filter-links">
+						<li><a href="#" class="active" data-filter="*">Show All</a></li>
+						<li><a href="#" data-filter=".fashion">Fashion</a></li>
+						<li><a href="#" data-filter=".portraits">Portraits</a></li>
+						<li><a href="#" data-filter=".black-and-white">Black &amp; White</a></li>
+						<li><a href="#" data-filter=".outdoor">Outdoor</a></li>
+					</ul>
+				</div>
+				<!-- End isotope filter -->
+
+			</div>
+			<!-- End isotope top content -->
 
 			<!-- Begin isotope items wrap 
 			==============================
@@ -65,7 +105,7 @@
 			* Use class "gli-dark" or "gli-colored" to enable colored hover overlay (effect only with default hover overlay and "gli-alter-4", "gli-alter-5" classes!).
 			* Use class "gli-frame" to enable image frames.
 			-->
-			<div class="isotope-items-wrap gli-dark gli-alter-4">
+			<div class="isotope-items-wrap gli-colored gli-frame gli-alter-3">
 
 				<!-- Grid sizer (do not remove!!!) -->
 				<div class="grid-sizer"></div>
@@ -76,7 +116,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -85,7 +125,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-1.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -116,8 +156,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">The Old Man Dreams</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">The Old Man Dreams</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -133,7 +173,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item black-and-white iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -142,7 +182,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-2.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -173,8 +213,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">These Wonderful Freckles</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">These Wonderful Freckles</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Black &amp; White</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -190,7 +230,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item fashion iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -199,10 +239,10 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="page-password.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-3.jpg); background-position: 50% 50%"></div>
 								
-								<span class="gl-item-image-lock" title="Private Content"><i class="fas fa-lock"></i></span>
+								<span class="gl-item-image-zoom"></span>
 							</a>
 							<!-- End gallery list item image inner -->
 							
@@ -230,8 +270,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="page-password.html">Paris Fashion Week</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Paris Fashion Week</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Fashion</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -247,7 +287,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -256,7 +296,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-4.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -287,8 +327,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Afternoon Photoshoot</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Afternoon Photoshoot</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -304,7 +344,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item portraits iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -313,10 +353,10 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="page-password.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-5.jpg); background-position: 50% 50%"></div>
 								
-								<span class="gl-item-image-lock" title="Private Content"><i class="fas fa-lock"></i></span>
+								<span class="gl-item-image-zoom"></span>
 							</a>
 							<!-- End gallery list item image inner -->
 
@@ -344,8 +384,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="page-password.html">Sit Back and Relax</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Sit Back and Relax</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Portraits</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -361,7 +401,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item fashion outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -370,7 +410,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-6.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -401,8 +441,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Something In The Water vol.2</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Something In The Water vol.2</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Fashion</a>, <a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -418,7 +458,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -427,7 +467,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-7.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -458,8 +498,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Autumn Nights</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Autumn Nights</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -475,7 +515,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item fashion iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -484,7 +524,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-8.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -515,8 +555,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Beauty &amp; Fashion</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Beauty &amp; Fashion</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Fashion</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -532,7 +572,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item black-and-white iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -541,7 +581,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-9.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -572,8 +612,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">No Colors This Time</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">No Colors This Time</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Black &amp; White</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -589,7 +629,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -598,7 +638,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-10.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -629,8 +669,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Monday's Monochromes</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Monday's Monochromes</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -646,7 +686,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item fashion portraits iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -655,7 +695,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-11.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -686,8 +726,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Something In The Water</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Something In The Water</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Fashion</a>, <a href="albums-archive.html">Portraits</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -703,7 +743,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor fashion iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -712,7 +752,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-12.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -743,8 +783,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">Beautiful Bride</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">Beautiful Bride</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a>, <a href="albums-archive.html">Fashion</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -760,7 +800,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor fashion iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -769,7 +809,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-13.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -800,8 +840,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">My Super Awesome Album</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">My Super Awesome Album</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a>, <a href="albums-archive.html">Fashion</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -817,7 +857,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item portraits iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -826,7 +866,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-14.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -857,8 +897,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">One Day Shoot With Ordinary People</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">One Day Shoot With Ordinary People</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Portraits</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -874,7 +914,7 @@
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item iso-height-1">
+				<div class="isotope-item outdoor iso-height-1">
 
 					<!-- Begin gallery list item -->
 					<div class="gallery-list-item">
@@ -883,7 +923,7 @@
 						<div class="gl-item-image-wrap">
 
 							<!-- Begin gallery list item image inner -->
-							<a href="gallery-single-grid-fluid-2.html" class="gl-item-image-inner">
+							<a href="gallery-single-grid-2.html" class="gl-item-image-inner">
 								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-15.jpg); background-position: 50% 50%"></div>
 								
 								<span class="gl-item-image-zoom"></span>
@@ -914,8 +954,8 @@
 						<!-- Begin gallery list item info -->
 						<div class="gl-item-info">
 							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="gallery-single-grid-fluid-2.html">The Beauty of Nature</a></h2>
-								<span class="gl-item-category"><a href="albums-archive-fluid-2.html">Outdoor</a></span>
+								<h2 class="gl-item-title"><a href="gallery-single-grid-2.html">The Beauty of Nature</a></h2>
+								<span class="gl-item-category"><a href="albums-archive.html">Outdoor</a></span>
 							</div>
 						</div>
 						<!-- End gallery list item info -->
@@ -932,11 +972,11 @@
 
 			<!-- Begin isotope pagination 
 			============================== -->
-			<!-- <div class="isotope-pagination">
+			<div class="isotope-pagination">
 				<div class="iso-load-more">
 					<a class="btn btn-dark-bordered btn-lg" href="">View More <i class="fas fa-refresh"></i></a>
 				</div>
-			</div> -->
+			</div>
 			<!-- End isotope pagination -->
 
 		</div>
@@ -945,3 +985,4 @@
 	</div> <!-- /.isotope-wrap -->
 </section>
 <!-- End gallery list section -->
+</BaseLayout>

@@ -1,9 +1,12 @@
 ---
 import HR from "../components/general/HR.astro";
+import Signature from "../components/general/Signature.astro";
 import TTHeading from "../components/general/TTHeading.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const title = "Welcome to Sander Datema"
 ---
-
+<BaseLayout title={title}>
 <!-- ========================
 ///// Begin page header /////
 =============================
@@ -114,12 +117,7 @@ import TTHeading from "../components/general/TTHeading.astro"
 									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Vivamus at nibh tincidunt, bibendum ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas enimoa.</p>
 								</div>
 
-								<!-- Begin signature -->
-								<div class="signature">
-									<img class="signature-dark" src="assets/img/signature-dark.png" alt="">
-									<img class="signature-light" src="assets/img/signature-light.png" alt="">
-								</div>
-								<!-- End signature -->
+								<Signature />
 
 							</div>
 							<!-- End split box content -->
@@ -394,3 +392,4 @@ import TTHeading from "../components/general/TTHeading.astro"
 	</div> <!-- /.latest-work-inner -->
 </section>
 <!-- End latest work cection -->
+</BaseLayout>

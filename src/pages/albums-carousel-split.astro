@@ -1,7 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Welcome to Sander Datema"
+---
+<BaseLayout title={title}>
+
 <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
-<section id="gallery-list-section" class="gallery-list-carousel">
+<section id="gallery-list-section" class="gallery-list-carousel glc-split">
 	<div class="gallery-list-carousel-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 		<div class="gl-carousel-wrap no-padding"> <!-- Optional: add class "no-padding" to disable paddings -->
 
@@ -46,22 +53,23 @@
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-full owl-mousewheel nav-bottom-right cc-hover-dark cc-hover-zoom" data-items="4" data-dots="false" data-nav="true" data-nav-speed="800" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="800" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="3" data-mobile-landscape="2" data-mobile-portrait="2">
+			<div class="owl-carousel cc-height-full cc-height-m owl-mousewheel cc-hover-dark cc-hover-zoom" data-items="2" data-margin="0" data-dots="false" data-nav="true" data-nav-speed="800" data-mobile-portrait="1">
 
 				<!-- Begin carousel item 
 				========================= -->
 				<a href="gallery-single-carousel-center.html" class="cc-item">
 
 					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-7.jpg);"></div>
 
 					<!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Style</h2>
+					<div class="cc-caption cc-caption-lg center max-width-400"> <!-- max width class is optional -->
+						<h2 class="cc-title">Afternoon Photoshoot</h2>
+						<div class="cc-category"><span>Outdoor</span></div>
 					</div>
 					<!-- End caption -->
 
@@ -73,15 +81,16 @@
 				<a href="gallery-single-carousel-center.html" class="cc-item">
 
 					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-2.jpg); background-position: 50% 50%;"></div>
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-8.jpg);"></div>
 
 					<!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Sport</h2>
+					<div class="cc-caption cc-caption-lg center max-width-400"> <!-- max width class is optional -->
+						<h2 class="cc-title">Black &amp; White</h2>
+						<div class="cc-category"><span>Models</span></div>
 					</div>
 					<!-- End caption -->
 
@@ -93,15 +102,16 @@
 				<a href="gallery-single-carousel-center.html" class="cc-item">
 
 					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-3.jpg); background-position: 50% 50%;"></div>
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-9.jpg);"></div>
 
 					<!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Weddings</h2>
+					<div class="cc-caption cc-caption-lg center max-width-400">
+						<h2 class="cc-title">One Day Shoot With Ordinary People</h2>
+						<div class="cc-category"><span>Outdoor</span></div>
 					</div>
 					<!-- End caption -->
 
@@ -113,15 +123,16 @@
 				<a href="gallery-single-carousel-center.html" class="cc-item">
 
 					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-4.jpg); background-position: 50% 50%;"></div>
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-10.jpg);"></div>
 
 					<!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Nature</h2>
+					<div class="cc-caption cc-caption-lg center max-width-400"> <!-- max width class is optional -->
+						<h2 class="cc-title">Dancing Is Everything</h2>
+						<div class="cc-category"><span>People</span></div>
 					</div>
 					<!-- End caption -->
 
@@ -133,15 +144,37 @@
 				<a href="gallery-single-carousel-center.html" class="cc-item">
 
 					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-7.jpg); background-position: 50% 50%;"></div>
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-11.jpg);"></div>
 
 					<!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Macro</h2>
+					<div class="cc-caption cc-caption-lg center max-width-400"> <!-- max width class is optional -->
+						<h2 class="cc-title">Redhead Beauty</h2>
+						<div class="cc-category"><span>Outdoor</span></div>
+					</div>
+					<!-- End caption -->
+
+				</a>
+				<!-- End carousel item -->
+
+				<!-- Begin carousel item 
+				========================= -->
+				<a href="gallery-single-carousel-center.html" class="cc-item">
+
+					<!-- cc image -->
+					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-12.jpg);"></div>
+
+					<!-- Begin caption 
+					===================
+					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
+					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
+					-->
+					<div class="cc-caption cc-caption-lg center max-width-400"> <!-- max width class is optional -->
+						<h2 class="cc-title">Beautiful People</h2>
+						<div class="cc-category"><span>People</span></div>
 					</div>
 					<!-- End caption -->
 
@@ -155,3 +188,4 @@
 	</div> <!-- /.gallery-list-carousel-inner -->
 </section>
 <!-- End gallery list section -->
+</BaseLayout>
