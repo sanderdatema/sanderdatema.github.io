@@ -1,5 +1,5 @@
 ---
-const { css_class } = Astro.props
+const { size, align } = Astro.props
 ---
 <!-- ========================
 ///// Begin page header /////
@@ -7,7 +7,7 @@ const { css_class } = Astro.props
 * Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
 * Use class "ph-center" or "ph-right" to align page header caption.
 -->
-<section id="page-header">
+<section id="page-header" class:list={[`ph-${size}`, `ph-${align}`]}>
     <slot />
 </section>
 <!-- End page header -->

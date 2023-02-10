@@ -1,4 +1,6 @@
 ---
+import ElementCover from "../general/ElementCover.astro";
+
 const { parallax_style, background_image } = Astro.props
 ---
 <!-- Begin page header image 
@@ -9,11 +11,7 @@ const { parallax_style, background_image } = Astro.props
 -->
 <div class={`page-header-image bg-image parallax-bg-${parallax_style}`} style={`background-image: url(${background_image});`}>
     
-    <!-- Element cover 
-    ===================
-    * You can use prepared background transparent classes depends on brightness of your page header image. More info: file "helper.css".
-    -->
-    <div class="cover bg-transparent-5-dark"></div>
+    <ElementCover css_class="bg-transparent-5-dark" />
     
 </div>
 <!-- End page header image -->
