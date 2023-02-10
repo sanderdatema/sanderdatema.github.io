@@ -13,9 +13,11 @@
   "dependencies": {
     "@astrojs/image": "^0.14.1",
     "@astrojs/mdx": "^0.16.0",
+    "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.1",
     "@astropub/flow": "^0.3.6",
     "astro": "^2.0.8",
-    "astro-compress": "^1.1.30"
+    "astro-compress": "^1.1.30",
+    "jquery": "^3.6.3"
   }
 }

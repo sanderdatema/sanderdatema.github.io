@@ -1,0 +1,494 @@
+<!-- ========================
+///// Begin page header /////
+=============================
+* Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
+* Use class "ph-center" or "ph-right" to align page header caption.
+-->
+<section id="page-header">
+
+	<!-- Begin page header image 
+	============================= 
+	* Use class "parallax-bg-1" up to "parallax-bg-6" to enable background image parallax effect.
+	* Use class "fade-out-scroll-3" to enable fade out effect if page scroll.
+	* Use class "hide-ph-image" to hide page header image without removing the code.
+	-->
+	<div class="page-header-image parallax-bg-3 bg-image" style="background-image: url(/assets/img/misc/page-header-bg-15.jpg);">
+		
+		<!-- Element cover 
+		===================
+		* You can use prepared background transparent classes depends on brightness of your page header image. More info: file "helper.css".
+		-->
+		<div class="cover bg-transparent-5-dark"></div>
+		
+	</div>
+	<!-- End page header image -->
+
+	<!-- Begin page header inner -->
+	<div class="page-header-inner tt-wrap">
+
+		<!-- Begin page header caption 
+		===============================
+		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
+		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
+		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
+		-->
+		<div class="page-header-caption ph-caption-xlg">
+			<h1 class="page-header-title">Search</h1>
+		</div>
+		<!-- End page header caption -->
+
+		<!-- Begin big search box 
+		========================== 
+		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
+		-->
+		<div class="big-search-box">
+			<div class="big-search-box-inner">
+
+				<!-- Begin big search box form -->
+				<form id="big-search-form" class="form-btn-inside" method="get" action="search-results.html">
+					<div class="big-search-input-wrap">
+						<input type="text" id="big-search-input" name="search" placeholder="Search something ...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</div> <!-- /.big-search-input-wrap -->
+
+					<div class="big-search-options-wrap">
+						<label class="margin-right-10">Search from:</label>
+
+						<span class="big-search-option">
+							<label for="search-all" class="margin-left-10">All:</label>
+							<input type="radio" name="check" id="search-all" checked="">
+						</span>
+
+						<span class="big-search-option">
+							<label for="search-gallery" class="margin-left-10">Gallery:</label>
+							<input type="radio" name="check" id="search-gallery">
+						</span>
+
+						<span class="big-search-option">
+							<label for="search-blog" class="margin-left-10">Blog:</label>
+							<input type="radio" name="check" id="search-blog">
+						</span>
+
+						<span class="big-search-option">
+							<label for="search-pages" class="margin-left-10">Pages:</label>
+							<input type="radio" name="check" id="search-pages">
+						</span>
+					</div> <!-- /.big-search-options-wrap -->
+				</form>
+				<!-- End big search box form -->
+
+			</div> <!-- /.big-search-box-inner -->
+		</div>
+		<!-- End big search box -->
+
+	</div> 
+	<!-- End page header inner -->
+
+</section>
+<!-- End page header -->
+
+
+<!-- ===================================
+///// Begin search results section /////
+==================================== -->
+<section id="search-results-section">
+
+	<!-- Begin search results section inner -->
+	<div class="srs-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+		<!-- Begin search results 
+		========================== -->
+		<div class="search-results">
+
+			<!-- <div class="no-search-results">
+				<h1>Nothing Found!</h1>
+				<p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
+			</div> -->
+		
+			<!-- Begin search results head -->
+			<div class="search-results-head">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2 class="srh-title">Search Results for: "Love"</h2>
+						<p class="srh-subtitle"><em>Displaying search results from: <strong>galleries</strong>, <strong>blog</strong>, <strong>pages</strong></em></p>
+					</div> <!-- /.col -->
+
+					<div class="col-sm-6 text-right">
+						<span class="sr-count"><span>9</span> results are found</span>
+					</div> <!-- /.col -->
+				</div> <!-- /.row -->
+			</div>
+			<!-- End search results head -->
+
+			<!-- Begin search results items wrap -->
+			<div class="sr-items-wrap">
+
+				<!-- Begin search results item (gallery with thumbnails) 
+				========================================================= -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="gallery-single-grid.html" class="sr-item-img glc-gallery">
+
+						<!-- Begin thumbnail list 
+						==========================
+						* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
+						* Use class "gutter-1", "gutter-2", "gutter-3", "gutter-4" or "gutter-5" to add more space between items.
+						-->
+						<ul class="thumb-list col-4">
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-1.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-2.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-3.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-4.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-5.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-6.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-7.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-8.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-9.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-10.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-11.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-12.jpg);"></div></li>
+						</ul>
+						<!-- End thumbnail list -->
+					</a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="gallery-single-grid.html">One Day Shoot With Ordinary People</a></h2>
+						<div class="sr-item-category"><a href="albums-archive.html">Outdoor</a></div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Gallery</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+				
+				<!-- Begin search results item (gallery with thumbnails) 
+				========================================================= -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="gallery-single-grid.html" class="sr-item-img glc-gallery">
+						<!-- Begin thumbnail list 
+						==========================
+						* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
+						* Use class "gutter-1", "gutter-2", "gutter-3", "gutter-4" or "gutter-5" to add more space between items.
+						-->
+						<ul class="thumb-list col-4">
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-13.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-14.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-15.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-16.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-17.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-18.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-19.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-20.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-21.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-22.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-23.jpg);"></div></li>
+							<li><div class="thumb-list-item bg-image" style="background-image: url(/assets/img/misc/small/img-24.jpg);"></div></li>
+						</ul>
+						<!-- End thumbnail list -->
+					</a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="gallery-single-grid.html">Monday's Monochromes</a></h2>
+						<div class="sr-item-category"><a href="albums-archive.html">Portraits</a></div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Gallery</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+				
+				<!-- Begin search results item (gallery) 
+				========================================= -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="gallery-single-grid.html" class="sr-item-img bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-2.jpg); background-position: 50% 50%"></a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="gallery-single-grid.html">These Wonderful Freckles</a></h2>
+						<div class="sr-item-category"><a href="albums-archive.html">Models</a></div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Gallery</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+				<!-- Begin search results item (gallery, no image) 
+				=================================================== -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="gallery-single-grid.html">Paris Fashion Week</a></h2>
+						<div class="sr-item-category"><a href="albums-archive.html">Models</a></div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Gallery</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+
+
+				<!-- Begin search results item (blog post) 
+				=========================================== -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="blog-single.html" class="sr-item-img bg-image" style="background-image: url(/assets/img/blog/list/blog-1.jpg); background-position: 50% 50%"></a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<div class="sr-item-category"><a href="blog-archive.html">Photography</a></div>
+						<h2 class="sr-item-title"><a href="blog-single.html">5 Reasons You Should Fall In Love With Photography</a></h2>
+						<div class="sr-item-meta"> 
+							<span class="published">May 26, 2017</span>
+							<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+						</div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">Read Blog Post</a>
+
+						<!-- Begin blog list item attributes -->
+						<ul class="sr-item-attr">
+							<li>
+								<!-- Begin comments count -->
+								<a href="blog-single.html#blog-post-comments" class="sr-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 10</a>
+								<!-- End comments count -->
+							</li>
+							<li>
+								<!-- Begin favorite button -->
+								<div class="favorite-btn active">
+									<div class="fav-inner">
+										<div class="icon-heart">
+											<span class="icon-heart-empty"></span>
+											<span class="icon-heart-filled"></span>
+										</div>
+									</div>
+									<div class="fav-count">48</div>
+								</div>
+								<!-- End favorite button -->
+							</li>
+						</ul>
+						<!-- End blog list item attributes -->
+
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+				<!-- Begin search results item (blog post) 
+				=========================================== -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="blog-single.html" class="sr-item-img bg-image" style="background-image: url(/assets/img/blog/list/blog-5.jpg); background-position: 50% 50%"></a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<div class="sr-item-category"><a href="blog-archive.html">Photography</a></div>
+						<h2 class="sr-item-title"><a href="blog-single.html">Most Common Wedding Photography Mistakes Every Beginner Will Make</a></h2>
+						<div class="sr-item-meta"> 
+							<span class="published">May 26, 2017</span>
+							<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+						</div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">Read Blog Post</a>
+
+						<!-- Begin blog list item attributes -->
+						<ul class="bl-item-attr">
+							<li>
+								<!-- Begin comments count -->
+								<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 8</a>
+								<!-- End comments count -->
+							</li>
+							<li>
+								<!-- Begin favorite button -->
+								<div class="favorite-btn">
+									<div class="fav-inner">
+										<div class="icon-heart">
+											<span class="icon-heart-empty"></span>
+											<span class="icon-heart-filled"></span>
+										</div>
+									</div>
+									<div class="fav-count">71</div>
+								</div>
+								<!-- End favorite button -->
+							</li>
+						</ul>
+						<!-- End blog list item attributes -->
+
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+				<!-- Begin search results item (blog post, no image) 
+				===================================================== -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<div class="sr-item-category"><a href="blog-archive.html">Fashion</a></div>
+						<h2 class="sr-item-title"><a href="blog-single.html">Best Lighting Tips For High Fashion Photography</a></h2>
+						<div class="sr-item-meta"> 
+							<span class="published">May 26, 2017</span>
+							<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+						</div>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">Read Blog Post</a>
+
+						<!-- Begin blog list item attributes -->
+						<ul class="bl-item-attr">
+							<li>
+								<!-- Begin comments count -->
+								<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 79</a>
+								<!-- End comments count -->
+							</li>
+							<li>
+								<!-- Begin favorite button -->
+								<div class="favorite-btn">
+									<div class="fav-inner">
+										<div class="icon-heart">
+											<span class="icon-heart-empty"></span>
+											<span class="icon-heart-filled"></span>
+										</div>
+									</div>
+									<div class="fav-count">114</div>
+								</div>
+								<!-- End favorite button -->
+							</li>
+						</ul>
+						<!-- End blog list item attributes -->
+
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+
+
+				<!-- Begin search results item (page) 
+				====================================== -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item image -->
+					<a href="page-dummy-modern.html" class="sr-item-img bg-image" style="background-image: url(/assets/img/misc/misc-1.jpg); background-position: 50% 50%"></a>
+					<!-- End search results item image -->
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="page-dummy-modern.html">Dummy Page</a></h2>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Page</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+				<!-- Begin search results item (page, no image) 
+				================================================ -->
+				<div class="search-results-item">
+
+					<!-- Begin search results item info -->
+					<div class="sr-item-info">
+						<h2 class="sr-item-title"><a href="page-dummy.html">Dummy Page (Without Image)</a></h2>
+						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+						<div class="sr-item-description" data-max-words="25">
+							At tortor quis. Aut odio nibh. Aliquet neque dis gravida adipiscing feugiat. Elit amet metus. Magna suscipit risus. Arcu elementum accumsan. Pede tincidunt mauris lobortis aliquam sed fusce libero duis senectus nec ipsum. Libero amet mi. Tempor ante est non ut libero.
+						</div>
+						<a href="gallery-single-grid.html" class="btn btn-default btn-sm margin-top-20">View Page</a>
+					</div>
+					<!-- End search results item info -->
+
+				</div>
+				<!-- End search results item -->
+
+			</div>
+			<!-- End search results items wrap -->
+
+		</div>
+		<!-- End search results -->
+
+
+		<!-- Begin pagination -->
+		<nav class="pagination-wrap text-left">
+			<ul class="pagination">
+				<li>
+					<a href="" aria-label="Previous">
+						<span aria-hidden="true">First</span>
+					</a>
+				</li>
+				<li><a href="">Prev</a></li>
+				<li class="active"><a href="#0">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li>...</li>
+				<li><a href="">6</a></li>
+				<li><a href="">7</a></li>
+				<li><a href="">8</a></li>
+				<li><a href="">Next</a></li>
+				<li>
+					<a href="" aria-label="Next">
+						<span aria-hidden="true">Last</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Begin pagination info -->
+			<div class="pagination-info">
+				<span>Showing page 1 of 8</span>
+				<span>Items 1 - 5 of 40</span>
+			</div>
+			<!-- End pagination info -->
+		</nav>
+		<!-- End pagination -->
+
+	</div>
+	<!-- End search results section inner -->
+
+</section>
+<!-- End search results section -->

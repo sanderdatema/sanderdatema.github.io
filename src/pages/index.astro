@@ -1,7 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Scripts from '../components/Scripts.astro';
 import Intro from "../components/index/Intro.astro"
 import AboutMe from "../components/index/AboutMe.astro"
 import GalleryList from "../components/index/GalleryList.astro"
@@ -9,18 +7,11 @@ import Prices from "../components/index/Prices.astro"
 import Testimonials from "../components/index/Testimonials.astro"
 import LatestNews from "../components/index/LatestNews.astro"
 import CallToAction from "../components/index/CallToAction.astro"
-import Footer from "../components/index/Footer.astro"
 
 const title = "Welcome to Sander Datema"
 ---
 
 <BaseLayout title={title}>
-	<Header />
-
-	<!-- *************************************
-	*********** Begin body content *********** 
-	************************************** -->
-	<div id="body-content">
 
 		<Intro />
 
@@ -36,10 +27,4 @@ const title = "Welcome to Sander Datema"
 
 		<CallToAction />
 
-		<Footer />
-
-	</div>
-	<!-- End body content -->
-
-	<Scripts />
 </BaseLayout>

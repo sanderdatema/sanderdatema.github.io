@@ -1,0 +1,19 @@
+---
+const { parallax_style, background_image } = Astro.props
+---
+<!-- Begin page header image 
+============================= 
+* Use class "parallax-bg-1" up to "parallax-bg-6" to enable background image parallax effect.
+* Use class "fade-out-scroll-3" to enable fade out effect if page scroll.
+* Use class "hide-ph-image" to hide page header image without removing the code.
+-->
+<div class={`page-header-image bg-image parallax-bg-${parallax_style}`} style={`background-image: url(${background_image});`}>
+    
+    <!-- Element cover 
+    ===================
+    * You can use prepared background transparent classes depends on brightness of your page header image. More info: file "helper.css".
+    -->
+    <div class="cover bg-transparent-5-dark"></div>
+    
+</div>
+<!-- End page header image -->
