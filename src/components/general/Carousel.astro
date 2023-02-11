@@ -2,7 +2,8 @@
 ///// Begin blog list carousel section (categories) /////
 ===================================================== -->
 <section id="blog-list-carousel-section" class="blc-categories">
-    <div class="bl-carousel-wrap padding-25 tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class="bl-carousel-wrap padding-25 tt-wrap">
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
         <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
         ====================================================================
@@ -45,13 +46,26 @@
                 data-dots="false"....................(true/false)
                 data-dots-speed="800"................(milliseconds)
         -->
-        <div class="owl-carousel cursor-grab nav-outside dots-rounded dots-right" data-items="4" data-margin="25" data-loop="true" data-nav="true" data-nav-speed="400" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="400" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
-
+        <div
+            class="owl-carousel cursor-grab nav-outside dots-rounded dots-right"
+            data-items="4"
+            data-margin="25"
+            data-loop="true"
+            data-nav="true"
+            data-nav-speed="400"
+            data-autoplay="true"
+            data-autoplay-timeout="8000"
+            data-autoplay-speed="400"
+            data-autoplay-hover-pause="true"
+            data-tablet-landscape="3"
+            data-tablet-portrait="2"
+            data-mobile-landscape="1"
+            data-mobile-portrait="1"
+        >
             <slot />
-
         </div>
         <!-- End content carousel -->
-
-    </div> <!-- /.gl-carousel-wrap -->
+    </div>
+    <!-- /.gl-carousel-wrap -->
 </section>
 <!-- End blog list carousel section -->

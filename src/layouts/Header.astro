@@ -2,6 +2,7 @@
 import Logo from "./Header/Logo.astro"
 import Navigation from "./Header/Navigation.astro"
 ---
+
 <!-- =================
 //// Begin header //// 
 ======================
@@ -13,16 +14,14 @@ import Navigation from "./Header/Navigation.astro"
 * Use class "menu-align-center" to align menu to center (do not use with header classes!).
 -->
 <header id="header" class="header-show-hide-on-scroll menu-align-right">
-
     <!-- Begin header inner -->
-    <div class="header-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class="header-inner tt-wrap">
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
         <Logo />
 
         <Navigation />
-
     </div>
     <!-- End header inner -->
-
 </header>
 <!-- End header -->

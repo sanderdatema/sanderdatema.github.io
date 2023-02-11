@@ -1,8 +1,9 @@
 ---
-import ElementCover from "../general/ElementCover.astro";
+import ElementCover from "../general/ElementCover.astro"
 
 const { parallax_style, background_image } = Astro.props
 ---
+
 <!-- Begin page header image 
 ============================= 
 * Use class "parallax-bg-1" up to "parallax-bg-6" to enable background image parallax effect.
@@ -10,8 +11,6 @@ const { parallax_style, background_image } = Astro.props
 * Use class "hide-ph-image" to hide page header image without removing the code.
 -->
 <div class={`page-header-image bg-image parallax-bg-${parallax_style}`} style={`background-image: url(${background_image});`}>
-    
     <ElementCover css_class="bg-transparent-5-dark" />
-    
 </div>
 <!-- End page header image -->

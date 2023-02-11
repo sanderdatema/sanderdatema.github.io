@@ -1,28 +1,21 @@
 ---
-import ProjectCarousel from "../components/general/ProjectCarousel.astro";
-import TTHeading from "../components/general/TTHeading.astro";
-
+import ProjectCarousel from "../components/general/ProjectCarousel.astro"
+import TTHeading from "../components/general/TTHeading.astro"
 ---
 
 <!-- ================================
 ///// Begin latest work section /////
 ================================= -->
 <section id="latest-work-section" class="margin-top-40">
-  <!-- margin class is optional ) -->
+    <!-- margin class is optional ) -->
 
-  <TTHeading
-    title="Latest Projects"
-    subtitle="My latest photo projects"
-    wrap
-    padding
-    alignment="center"
-  />
+    <TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap padding alignment="center" />
 
-  <div class="latest-work-inner">
-    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class="latest-work-inner">
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-    <ProjectCarousel />
-  </div>
-  <!-- /.latest-work-inner -->
+        <ProjectCarousel />
+    </div>
+    <!-- /.latest-work-inner -->
 </section>
 <!-- End latest work section -->

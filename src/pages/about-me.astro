@@ -1,54 +1,48 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
-import SectionAboutMe from "../sections/SectionAboutMe.astro";
-import SectionLatestWork from "../sections/SectionLatestWork.astro";
-import HR from "../components/general/HR.astro";
-import ElementCover from "../components/general/ElementCover.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import SectionAboutMe from "../sections/SectionAboutMe.astro"
+import SectionLatestWork from "../sections/SectionLatestWork.astro"
+import HR from "../components/general/HR.astro"
+import ElementCover from "../components/general/ElementCover.astro"
 
-const title = "Welcome to Sander Datema";
+const title = "Welcome to Sander Datema"
 ---
 
 <BaseLayout title={title}>
-  <SectionPageHeader>
-    <!-- Begin page header image 
+    <SectionPageHeader>
+        <!-- Begin page header image 
     ============================= 
     * Use class "parallax-bg-1" up to "parallax-bg-6" to enable background image parallax effect.
     * Use class "fade-out-scroll-3" to enable fade out effect if page scroll.
     * Use class "hide-ph-image" to hide page header image without removing the code.
     -->
-    <div class="page-header-image bg-image parallax-bg-3" style="background-image: url(/assets/img/misc/page-header-bg-1.jpg);">
-        
-        <ElementCover css_class="bg-transparent-5-dark" />
-        
-    </div>
-    <!-- End page header image -->
+        <div class="page-header-image bg-image parallax-bg-3" style="background-image: url(/assets/img/misc/page-header-bg-1.jpg);">
+            <ElementCover css_class="bg-transparent-5-dark" />
+        </div>
+        <!-- End page header image -->
 
-    <!-- Begin page header inner -->
-    <div class="page-header-inner tt-wrap">
-      <!-- Begin page header caption 
+        <!-- Begin page header inner -->
+        <div class="page-header-inner tt-wrap">
+            <!-- Begin page header caption 
         ===============================
         * Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
         * Use class "parallax-1" up to "parallax-6" to enable parallax effect.
         * Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
         -->
-      <div
-        class="page-header-caption ph-caption-lg parallax-3 fade-out-scroll-4"
-      >
-        <h1 class="page-header-title">Martin Vegas</h1>
-        <HR size="short" />
+            <div class="page-header-caption ph-caption-lg parallax-3 fade-out-scroll-4">
+                <h1 class="page-header-title">Martin Vegas</h1>
+                <HR size="short" />
 
-        <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-        <div class="page-header-description" data-max-words="40">
-          Artist &amp; Photographer
+                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                <div class="page-header-description" data-max-words="40">Artist &amp; Photographer</div>
+            </div>
+            <!-- End page header caption -->
         </div>
-      </div>
-      <!-- End page header caption -->
-    </div>
-    <!-- End page header inner -->
-  </SectionPageHeader>
+        <!-- End page header inner -->
+    </SectionPageHeader>
 
-  <SectionAboutMe wrap />
+    <SectionAboutMe wrap />
 
-  <SectionLatestWork />
+    <SectionLatestWork />
 </BaseLayout>

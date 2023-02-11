@@ -1,34 +1,41 @@
 ---
-import TTHeading from "../general/TTHeading.astro";
+import TTHeading from "../general/TTHeading.astro"
 
 const tt_heading_title = "What Next?"
 const tt_heading_subtitle = "Interested in working with me?"
 ---
+
 <!-- ===================================
 ///// Begin call to action section /////
 ==================================== -->
 <section class="call-to-action-section bg-gray-3 margin-top-60">
+    <div class="full-cover for-light-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;">
+    </div>
+    <div class="full-cover for-dark-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;">
+    </div>
 
-    <div class="full-cover for-light-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;"></div>
-    <div class="full-cover for-dark-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;"></div>
-
-    <div class="call-to-action-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class="call-to-action-inner tt-wrap">
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
         <div class="row">
             <div class="col-md-12 text-center">
-
-                <TTHeading title={tt_heading_title} subtitle={tt_heading_subtitle} wrap size="lg" alignment="center"/>
+                <TTHeading title={tt_heading_title} subtitle={tt_heading_subtitle} wrap size="lg" alignment="center" />
 
                 <div class="margin-top-30 max-width-1000 margin-auto">
-                    <p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.</p>
-                    
+                    <p>
+                        Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu.
+                        Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.
+                    </p>
+
                     <div class="margin-top-30">
                         <a href="page-dummy-modern.html" class="btn btn-dark margin-top-5 margin-right-5">Read More</a>
                         <a href="contact.html" class="btn btn-primary margin-top-5">Let's Work Together!</a>
                     </div>
                 </div>
-
-            </div> <!-- /.col -->
-        </div> <!-- /.row -->
-    </div> <!-- /.call-to-action-inner -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.call-to-action-inner -->
 </section>
 <!-- End call to action section -->

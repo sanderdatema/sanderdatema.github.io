@@ -1,21 +1,20 @@
 ---
-import Link from "../general/Link.astro";
-import TTHeading from "../general/TTHeading.astro";
+import Link from "../general/Link.astro"
+import TTHeading from "../general/TTHeading.astro"
 ---
 
 <!-- ================================
 ///// Begin latest news section /////
 ================================= -->
 <section id="latest-news-section">
+    <TTHeading title="Latest From Blog" subtitle="News, Reviews, Tips & Tricks" wrap />
 
-    <TTHeading title="Latest From Blog" subtitle="News, Reviews, Tips &amp; Tricks" wrap />
-
-    <div class="latest-news-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class="latest-news-section-inner tt-wrap">
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
         <!-- Begin latest news carousel
         ================================ -->
         <div class="latest-news-carousel">
-
             <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
             ====================================================================
             * Use class "nav-outside" for outside nav (requires boxed layout).
@@ -57,29 +56,44 @@ import TTHeading from "../general/TTHeading.astro";
                     data-dots="false"....................(true/false)
                     data-dots-speed="800"................(milliseconds)
             -->
-            <div class="owl-carousel cursor-grab nav-outside-top" data-items="3" data-margin="30" data-loop="true" data-dots="false" data-nav="true" data-nav-speed="500" data-autoplay="true" data-autoplay-timeout="5000" data-autoplay-speed="500" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
-
+            <div
+                class="owl-carousel cursor-grab nav-outside-top"
+                data-items="3"
+                data-margin="30"
+                data-loop="true"
+                data-dots="false"
+                data-nav="true"
+                data-nav-speed="500"
+                data-autoplay="true"
+                data-autoplay-timeout="5000"
+                data-autoplay-speed="500"
+                data-autoplay-hover-pause="true"
+                data-tablet-landscape="3"
+                data-tablet-portrait="2"
+                data-mobile-landscape="1"
+                data-mobile-portrait="1"
+            >
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Photography</Link></div>
                             <Link href="blog-single.html" css_class="bl-item-title"><h2>5 Reasons You Should Fall In Love With Photography</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">Martin Vegas</Link></span>
                             </div>
 
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -87,7 +101,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 10</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 10
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -105,37 +121,34 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
 
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Equipment</Link></div>
                             <Link href="blog-single.html" css_class="bl-item-title"><h2>10 Top Choices for Aerial Photography</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">John Young</Link></span>
                             </div>
-                            
+
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -143,7 +156,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 66</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 66
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -161,37 +176,34 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
 
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Travel</Link></div>
                             <Link href="blog-single.html" css_class="bl-item-title"><h2>How to Take Professional Travel Photos</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">Anna Vernik</Link></span>
                             </div>
-                            
+
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -199,7 +211,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 3</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 3
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -217,37 +231,36 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
 
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Photography</Link></div>
-                            <Link href="blog-single.html" css_class="bl-item-title"><h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <Link href="blog-single.html" css_class="bl-item-title">
+                                <h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2>
+                            </Link>
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">Julia Beck</Link></span>
                             </div>
-                            
+
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -255,7 +268,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 0</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 0
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -273,37 +288,36 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
 
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Photography</Link></div>
-                            <Link href="blog-single.html" css_class="bl-item-title"><h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <Link href="blog-single.html" css_class="bl-item-title">
+                                <h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2>
+                            </Link>
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">Martin Vegas</Link></span>
                             </div>
-                            
+
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -311,7 +325,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 8</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 8
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -329,37 +345,34 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
 
                 <!-- Begin carousel item 
                 ========================= -->
                 <div class="cc-item">
-
                     <!-- Begin blog list item -->
                     <article class="blog-list-item">
-                        
                         <!-- Blog list item image -->
-                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></Link>
-                        
+                        <Link href="blog-single.html" css_class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></Link>
+
                         <!-- Begin blog list item info -->
                         <div class="bl-item-info">
                             <div class="bl-item-category"><Link href="blog-archive.html">Food</Link> <Link href="#">Photography</Link></div>
                             <Link href="blog-single.html" css_class="bl-item-title"><h2>The Serious Eats Guide to Food Photography</h2></Link>
-                            <div class="bl-item-meta"> 
+                            <div class="bl-item-meta">
                                 <span class="published">May 26, 2017</span>
                                 <span class="posted-by">- by <Link href="#" title="View all posts by Martin Vegas">Martin Vegas</Link></span>
                             </div>
-                            
+
                             <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                            <div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                            <div class="bl-item-desc" data-max-words="14">
+                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.
+                            </div>
 
                             <Link href="blog-single.html" css_class="bl-item-read-more" title="Read More"><span></span></Link>
 
@@ -367,7 +380,9 @@ import TTHeading from "../general/TTHeading.astro";
                             <ul class="bl-item-attr">
                                 <li>
                                     <!-- Begin comments count -->
-                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 28</Link>
+                                    <Link href="blog-single.html#blog-post-comments" css_class="bl-item-comments-count" title="Read the comments">
+                                        <i class="far fa-comment"></i> 28
+                                    </Link>
                                     <!-- End comments count -->
                                 </li>
                                 <li>
@@ -385,22 +400,17 @@ import TTHeading from "../general/TTHeading.astro";
                                 </li>
                             </ul>
                             <!-- End blog list item attributes -->
-
                         </div>
                         <!-- End blog list item info -->
-
                     </article>
                     <!-- End blog list item -->
-
                 </div>
                 <!-- End carousel item -->
-
             </div>
             <!-- End content carousel -->
-
-        </div> 
+        </div>
         <!-- End latest news carousel -->
-
-    </div> <!-- /.latest-news-section-inner -->
+    </div>
+    <!-- /.latest-news-section-inner -->
 </section>
 <!-- End latest news section -->

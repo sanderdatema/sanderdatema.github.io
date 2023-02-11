@@ -1,8 +1,7 @@
 ---
-import HR from "./HR.astro";
+import HR from "./HR.astro"
 
-const { title, subtitle, padding, alignment, size, css_class, wrap } =
-  Astro.props;
+const { title, subtitle, padding, alignment, size, css_class, wrap } = Astro.props
 ---
 
 <!-- Begin tt-heading 
@@ -11,32 +10,24 @@ const { title, subtitle, padding, alignment, size, css_class, wrap } =
 * Use class "text-center" or "text-right" to align tt-heading.
 * Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
 -->
-<div
-  class:list={[
-    "tt-heading",
-    { "padding-on": padding },
-    `tt-heading-${size}`,
-    `text-${alignment}`,
-    css_class,
-  ]}
->
-  <div class:list={["tt-heading-inner", { "tt-wrap": wrap }]}>
-    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-    <div class="row">
-      <div class="col-md-4">
-        <h1 class="tt-heading-title">{title}</h1>
-        <div class="tt-heading-subtitle">{subtitle}</div>
-        <HR size="short" />
-      </div>
-      <!-- /.col -->
+<div class:list={["tt-heading", { "padding-on": padding }, `tt-heading-${size}`, `text-${alignment}`, css_class]}>
+    <div class:list={["tt-heading-inner", { "tt-wrap": wrap }]}>
+        <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="tt-heading-title">{title}</h1>
+                <div class="tt-heading-subtitle">{subtitle}</div>
+                <HR size="short" />
+            </div>
+            <!-- /.col -->
 
-      <div class="col-md-8">
-        <slot />
-      </div>
-      <!-- /.col -->
+            <div class="col-md-8">
+                <slot />
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- /.tt-heading-inner -->
     </div>
-    <!-- /.row -->
-    <!-- /.tt-heading-inner -->
-  </div>
 </div>
 <!-- End tt-heading -->
