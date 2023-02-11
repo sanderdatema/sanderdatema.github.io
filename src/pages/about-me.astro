@@ -1,11 +1,40 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import AboutMe from "../components/AboutMe.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionPageHeader from "../sections/SectionPageHeader.astro";
+import SectionAboutMe from "../sections/SectionAboutMe.astro";
+import SectionLatestWork from "../sections/SectionLatestWork.astro";
+import HR from "../components/general/HR.astro";
 
-const title = "Welcome to Sander Datema"
+const title = "Welcome to Sander Datema";
 ---
+
 <BaseLayout title={title}>
+  <SectionPageHeader>
+    <!-- Begin page header inner -->
+    <div class="page-header-inner tt-wrap">
+      <!-- Begin page header caption 
+        ===============================
+        * Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
+        * Use class "parallax-1" up to "parallax-6" to enable parallax effect.
+        * Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
+        -->
+      <div
+        class="page-header-caption ph-caption-lg parallax-3 fade-out-scroll-4"
+      >
+        <h1 class="page-header-title">Martin Vegas</h1>
+        <HR size="short" />
 
-    <AboutMe />
+        <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+        <div class="page-header-description" data-max-words="40">
+          Artist &amp; Photographer
+        </div>
+      </div>
+      <!-- End page header caption -->
+    </div>
+    <!-- End page header inner -->
+  </SectionPageHeader>
 
+  <SectionAboutMe />
+
+  <SectionLatestWork />
 </BaseLayout>
