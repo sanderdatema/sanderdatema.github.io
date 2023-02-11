@@ -1,0 +1,193 @@
+/* --------------------------------------------------------------------
+* Template helper RTL CSS
+* 
+* Template:    Sepia - Photography Portfolio HTML Website Template
+* Author:      Themetorium
+* URL:         https://themetorium.net
+*
+* Read template documentation about how to enable RTL mode!
+----------------------------------------------------------------------- */
+
+
+/* Table of Content
+====================
+# Various classes
+# Center align
+# Borders classes
+# Paddings classes
+# Margin classes
+# Bootstrap responsive columns of same height
+*/
+
+
+
+/* ------------------------------------------------------------- *
+ *  Various classes
+/* ------------------------------------------------------------- */
+.text-left { text-align: right !important; }
+.text-right { text-align: left !important; }
+
+
+/* -------------------------------------------------------------------------- *
+ *  Center align classes (parent element must contain "position: relative;")
+/* -------------------------------------------------------------------------- */
+
+.align-center {
+   right: 50% !important;
+   left: auto !important;
+}
+.horisontal-align-center {
+   right: 50% !important;
+   left: auto !important;
+}
+
+
+/* ------------------------------------------------------------- *
+ *  Borders classes
+/* ------------------------------------------------------------- */
+
+.border-left { border-right: 1px solid rgba(132, 132, 132, 0.13) !important; }
+.border-right { border-left: 1px solid rgba(132, 132, 132, 0.13) !important; }
+
+/* no border classes */
+.no-border-left { border-right: none !important; }
+.no-border-right { border-left: none !important; }
+
+
+/* ------------------------------------------------------------- *
+ *  Paddings classes
+/* ------------------------------------------------------------- */
+
+/* no paddings classes */
+.no-padding-left { padding-right: 0 !important; }
+.no-padding-right { padding-left: 0 !important; }
+
+
+/* ------------------------------------------------------------- *
+ *  Margin classes
+/* ------------------------------------------------------------- */
+
+/* margin left */
+.margin-left-5 { margin-right: 5px !important; margin-left: auto !important; }
+.margin-left-10 { margin-right: 10px !important; margin-left: auto !important; }
+.margin-left-15 { margin-right: 15px !important; margin-left: auto !important; }
+.margin-left-20 { margin-right: 20px !important; margin-left: auto !important; }
+.margin-left-25 { margin-right: 25px !important; margin-left: auto !important; }
+.margin-left-30 { margin-right: 30px !important; margin-left: auto !important; }
+.margin-left-35 { margin-right: 35px !important; margin-left: auto !important; }
+.margin-left-40 { margin-right: 40px !important; margin-left: auto !important; }
+.margin-left-45 { margin-right: 45px !important; margin-left: auto !important; }
+.margin-left-50 { margin-right: 50px !important; margin-left: auto !important; }
+.margin-left-55 { margin-right: 55px !important; margin-left: auto !important; }
+.margin-left-60 { margin-right: 60px !important; margin-left: auto !important; }
+.margin-left-65 { margin-right: 65px !important; margin-left: auto !important; }
+.margin-left-70 { margin-right: 70px !important; margin-left: auto !important; }
+.margin-left-75 { margin-right: 75px !important; margin-left: auto !important; }
+.margin-left-80 { margin-right: 80px !important; margin-left: auto !important; }
+.margin-left-85 { margin-right: 85px !important; margin-left: auto !important; }
+.margin-left-90 { margin-right: 90px !important; margin-left: auto !important; }
+.margin-left-95 { margin-right: 95px !important; margin-left: auto !important; }
+.margin-left-100 { margin-right: 100px !important; margin-left: auto !important; }
+
+/* margin left (percent) */
+.margin-left-1-p { margin-right: 1% !important; margin-left: auto !important; }
+.margin-left-2-p { margin-right: 2% !important; margin-left: auto !important; }
+.margin-left-3-p { margin-right: 3% !important; margin-left: auto !important; }
+.margin-left-4-p { margin-right: 4% !important; margin-left: auto !important; }
+.margin-left-5-p { margin-right: 5% !important; margin-left: auto !important; }
+.margin-left-6-p { margin-right: 6% !important; margin-left: auto !important; }
+.margin-left-7-p { margin-right: 7% !important; margin-left: auto !important; }
+.margin-left-8-p { margin-right: 8% !important; margin-left: auto !important; }
+.margin-left-9-p { margin-right: 9% !important; margin-left: auto !important; }
+.margin-left-10-p { margin-right: 10% !important; margin-left: auto !important; }
+.margin-left-11-p { margin-right: 11% !important; margin-left: auto !important; }
+.margin-left-12-p { margin-right: 12% !important; margin-left: auto !important; }
+.margin-left-13-p { margin-right: 13% !important; margin-left: auto !important; }
+.margin-left-14-p { margin-right: 14% !important; margin-left: auto !important; }
+.margin-left-15-p { margin-right: 15% !important; margin-left: auto !important; }
+.margin-left-16-p { margin-right: 16% !important; margin-left: auto !important; }
+.margin-left-17-p { margin-right: 17% !important; margin-left: auto !important; }
+.margin-left-18-p { margin-right: 18% !important; margin-left: auto !important; }
+.margin-left-19-p { margin-right: 19% !important; margin-left: auto !important; }
+.margin-left-20-p { margin-right: 20% !important; margin-left: auto !important; }
+
+/* margin right */
+.margin-right-5 { margin-left: 5px !important; margin-right: auto !important; }
+.margin-right-10 { margin-left: 10px !important; margin-right: auto !important; }
+.margin-right-15 { margin-left: 15px !important; margin-right: auto !important; }
+.margin-right-20 { margin-left: 20px !important; margin-right: auto !important; }
+.margin-right-25 { margin-left: 25px !important; margin-right: auto !important; }
+.margin-right-30 { margin-left: 30px !important; margin-right: auto !important; }
+.margin-right-35 { margin-left: 35px !important; margin-right: auto !important; }
+.margin-right-40 { margin-left: 40px !important; margin-right: auto !important; }
+.margin-right-45 { margin-left: 45px !important; margin-right: auto !important; }
+.margin-right-50 { margin-left: 50px !important; margin-right: auto !important; }
+.margin-right-55 { margin-left: 55px !important; margin-right: auto !important; }
+.margin-right-60 { margin-left: 60px !important; margin-right: auto !important; }
+.margin-right-65 { margin-left: 65px !important; margin-right: auto !important; }
+.margin-right-70 { margin-left: 70px !important; margin-right: auto !important; }
+.margin-right-75 { margin-left: 75px !important; margin-right: auto !important; }
+.margin-right-80 { margin-left: 80px !important; margin-right: auto !important; }
+.margin-right-85 { margin-left: 85px !important; margin-right: auto !important; }
+.margin-right-90 { margin-left: 90px !important; margin-right: auto !important; }
+.margin-right-95 { margin-left: 95px !important; margin-right: auto !important; }
+.margin-right-100 { margin-left: 100px !important; margin-right: auto !important; }
+
+/* margin right (percent) */
+.margin-right-1-p { margin-left: 1% !important; margin-right: auto !important; }
+.margin-right-2-p { margin-left: 2% !important; margin-right: auto !important; }
+.margin-right-3-p { margin-left: 3% !important; margin-right: auto !important; }
+.margin-right-4-p { margin-left: 4% !important; margin-right: auto !important; }
+.margin-right-5-p { margin-left: 5% !important; margin-right: auto !important; }
+.margin-right-6-p { margin-left: 6% !important; margin-right: auto !important; }
+.margin-right-7-p { margin-left: 7% !important; margin-right: auto !important; }
+.margin-right-8-p { margin-left: 8% !important; margin-right: auto !important; }
+.margin-right-9-p { margin-left: 9% !important; margin-right: auto !important; }
+.margin-right-10-p { margin-left: 10% !important; margin-right: auto !important; }
+.margin-right-11-p { margin-left: 11% !important; margin-right: auto !important; }
+.margin-right-12-p { margin-left: 12% !important; margin-right: auto !important; }
+.margin-right-13-p { margin-left: 13% !important; margin-right: auto !important; }
+.margin-right-14-p { margin-left: 14% !important; margin-right: auto !important; }
+.margin-right-15-p { margin-left: 15% !important; margin-right: auto !important; }
+.margin-right-16-p { margin-left: 16% !important; margin-right: auto !important; }
+.margin-right-17-p { margin-left: 17% !important; margin-right: auto !important; }
+.margin-right-18-p { margin-left: 18% !important; margin-right: auto !important; }
+.margin-right-19-p { margin-left: 19% !important; margin-right: auto !important; }
+.margin-right-20-p { margin-left: 20% !important; margin-right: auto !important; }
+
+/* no margins classes */
+.no-margin-left { margin-right: 0 !important; }
+.no-margin-right { margin-left: 0 !important; }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- *
+ *  Bootstrap responsive columns of same height
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.col-height {
+	float: none;
+}
+
+@media (min-width: 480px) {
+	.col-xs-height {
+		float: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-sm-height {
+		float: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-height {
+		float: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-height {
+		float: none;
+	}
+}

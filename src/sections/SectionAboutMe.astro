@@ -3,13 +3,16 @@ import Column from "../components/general/Column.astro";
 import Link from "../components/general/Link.astro";
 import Signature from "../components/general/Signature.astro";
 import TTHeading from "../components/general/TTHeading.astro";
+
+const { simple, wrap } = Astro.props
 ---
 
 <!-- =============================
 ///// Begin about me section /////
 ============================== -->
-<section id="about-me-section" class="about-me-simple">
-	<div class="about-me-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+<section id="about-me-section" class:list={[{"about-me-simple": simple}]}>
+	<!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+	<div class:list={["about-me-inner", {"tt-wrap": wrap}]}>
 			
 		<!-- ======================
 		///// Begin split box /////

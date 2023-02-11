@@ -1,4 +1,29 @@
 ---
+// Bootstrap CSS (http://getbootstrap.com)
+import "../styles/vendor/bootstrap/css/bootstrap.min.css" // bootstrap CSS (http://getbootstrap.com)
+
+// Libs and Plugins CSS
+import "../styles/vendor/animsition/css/animsition.min.css" // Animsition CSS (http://git.blivesta.com/animsition/)
+import "../styles/vendor/fontawesome/css/fontawesome-all.min.css" // Font Icons CSS (https://fontawesome.com) Free version!
+import "../styles/vendor/lightgallery/css/lightgallery.min.css" // lightGallery CSS (http://sachinchoolur.github.io/lightGallery)
+import "../styles/vendor/owl-carousel/css/owl.carousel.min.css" // Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/)
+import "../styles/vendor/owl-carousel/css/owl.theme.default.min.css" // Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/)
+import "../styles/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css" // YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer)
+
+// Template master CSS
+import "../styles/helper.css"
+import "../styles/theme.css"
+
+// Template dark style CSS (just uncomment line below to enable dark style)
+// import "../styles/dark-style.css"
+
+// Template round style CSS (just uncomment line below to enable round style)
+// import "../styles/round-style.css"
+
+// Template color skins CSS (just uncomment line below to enable color skin. One line at a time!)
+import "../styles/color-skins/skin-orange.css"
+
+
 const { title } = Astro.props
 ---
 <head>
@@ -22,35 +47,4 @@ const { title } = Astro.props
     
     <!-- Google fonts (https://www.google.com/fonts) -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> <!-- Global font -->
-
-    <!-- Bootstrap CSS (http://getbootstrap.com) -->
-    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css"> <!-- bootstrap CSS (http://getbootstrap.com) -->
-
-    <!-- Libs and Plugins CSS -->
-    <link rel="stylesheet" href="/assets/vendor/animsition/css/animsition.min.css"> <!-- Animsition CSS (http://git.blivesta.com/animsition/) -->
-    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-    <link rel="stylesheet" href="/assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
-    <link rel="stylesheet" href="/assets/vendor/owl-carousel/css/owl.carousel.min.css"> <!-- Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
-    <link rel="stylesheet" href="/assets/vendor/owl-carousel/css/owl.theme.default.min.css"> <!-- Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
-    <link rel="stylesheet" href="/assets/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css"> <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
-
-    <!-- Template master CSS -->
-    <link rel="stylesheet" href="/assets/css/helper.css">
-    <link rel="stylesheet" href="/assets/css/theme.css">
-
-    <!-- Template dark style CSS (just uncomment line below to enable dark style) -->
-        <link rel="stylesheet" href="/assets/css/dark-style.css">
-
-    <!-- Template round style CSS (just uncomment line below to enable round style) -->
-        <link rel="stylesheet" href="/assets/css/round-style.css">
-
-    <!-- Template color skins CSS (just uncomment line below to enable color skin. One line at a time!) -->
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-red.css"> -->
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-green.css"> -->
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-blue.css"> -->
-        <link rel="stylesheet" href="/assets/css/color-skins/skin-orange.css">
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-purple.css"> -->
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-pink.css"> -->
-        <!-- <link rel="stylesheet" href="/assets/css/color-skins/skin-brown.css"> -->
-
 </head>

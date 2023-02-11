@@ -2,13 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionAboutMe from "../sections/SectionAboutMe.astro";
 import SectionLatestWork from "../sections/SectionLatestWork.astro";
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
 
 const title = "Welcome to Sander Datema";
 ---
 
 <BaseLayout title={title}>
-  <SectionPageHeader />
-  <SectionAboutMe />
+  <SectionAboutMe wrap simple />
   <SectionLatestWork />
 </BaseLayout>
