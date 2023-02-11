@@ -1,0 +1,25 @@
+---
+import ContentColumn from "./SectionBlogSingle/ContentColumn.astro";
+import SidebarColumn from "./SectionBlogSingle/SidebarColumn.astro";
+
+const { wrap } = Astro.props
+---
+
+<!-- ====================================
+/////// Begin blog single section ///////
+===================================== -->
+<section id="blog-single-section">
+    <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <div class:list={["blog-single-inner", {"tt-wrap": wrap}]}>
+
+        <div class="row no-margin">
+
+            <ContentColumn />
+
+            <SidebarColumn />
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.blog-single-inner -->
+</section>
+<!-- End blog single section -->

@@ -6756,17 +6756,17 @@ ul.bl-item-attr .favorite-btn {
  * Blog single
 /* ------------------------------------------------------------- */
 
-#blog-single-cection {
+#blog-single-section {
 	padding: 50px 0;
 }
 @media (max-width : 1600px) {
-	#blog-single-cection {
+	#blog-single-section {
 		padding-top: 3%;
 		padding-bottom: 3%;
 	}
 }
 @media (max-width : 1000px) {
-	#blog-single-cection {
+	#blog-single-section {
 		padding-top: 4%;
 		padding-bottom: 4%;
 	}
@@ -6801,7 +6801,7 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	position: relative;
 }
 
-#blog-single-cection.blog-single-simple {
+#blog-single-section.blog-single-simple {
 	max-width: 1140px;
 	margin: 0 auto;
 	padding-top: 0;
