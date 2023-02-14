@@ -1,0 +1,19 @@
+---
+import ElementCover from "../../components/general/ElementCover.astro";
+
+const { parallax_style, fade_out_style, hide_ph_image, background_image, cover_style, cover_type } = Astro.props
+---
+
+<!-- Begin page header image 
+============================= 
+* Use class "parallax-bg-1" up to "parallax-bg-6" to enable background image parallax effect.
+* Use class "fade-out-scroll-3" to enable fade out effect if page scroll.
+* Use class "hide-ph-image" to hide page header image without removing the code.
+-->
+<div
+    class:list={["page-header-image", "bg-image", `parallax-bg-${parallax_style}`, `fade_out-scroll-${fade_out_style}`, { "hide-pg-image": hide_ph_image }]}
+    style={`background-image: url(${background_image});`}
+>
+    <ElementCover class={`bg-transparent-${cover_style}-${cover_type}`} />
+</div>
+<!-- End page header image -->
