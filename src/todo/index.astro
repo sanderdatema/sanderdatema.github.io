@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 import Intro from "../components/index/Intro.astro"
 import AboutMe from "../components/index/AboutMe.astro"
 import GalleryList from "../components/index/GalleryList.astro"
@@ -10,20 +10,19 @@ import CallToAction from "../components/index/CallToAction.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <Intro />
 
-		<Intro />
+    <AboutMe />
 
-		<AboutMe />
+    <GalleryList />
 
-		<GalleryList />
+    <Prices />
 
-		<Prices />
+    <Testimonials />
 
-		<Testimonials />
+    <LatestNews />
 
-		<LatestNews />
-
-		<CallToAction />
-
+    <CallToAction />
 </BaseLayout>

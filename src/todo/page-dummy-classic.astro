@@ -1,74 +1,95 @@
 ---
-import HR from '../components/general/HR.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from '../sections/SectionPageHeader.astro';
-import PageHeaderImage from '../sections/SectionPageHeader/PageHeaderImage.astro';
-import PageHeaderInner from '../sections/SectionPageHeader/PageHeaderInner.astro';
+import HR from "../components/general/HR.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader>
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-	<SectionPageHeader>
-		<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-		<PageHeaderInner>
-
-			<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 			===============================
 			* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 			* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 			* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 			-->
-			<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
-				<h1 class="page-header-title">Dummy Page</h1>
-				<HR size="short" />
-				<div class="page-header-description">
-					<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
-				</div>
+            <div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
+                <h1 class="page-header-title">Dummy Page</h1>
+                <HR size="short" />
+                <div class="page-header-description">
+                    <p>
+                        Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget
+                        gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.
+                    </p>
+                </div>
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-			</div>
-			<!-- End page header caption -->
-
-		</PageHeaderInner>
-	</SectionPageHeader>
-
-
-	<!-- =========================
+    <!-- =========================
 	///// Begin page section /////
 	========================== -->
-	<section id="page-section" class="page-classic">
-		<div class="page-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <section id="page-section" class="page-classic">
+        <div class="page-section-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 no-padding margin-bottom-40">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 no-padding margin-bottom-40">
+                        <!-- Begin page content -->
+                        <div class="page-content">
+                            <h3>Your Content Here</h3>
 
-						<!-- Begin page content -->
-						<div class="page-content">
+                            <p>
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed viverra rhoncus placerat. Quisque
+                                sed auctor turpis. Etiam elementum malesuada felis, sit amet aliquet nibh laoreet et.
+                            </p>
 
-							<h3>Your Content Here</h3>
+                            <p>
+                                Nunc pellentesque erat metus, euismod feugiat purus semper ut. Quisque rutrum, nibh quis blandit lacinia, nibh lorem condimentum
+                                neque, quis vestibulum mi felis non lectus. Ut at lectus euismod, pharetra libero quis, vestibulum est. Fusce et velit sed augue
+                                rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu
+                                vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque massa eget ante. In hac habitasse platea dictumst.
+                                Pellentesque non interdum dolor, et imperdiet metus. Phasellus et posuere justo. Donec quis enim eu ex tincidunt rhoncus sit
+                                amet et libero.
+                            </p>
 
-							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed viverra rhoncus placerat. Quisque sed auctor turpis. Etiam elementum malesuada felis, sit amet aliquet nibh laoreet et.</p> 
+                            <blockquote>
+                                Non mauris nullam. Wisi gravida quis quisque mattis dolor. Etiam sociis turpis nesciunt sed lacus sed hendrerit diam. Accumsan
+                                varius venenatis arcu maecenas nulla. Aliquet tempus lobortis. Tortor nibh erat vel gravida est accumsan ut ad. Orci malesuada
+                                morbi. Luctus pharetra lectus.
+                            </blockquote>
 
-							<p>Nunc pellentesque erat metus, euismod feugiat purus semper ut. Quisque rutrum, nibh quis blandit lacinia, nibh lorem condimentum neque, quis vestibulum mi felis non lectus. Ut at lectus euismod, pharetra libero quis, vestibulum est. Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque massa eget ante. In hac habitasse platea dictumst. Pellentesque non interdum dolor, et imperdiet metus. Phasellus et posuere justo. Donec quis enim eu ex tincidunt rhoncus sit amet et libero.</p>
+                            <p>
+                                Morbi malesuada feugiat nisl. Donec dapibus felis vitae vestibulum laoreet. Quisque scelerisque, nisl at ornare rutrum, orci
+                                purus convallis ipsum, et tincidunt ligula est vel turpis. Nunc at finibus elit, vel fringilla ligula. Duis accumsan nibh eget
+                                mauris elementum porttitor. Aliquam erat volutpat. Quisque rutrum vulputate metus non aliquet. Nullam vulputate scelerisque
+                                tortor nec porttitor.
+                            </p>
 
-							<blockquote>Non mauris nullam. Wisi gravida quis quisque mattis dolor. Etiam sociis turpis nesciunt sed lacus sed hendrerit diam. Accumsan varius venenatis arcu maecenas nulla. Aliquet tempus lobortis. Tortor nibh erat vel gravida est accumsan ut ad. Orci malesuada morbi. Luctus pharetra lectus.</blockquote>
+                            <p>
+                                Nunc scelerisque bibendum laoreet. Aenean eleifend quam a dui ullamcorper bibendum. Maecenas blandit at odio nec tempus. Integer
+                                nec elit ac nunc aliquam commodo. Pellentesque sed tincidunt neque, in tempor turpis.
+                            </p>
 
-							<p>Morbi malesuada feugiat nisl. Donec dapibus felis vitae vestibulum laoreet. Quisque scelerisque, nisl at ornare rutrum, orci purus convallis ipsum, et tincidunt ligula est vel turpis. Nunc at finibus elit, vel fringilla ligula. Duis accumsan nibh eget mauris elementum porttitor. Aliquam erat volutpat. Quisque rutrum vulputate metus non aliquet. Nullam vulputate scelerisque tortor nec porttitor.</p>
-
-							<p>Nunc scelerisque bibendum laoreet. Aenean eleifend quam a dui ullamcorper bibendum. Maecenas blandit at odio nec tempus. Integer nec elit ac nunc aliquam commodo. Pellentesque sed tincidunt neque, in tempor turpis.</p>
-
-							<p>:)</p>
-
-						</div> 
-						<!-- End page content -->
-
-					</div> <!-- /.col -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-
-		</div> <!-- /.page-section-inner -->
-	</section>
-	<!-- End page section -->
+                            <p>:)</p>
+                        </div>
+                        <!-- End page content -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.page-section-inner -->
+    </section>
+    <!-- End page section -->
 </BaseLayout>

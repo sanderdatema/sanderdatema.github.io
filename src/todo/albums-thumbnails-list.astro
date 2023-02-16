@@ -1,426 +1,581 @@
 ---
-import HR from '../components/general/HR.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from '../sections/SectionPageHeader.astro';
-import PageHeaderImage from '../sections/SectionPageHeader/PageHeaderImage.astro';
-import PageHeaderInner from '../sections/SectionPageHeader/PageHeaderInner.astro';
+import HR from "../components/general/HR.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader>
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-<SectionPageHeader>
-
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-<PageHeaderInner>
-
-		<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 		===============================
 		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption ph-caption-lg parallax-5 fade-out-scroll-3">
-			<h1 class="page-header-title">Camera Roll</h1>
-			<HR size="short" />
-			
-			<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-			<div class="page-header-description" data-max-words="40">
-				<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
-			</div>
+            <div class="page-header-caption ph-caption-lg parallax-5 fade-out-scroll-3">
+                <h1 class="page-header-title">Camera Roll</h1>
+                <HR size="short" />
 
-		</div>
-		<!-- End page header caption -->
+                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                <div class="page-header-description" data-max-words="40">
+                    <p>
+                        Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget
+                        gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.
+                    </p>
+                </div>
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-</PageHeaderInner>
-
-</SectionPageHeader>
-
-<!-- =======================================
+    <!-- =======================================
 ///// Begin gallery thumbnails section /////
 ======================================== -->
-<section id="gallery-thumbnails-section">
-	<div class="gts-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <section id="gallery-thumbnails-section">
+        <div class="gts-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-		<!-- Begin gallery thumbnails block 
+            <!-- Begin gallery thumbnails block 
 		==================================== -->
-		<div class="gallery-thumbnails-block lightgallery">
+            <div class="gallery-thumbnails-block lightgallery">
+                <!-- Begin gallery thumbnails block heading -->
+                <div class="gtb-heading">
+                    <div class="gtb-heading-category"><a href="albums-archive.html">Travel</a></div>
+                    <h2 class="gtb-heading-title">The Best Places to Visit.</h2>
+                    <div class="gtb-heading-date">May 30, 2017</div>
+                    <HR size="short" />
+                </div>
+                <!-- End gallery thumbnails block heading -->
 
-			<!-- Begin gallery thumbnails block heading -->
-			<div class="gtb-heading">
-				<div class="gtb-heading-category"><a href="albums-archive.html">Travel</a></div>
-				<h2 class="gtb-heading-title">The Best Places to Visit.</h2>
-				<div class="gtb-heading-date">May 30, 2017</div>
-				<HR size="short" />
-			</div>
-			<!-- End gallery thumbnails block heading -->
+                <!-- Begin gallery thumbnails list -->
+                <ul class="gallery-thumbnails-list">
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                            data-sub-html="<p>Yes, you can use image captions :)</p>"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                </ul>
+                <!-- End gallery thumbnails list -->
+            </div>
+            <!-- End gallery thumbnails block -->
 
-			<!-- Begin gallery thumbnails list -->
-			<ul class="gallery-thumbnails-list">
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg" data-sub-html="<p>Yes, you can use image captions :)</p>">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-			</ul>
-			<!-- End gallery thumbnails list -->
-
-		</div>
-		<!-- End gallery thumbnails block -->
-
-		<!-- Begin gallery thumbnails block 
+            <!-- Begin gallery thumbnails block 
 		==================================== -->
-		<div class="gallery-thumbnails-block lightgallery">
+            <div class="gallery-thumbnails-block lightgallery">
+                <!-- Begin gallery thumbnails block heading -->
+                <div class="gtb-heading">
+                    <div class="gtb-heading-category"><a href="albums-archive.html">Wedding</a></div>
+                    <h2 class="gtb-heading-title">One Very Special Day</h2>
+                    <div class="gtb-heading-date">May 21, 2017</div>
+                    <HR size="short" />
+                </div>
+                <!-- End gallery thumbnails block heading -->
 
-			<!-- Begin gallery thumbnails block heading -->
-			<div class="gtb-heading">
-				<div class="gtb-heading-category"><a href="albums-archive.html">Wedding</a></div>
-				<h2 class="gtb-heading-title">One Very Special Day</h2>
-				<div class="gtb-heading-date">May 21, 2017</div>
-				<HR size="short" />
-			</div>
-			<!-- End gallery thumbnails block heading -->
+                <!-- Begin gallery thumbnails list -->
+                <ul class="gallery-thumbnails-list">
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                            data-sub-html="<p>Yes, you can use image captions :)</p>"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                </ul>
+                <!-- End gallery thumbnails list -->
+            </div>
+            <!-- End gallery thumbnails block -->
 
-			<!-- Begin gallery thumbnails list -->
-			<ul class="gallery-thumbnails-list">
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg" data-sub-html="<p>Yes, you can use image captions :)</p>">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-			</ul>
-			<!-- End gallery thumbnails list -->
-
-		</div>
-		<!-- End gallery thumbnails block -->
-
-		<!-- Begin gallery thumbnails block 
+            <!-- Begin gallery thumbnails block 
 		==================================== -->
-		<div class="gallery-thumbnails-block lightgallery">
+            <div class="gallery-thumbnails-block lightgallery">
+                <!-- Begin gallery thumbnails block heading -->
+                <div class="gtb-heading">
+                    <div class="gtb-heading-category"><a href="albums-archive.html">Nature</a></div>
+                    <h2 class="gtb-heading-title">Nature's Many Faces</h2>
+                    <div class="gtb-heading-date">May 4, 2017</div>
+                    <HR size="short" />
+                </div>
+                <!-- End gallery thumbnails block heading -->
 
-			<!-- Begin gallery thumbnails block heading -->
-			<div class="gtb-heading">
-				<div class="gtb-heading-category"><a href="albums-archive.html">Nature</a></div>
-				<h2 class="gtb-heading-title">Nature's Many Faces</h2>
-				<div class="gtb-heading-date">May 4, 2017</div>
-				<HR size="short" />
-			</div>
-			<!-- End gallery thumbnails block heading -->
+                <!-- Begin gallery thumbnails list -->
+                <ul class="gallery-thumbnails-list">
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                            data-sub-html="<p>Yes, you can use image captions :)</p>"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                    <li>
+                        <!-- Begin gallery thumbnails list item -->
+                        <a
+                            href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg"
+                            class="gtl-item-link lg-trigger"
+                            data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg"
+                        >
+                            <div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
+                        </a>
+                        <!-- End gallery thumbnails list item -->
+                    </li>
+                </ul>
+                <!-- End gallery thumbnails list -->
+            </div>
+            <!-- End gallery thumbnails block -->
 
-			<!-- Begin gallery thumbnails list -->
-			<ul class="gallery-thumbnails-list">
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg" data-sub-html="<p>Yes, you can use image captions :)</p>">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-				<li>
-					<!-- Begin gallery thumbnails list item -->
-					<a href="/assets/img/gallery/gallery-single/thumbnails/big/thumbnail-big-1.jpg" class="gtl-item-link lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg">
-						<div class="gtl-item bg-image" style="background-image: url(/assets/img/gallery/gallery-single/thumbnails/thumbnail-1.jpg);"></div>
-					</a>
-					<!-- End gallery thumbnails list item -->
-				</li>
-			</ul>
-			<!-- End gallery thumbnails list -->
+            <!-- Begin pagination -->
+            <nav class="pagination-wrap text-left">
+                <ul class="pagination">
+                    <li>
+                        <a href="" aria-label="Previous">
+                            <span aria-hidden="true">First</span>
+                        </a>
+                    </li>
+                    <li><a href="">Prev</a></li>
+                    <li class="active"><a href="#0">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li>...</li>
+                    <li><a href="">6</a></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">8</a></li>
+                    <li><a href="">Next</a></li>
+                    <li>
+                        <a href="" aria-label="Next">
+                            <span aria-hidden="true">Last</span>
+                        </a>
+                    </li>
+                </ul>
 
-		</div>
-		<!-- End gallery thumbnails block -->
-
-
-		<!-- Begin pagination -->
-		<nav class="pagination-wrap text-left">
-			<ul class="pagination">
-				<li>
-					<a href="" aria-label="Previous">
-						<span aria-hidden="true">First</span>
-					</a>
-				</li>
-				<li><a href="">Prev</a></li>
-				<li class="active"><a href="#0">1</a></li>
-				<li><a href="">2</a></li>
-				<li><a href="">3</a></li>
-				<li>...</li>
-				<li><a href="">6</a></li>
-				<li><a href="">7</a></li>
-				<li><a href="">8</a></li>
-				<li><a href="">Next</a></li>
-				<li>
-					<a href="" aria-label="Next">
-						<span aria-hidden="true">Last</span>
-					</a>
-				</li>
-			</ul>
-
-			<!-- Begin pagination info -->
-			<div class="pagination-info">
-				<span>Showing page 1 of 8</span>
-				<span>Items 1 - 5 of 40</span>
-			</div>
-			<!-- End pagination info -->
-		</nav>
-		<!-- End pagination -->
-		
-	</div> <!-- /.gts-inner -->
-</section>
-<!-- End gallery thumbnails section -->
+                <!-- Begin pagination info -->
+                <div class="pagination-info">
+                    <span>Showing page 1 of 8</span>
+                    <span>Items 1 - 5 of 40</span>
+                </div>
+                <!-- End pagination info -->
+            </nav>
+            <!-- End pagination -->
+        </div>
+        <!-- /.gts-inner -->
+    </section>
+    <!-- End gallery thumbnails section -->
 </BaseLayout>

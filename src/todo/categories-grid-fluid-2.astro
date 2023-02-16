@@ -1,425 +1,401 @@
 ---
-import HR from '../components/general/HR.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from '../sections/SectionPageHeader.astro';
-import PageHeaderImage from '../sections/SectionPageHeader/PageHeaderImage.astro';
-import PageHeaderInner from '../sections/SectionPageHeader/PageHeaderInner.astro';
+import HR from "../components/general/HR.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader size="lg">
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-<SectionPageHeader size="lg">
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-<PageHeaderInner>
-
-		<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 		===============================
 		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
-			<h1 class="page-header-title">Categories</h1>
-			<HR size="short" />
-									
-			<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-			<div class="page-header-description" data-max-words="40">
-				<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
-			</div>
+            <div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
+                <h1 class="page-header-title">Categories</h1>
+                <HR size="short" />
 
-		</div>
-		<!-- End page header caption -->
+                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                <div class="page-header-description" data-max-words="40">
+                    <p>
+                        Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget
+                        gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.
+                    </p>
+                </div>
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-</PageHeaderInner>
-
-</SectionPageHeader>
-
-<!-- =================================
+    <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
-<section id="gallery-list-section" class="gl-categories">
-	<div class="isotope-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		
-		<!-- Begin isotope
+    <section id="gallery-list-section" class="gl-categories">
+        <div class="isotope-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+            <!-- Begin isotope
 		===================
 		* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 		* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 		-->
-		<div class="isotope col-3">
-
-			<!-- Begin isotope items wrap 
+            <div class="isotope col-3">
+                <!-- Begin isotope items wrap 
 			==============================
 			* Use class "gli-alter-1", "gli-alter-2", "gli-alter-3", "gli-alter-4" or "gli-alter-5" to change gallery list item style.
 			* Use class "gli-dark" or "gli-colored" to enable colored hover overlay (effect only with default hover overlay and "gli-alter-4", "gli-alter-5" classes!).
 			* Use class "gli-frame" to enable image frames.
 			-->
-			<div class="isotope-items-wrap gli-alter-5">
+                <div class="isotope-items-wrap gli-alter-5">
+                    <!-- Grid sizer (do not remove!!!) -->
+                    <div class="grid-sizer"></div>
 
-				<!-- Grid sizer (do not remove!!!) -->
-				<div class="grid-sizer"></div>
-
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item outdoor iso-height-1">
+                    <div class="isotope-item outdoor iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Nature</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Nature</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item black-and-white iso-height-1">
+                    <div class="isotope-item black-and-white iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Portraits</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Portraits</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item fashion iso-height-1">
+                    <div class="isotope-item fashion iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Fashion</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Fashion</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item outdoor iso-height-1">
+                    <div class="isotope-item outdoor iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Outdoor</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-							
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Outdoor</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item portraits iso-height-1">
+                    <div class="isotope-item portraits iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Tattoos</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Tattoos</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item fashion outdoor iso-height-1">
+                    <div class="isotope-item fashion outdoor iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Nude</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Nude</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item outdoor iso-height-1">
+                    <div class="isotope-item outdoor iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">People</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">People</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item fashion iso-height-1">
+                    <div class="isotope-item fashion iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Streets</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Streets</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-				<!-- ===================== 
+                    <!-- ===================== 
 				/// Begin isotope item ///
 				========================== 
 				* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 				-->
-				<div class="isotope-item black-and-white iso-height-1">
+                    <div class="isotope-item black-and-white iso-height-1">
+                        <!-- Begin gallery list item -->
+                        <div class="gallery-list-item">
+                            <!-- Begin gallery list item image -->
+                            <div class="gl-item-image-wrap">
+                                <!-- Begin gallery list item image inner -->
+                                <a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
+                                    <div
+                                        class="gl-item-image bg-image"
+                                        style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"
+                                    >
+                                    </div>
 
-					<!-- Begin gallery list item -->
-					<div class="gallery-list-item">
+                                    <span class="gl-item-image-zoom"></span>
+                                </a>
+                                <!-- End gallery list item image inner -->
+                            </div>
+                            <!-- End gallery list item image -->
 
-						<!-- Begin gallery list item image -->
-						<div class="gl-item-image-wrap">
+                            <!-- Begin gallery list item info -->
+                            <div class="gl-item-info">
+                                <div class="gl-item-caption">
+                                    <h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Travel</a></h2>
+                                </div>
+                            </div>
+                            <!-- End gallery list item info -->
+                        </div>
+                        <!-- End gallery list item -->
+                    </div>
+                    <!-- End isotope item -->
+                </div>
+                <!-- End isotope items wrap -->
 
-							<!-- Begin gallery list item image inner -->
-							<a href="albums-archive-fluid-2.html" class="gl-item-image-inner">
-								<div class="gl-item-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/categories/gallery-cat-1.jpg); background-position: 50% 50%"></div>
-								
-								<span class="gl-item-image-zoom"></span>
-							</a>
-							<!-- End gallery list item image inner -->
-
-						</div>
-						<!-- End gallery list item image -->
-						
-						<!-- Begin gallery list item info -->
-						<div class="gl-item-info">
-							<div class="gl-item-caption">
-								<h2 class="gl-item-title"><a href="albums-archive-fluid-2.html">Travel</a></h2>
-							</div>
-						</div>
-						<!-- End gallery list item info -->
-
-					</div>
-					<!-- End gallery list item -->
-
-				</div>
-				<!-- End isotope item -->
-
-			</div>
-			<!-- End isotope items wrap -->
-
-
-			<!-- Begin isotope pagination 
+                <!-- Begin isotope pagination 
 			============================== -->
-			<!-- <div class="isotope-pagination">
+                <!-- <div class="isotope-pagination">
 				<div class="iso-load-more">
 					<a class="btn btn-dark-bordered btn-lg" href="">View More <i class="fas fa-refresh"></i></a>
 				</div>
 			</div> -->
-			<!-- End isotope pagination -->
-
-		</div>
-		<!-- End isotope -->
-
-	</div> <!-- /.isotope-wrap -->
-</section>
-<!-- End gallery list section -->
+                <!-- End isotope pagination -->
+            </div>
+            <!-- End isotope -->
+        </div>
+        <!-- /.isotope-wrap -->
+    </section>
+    <!-- End gallery list section -->
 </BaseLayout>

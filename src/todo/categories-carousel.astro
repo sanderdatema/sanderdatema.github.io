@@ -1,18 +1,20 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- =================================
+<BaseLayout title={title}>
+    <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
-<section id="gallery-list-section" class="gallery-list-carousel">
-	<div class="gallery-list-carousel-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="gl-carousel-wrap no-padding"> <!-- Optional: add class "no-padding" to disable paddings -->
+    <section id="gallery-list-section" class="gallery-list-carousel">
+        <div class="gallery-list-carousel-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="gl-carousel-wrap no-padding">
+                <!-- Optional: add class "no-padding" to disable paddings -->
 
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -53,113 +55,136 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-full owl-mousewheel nav-bottom-right cc-hover-dark cc-hover-zoom" data-items="4" data-dots="false" data-nav="true" data-nav-speed="800" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="800" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="3" data-mobile-landscape="2" data-mobile-portrait="2">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-full owl-mousewheel nav-bottom-right cc-hover-dark cc-hover-zoom"
+                    data-items="4"
+                    data-dots="false"
+                    data-nav="true"
+                    data-nav-speed="800"
+                    data-autoplay="true"
+                    data-autoplay-timeout="8000"
+                    data-autoplay-speed="800"
+                    data-autoplay-hover-pause="true"
+                    data-tablet-landscape="3"
+                    data-tablet-portrait="3"
+                    data-mobile-landscape="2"
+                    data-mobile-portrait="2"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-carousel-center.html" class="cc-item">
+                    <a href="gallery-single-carousel-center.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Style</h2>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center cc-caption-lg">
+                            <h2 class="cc-title">Style</h2>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-carousel-center.html" class="cc-item">
+                    <a href="gallery-single-carousel-center.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Sport</h2>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center cc-caption-lg">
+                            <h2 class="cc-title">Sport</h2>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-carousel-center.html" class="cc-item">
+                    <a href="gallery-single-carousel-center.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Weddings</h2>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center cc-caption-lg">
+                            <h2 class="cc-title">Weddings</h2>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-carousel-center.html" class="cc-item">
+                    <a href="gallery-single-carousel-center.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Nature</h2>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center cc-caption-lg">
+                            <h2 class="cc-title">Nature</h2>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-carousel-center.html" class="cc-item">
+                    <a href="gallery-single-carousel-center.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/striped/gallery-striped-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center cc-caption-lg">
-						<h2 class="cc-title">Macro</h2>
-					</div>
-					<!-- End caption -->
-
-				</a>
-				<!-- End carousel item -->
-
-			</div>
-			<!-- End content carousel -->
-
-		</div> <!-- /.gl-carousel-wrap -->
-	</div> <!-- /.gallery-list-carousel-inner -->
-</section>
-<!-- End gallery list section -->
+                        <div class="cc-caption center cc-caption-lg">
+                            <h2 class="cc-title">Macro</h2>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- /.gl-carousel-wrap -->
+        </div>
+        <!-- /.gallery-list-carousel-inner -->
+    </section>
+    <!-- End gallery list section -->
 </BaseLayout>

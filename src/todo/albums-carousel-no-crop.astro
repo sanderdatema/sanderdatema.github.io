@@ -1,23 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- =================================
+<BaseLayout title={title}>
+    <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
-<section id="gallery-list-section" class="gallery-list-carousel glc-no-crop">
+    <section id="gallery-list-section" class="gallery-list-carousel glc-no-crop">
+        <!-- Begin page background (usually the same as gallery featured image) -->
+        <div class="page-background bg-image" style="background-image: url(/assets/img/misc/page-bg-1.jpg);"></div>
+        <!-- End page background -->
 
-	<!-- Begin page background (usually the same as gallery featured image) -->
-	<div class="page-background bg-image" style="background-image: url(/assets/img/misc/page-bg-1.jpg);"></div>
-	<!-- End page background -->
-
-	<div class="gallery-list-carousel-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="gl-carousel-wrap">
-
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+        <div class="gallery-list-carousel-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="gl-carousel-wrap">
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -58,193 +57,203 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-full owl-mousewheel nav-light cc-hover-zoom" data-items="4" data-margin="60" data-dots="false" data-nav="true" data-nav-speed="800" data-autowidth="true" data-tablet-landscape="3" data-tablet-portrait="3" data-mobile-landscape="2" data-mobile-portrait="1">
-
-			<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-full owl-mousewheel nav-light cc-hover-zoom"
+                    data-items="4"
+                    data-margin="60"
+                    data-dots="false"
+                    data-nav="true"
+                    data-nav-speed="800"
+                    data-autowidth="true"
+                    data-tablet-landscape="3"
+                    data-tablet-portrait="3"
+                    data-mobile-landscape="2"
+                    data-mobile-portrait="1"
+                >
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400"> <!-- max width class is optional -->
-					<div class="cc-category"><span>Events</span></div>
-					<h2 class="cc-title">Wedding Day</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <!-- max width class is optional -->
+                            <div class="cc-category"><span>Events</span></div>
+                            <h2 class="cc-title">Wedding Day</h2>
 
-				</div>
-				<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-			</a>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400"> <!-- max width class is optional -->
-					<div class="cc-category"><span>Models</span></div>
-					<h2 class="cc-title">Three Mysterious Woman</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <!-- max width class is optional -->
+                            <div class="cc-category"><span>Models</span></div>
+                            <h2 class="cc-title">Three Mysterious Woman</h2>
 
-				</div>
-				<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-			</a>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400">
-					<div class="cc-category"><span>People</span></div>
-					<h2 class="cc-title">One Day Shoot With Ordinary People</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <div class="cc-category"><span>People</span></div>
+                            <h2 class="cc-title">One Day Shoot With Ordinary People</h2>
 
-				</div>
-				<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-			</a>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400"> <!-- max width class is optional -->
-					<div class="cc-category"><span>People</span></div>
-					<h2 class="cc-title">Little Girl &amp; Book</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <!-- max width class is optional -->
+                            <div class="cc-category"><span>People</span></div>
+                            <h2 class="cc-title">Little Girl &amp; Book</h2>
 
-				</div>
-				<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-			</a>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400"> <!-- max width class is optional -->
-					<div class="cc-category"><span>Art</span></div>
-					<h2 class="cc-title">Happy Moments With You</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <!-- max width class is optional -->
+                            <div class="cc-category"><span>Art</span></div>
+                            <h2 class="cc-title">Happy Moments With You</h2>
 
-				</div>
-				<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-			</a>
-			<!-- End carousel item -->
-
-			<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 			========================= -->
-			<a href="gallery-single-carousel-2.html" class="cc-item">
+                    <a href="gallery-single-carousel-2.html" class="cc-item">
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img" />
 
-				<!-- cc auto width img -->
-				<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg" alt="img">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-				<!-- cc auto width img for small devices -->
-				<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				<!-- Begin caption 
+                        <!-- Begin caption 
 				===================
 				* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 				* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 				-->
-				<div class="cc-caption cc-caption-lg bottom-left max-width-400"> <!-- max width class is optional -->
-					<div class="cc-category"><span>People</span></div>
-					<h2 class="cc-title">Two Sleeping Woman</h2>
-					
-					<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-					<div class="cc-description">
-						Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-					</div>
+                        <div class="cc-caption cc-caption-lg bottom-left max-width-400">
+                            <!-- max width class is optional -->
+                            <div class="cc-category"><span>People</span></div>
+                            <h2 class="cc-title">Two Sleeping Woman</h2>
 
-				</div>
-				<!-- End caption -->
-
-			</a>
-			<!-- End carousel item -->
-
-		</div>
-		<!-- End content carousel -->
-
-		</div> <!-- /.gl-carousel-wrap -->
-	</div> <!-- /.gallery-list-carousel-inner -->
-</section>
-<!-- End gallery list section -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <div class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- /.gl-carousel-wrap -->
+        </div>
+        <!-- /.gallery-list-carousel-inner -->
+    </section>
+    <!-- End gallery list section -->
 </BaseLayout>

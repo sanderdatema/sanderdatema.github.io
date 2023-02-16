@@ -1,946 +1,1036 @@
 ---
-import HR from '../components/general/HR.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import HR from "../components/general/HR.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- ==============================
+<BaseLayout title={title}>
+    <!-- ==============================
 ///// Begin blog list section /////
 =============================== -->
-<section id="blog-list-section" class="blog-list-grid">
-	<div class="blog-list-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <section id="blog-list-section" class="blog-list-grid">
+        <div class="blog-list-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-		<div class="row no-margin">
-		
-			<!-- Content column -->
-			<div class="col-md-8 no-padding-left no-padding-right">
+            <div class="row no-margin">
+                <!-- Content column -->
+                <div class="col-md-8 no-padding-left no-padding-right">
+                    <div class="isotope-wrap">
+                        <!-- Begin archive info box -->
+                        <div class="archive-info-box text-center">
+                            <div class="ai-box-subtitle">Browsing Category:</div>
+                            <!-- <div class="ai-box-subtitle">Browsing Tag:</div> -->
+                            <h1 class="ai-box-title">Photography</h1>
+                            <HR size="short" />
+                        </div>
+                        <!-- End archive info box -->
 
-				<div class="isotope-wrap">
-
-					<!-- Begin archive info box -->
-					<div class="archive-info-box text-center">
-						<div class="ai-box-subtitle">Browsing Category:</div>
-						<!-- <div class="ai-box-subtitle">Browsing Tag:</div> -->
-						<h1 class="ai-box-title">Photography</h1>
-						<HR size="short" />
-					</div>
-					<!-- End archive info box -->
-					
-					<!-- Begin isotope
+                        <!-- Begin isotope
 					===================
 					* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 					* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 					-->
-					<div class="isotope col-2 gutter-3">
-
-						<!-- Begin isotope items wrap 
+                        <div class="isotope col-2 gutter-3">
+                            <!-- Begin isotope items wrap 
 						============================== -->
-						<div class="isotope-items-wrap no-margin">
+                            <div class="isotope-items-wrap no-margin">
+                                <!-- Grid sizer (do not remove!!!) -->
+                                <div class="grid-sizer"></div>
 
-							<!-- Grid sizer (do not remove!!!) -->
-							<div class="grid-sizer"></div>
-
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>5 Reasons You Should Fall In Love With Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>5 Reasons You Should Fall In Love With Photography</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                                            </div>
 
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 10</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">48</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 10</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn active">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">48</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Equipment</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>10 Top Choices for Aerial Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">John Young</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Equipment</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>10 Top Choices for Aerial Photography</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">John Young</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 66</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">98</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 66</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">98</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Travel</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>How to Take Professional Travel Photos</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Travel</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>How to Take Professional Travel Photos</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 3</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">54</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 3</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn active">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">54</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Julia Beck</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"
+                                                ><h2>5 Tips Your Camera Manual Never Told You About Portrait Photography</h2></a
+                                            >
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Julia Beck</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 0</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">3</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 0</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">3</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"
+                                                ><h2>Most Common Wedding Photography Mistakes Every Beginner Will Make</h2></a
+                                            >
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 8</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">71</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 8</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">71</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Food</a> <a href="#">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>The Serious Eats Guide to Food Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Food</a> <a href="#">Photography</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>The Serious Eats Guide to Food Photography</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 28</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">65</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 28</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">65</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>How to Become a Fashion Photographer</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Jack Jackson</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>How to Become a Fashion Photographer</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Jack Jackson</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 2</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">14</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 2</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn active">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">14</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Best Lighting Tips For High Fashion Photography</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Fashion</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>Best Lighting Tips For High Fashion Photography</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Martin Vegas</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 79</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">114</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 79</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">114</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Streets</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>These Ideas Will Get Your Street Photography Rocking</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Mike Leon</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Streets</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>These Ideas Will Get Your Street Photography Rocking</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Mike Leon</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 9</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">6</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 9</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">6</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
 
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							====================== -->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin blog list item -->
+                                    <article class="blog-list-item">
+                                        <!-- Blog list item image -->
+                                        <a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image" /></a>
 
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Blog list item image -->
-									<a href="blog-single.html" class="bl-item-image"><img src="/assets/img/blog/list/blog-1.jpg" alt="image"></a>
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Donec faucibus turpis ut egestas</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">May 26, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
-										</div>
-										
-										<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-										<div class="bl-item-desc" data-max-words="14">Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue convallis artula ellis.</div>
+                                        <!-- Begin blog list item info -->
+                                        <div class="bl-item-info">
+                                            <div class="bl-item-category"><a href="blog-archive-3.html">Photography</a></div>
+                                            <a href="blog-single.html" class="bl-item-title"><h2>Donec faucibus turpis ut egestas</h2></a>
+                                            <div class="bl-item-meta">
+                                                <span class="published">May 26, 2017</span>
+                                                <span class="posted-by">- by <a href="#" title="View all posts by Martin Vegas">Anna Vernik</a></span>
+                                            </div>
 
-										<a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
+                                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                            <div class="bl-item-desc" data-max-words="14">
+                                                Suspendisse imperdiet ante at tortor consequat consectetur. Quisque rhoncus blandit justo praesen congue
+                                                convallis artula ellis.
+                                            </div>
 
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"><i class="far fa-comment"></i> 14</a>
-												<!-- End comments count -->
-											</li>
-											<li>
-												<!-- Begin favorite button -->
-												<div class="favorite-btn active">
-													<div class="fav-inner">
-														<div class="icon-heart">
-															<span class="icon-heart-empty"></span>
-															<span class="icon-heart-filled"></span>
-														</div>
-													</div>
-													<div class="fav-count">90</div>
-												</div>
-												<!-- End favorite button -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
+                                            <a href="blog-single.html" class="bl-item-read-more" title="Read More"><span></span></a>
 
-									</div>
-									<!-- End blog list item info -->
+                                            <!-- Begin blog list item attributes -->
+                                            <ul class="bl-item-attr">
+                                                <li>
+                                                    <!-- Begin comments count -->
+                                                    <a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read the comments"
+                                                        ><i class="far fa-comment"></i> 14</a
+                                                    >
+                                                    <!-- End comments count -->
+                                                </li>
+                                                <li>
+                                                    <!-- Begin favorite button -->
+                                                    <div class="favorite-btn active">
+                                                        <div class="fav-inner">
+                                                            <div class="icon-heart">
+                                                                <span class="icon-heart-empty"></span>
+                                                                <span class="icon-heart-filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fav-count">90</div>
+                                                    </div>
+                                                    <!-- End favorite button -->
+                                                </li>
+                                            </ul>
+                                            <!-- End blog list item attributes -->
+                                        </div>
+                                        <!-- End blog list item info -->
+                                    </article>
+                                    <!-- End blog list item -->
+                                </div>
+                                <!-- End isotope item -->
+                            </div>
+                            <!-- End isotope items wrap -->
+                        </div>
+                        <!-- End isotope -->
+                    </div>
+                    <!-- /.isotope-wrap -->
 
-								</article>
-								<!-- End blog list item -->
+                    <!-- Begin pagination -->
+                    <nav class="pagination-wrap">
+                        <ul class="pagination">
+                            <li>
+                                <a href="" aria-label="Previous">
+                                    <span aria-hidden="true">First</span>
+                                </a>
+                            </li>
+                            <li><a href="">Prev</a></li>
+                            <li class="active"><a href="#0">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li>...</li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">Next</a></li>
+                            <li>
+                                <a href="" aria-label="Next">
+                                    <span aria-hidden="true">Last</span>
+                                </a>
+                            </li>
+                        </ul>
 
-							</div>
-							<!-- End isotope item -->
+                        <!-- Begin pagination info -->
+                        <div class="pagination-info">
+                            <span>Showing page 1 of 8</span>
+                            <span>Items 1 - 5 of 40</span>
+                        </div>
+                        <!-- End pagination info -->
+                    </nav>
+                    <!-- End pagination -->
+                </div>
+                <!-- /.col (Content column) -->
 
-						</div>
-						<!-- End isotope items wrap -->
-
-					</div>
-					<!-- End isotope -->
-
-				</div> <!-- /.isotope-wrap -->
-
-				<!-- Begin pagination -->
-				<nav class="pagination-wrap">
-					<ul class="pagination">
-						<li>
-							<a href="" aria-label="Previous">
-								<span aria-hidden="true">First</span>
-							</a>
-						</li>
-						<li><a href="">Prev</a></li>
-						<li class="active"><a href="#0">1</a></li>
-						<li><a href="">2</a></li>
-						<li><a href="">3</a></li>
-						<li>...</li>
-						<li><a href="">6</a></li>
-						<li><a href="">7</a></li>
-						<li><a href="">8</a></li>
-						<li><a href="">Next</a></li>
-						<li>
-							<a href="" aria-label="Next">
-								<span aria-hidden="true">Last</span>
-							</a>
-						</li>
-					</ul>
-
-					<!-- Begin pagination info -->
-					<div class="pagination-info">
-						<span>Showing page 1 of 8</span>
-						<span>Items 1 - 5 of 40</span>
-					</div>
-					<!-- End pagination info -->
-				</nav>
-				<!-- End pagination -->
-
-			</div> <!-- /.col (Content column) -->
-
-			<!-- Sidebar column -->
-			<div class="col-md-4 no-padding-left no-padding-right">
-
-				<!-- Begin sidebar (sidebar right) 
+                <!-- Sidebar column -->
+                <div class="col-md-4 no-padding-left no-padding-right">
+                    <!-- Begin sidebar (sidebar right) 
 				=================================== -->
-				<div class="sidebar sidebar-right">
-					<div class="row">
+                    <div class="sidebar sidebar-right">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget blog-author no-margin-top">
+                                    <h3 class="sidebar-heading">About Me</h3>
+                                    <a
+                                        href="about-me.html"
+                                        class="blog-author-img bg-image"
+                                        style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
+                                    <div class="blog-author-info">
+                                        <h4 class="blog-author-name"><a href="about-me.html">Martin Vegas</a></h4>
+                                        <div class="blog-author-sub">Artist &amp; Photographer</div>
 
-						<div class="col-sm-12">
+                                        <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                        <p class="blog-author-text" data-max-words="15">
+                                            Debitis sociis phasellus feugiat luctus diam. Vitae aenean odio ligula interdum suscipit antimoa arte lacus ante.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget blog-author no-margin-top">
-								<h3 class="sidebar-heading">About Me</h3>
-								<a href="about-me.html" class="blog-author-img bg-image" style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
-								<div class="blog-author-info">
-						<h4 class="blog-author-name"><a href="about-me.html">Martin Vegas</a></h4>
-									<div class="blog-author-sub">Artist &amp; Photographer</div>
+                            <div class="col-sm-12">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-social">
+                                    <h3 class="sidebar-heading">Follow</h3>
+                                    <!-- Begin social buttons -->
+                                    <div class="social-buttons">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="https://www.facebook.com/themetorium"
+                                                    class="btn btn-social-min btn-facebook"
+                                                    title="Follow me on Facebook"
+                                                    target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://twitter.com/Themetorium"
+                                                    class="btn btn-social-min btn-twitter"
+                                                    title="Follow me on Twitter"
+                                                    target="_blank"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://plus.google.com/+SiiliOnu"
+                                                    class="btn btn-social-min btn-google"
+                                                    title="Follow me on Google+"
+                                                    target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.pinterest.com/themetorium"
+                                                    class="btn btn-social-min btn-pinterest"
+                                                    title="Follow me on Pinterest"
+                                                    target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://dribbble.com/Themetorium"
+                                                    class="btn btn-social-min btn-dribbble"
+                                                    title="Follow me on Dribbble"
+                                                    target="_blank"><i class="fab fa-dribbble"></i></a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://instagram.com"
+                                                    class="btn btn-social-min btn-instagram"
+                                                    title="Follow me on instagram"
+                                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End social buttons -->
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-									<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-									<p class="blog-author-text" data-max-words="15">Debitis sociis phasellus feugiat luctus diam. Vitae aenean odio ligula interdum suscipit antimoa arte lacus ante.</p>
+                            <div class="col-sm-12">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-search">
+                                    <h3 class="sidebar-heading">Search</h3>
+                                    <form id="blog-search-form" class="form-btn-inside" method="get" action="search-results.html">
+                                        <div class="form-group no-margin">
+                                            <input type="text" class="form-control" id="blog-search" name="search" placeholder="Search..." />
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-						</div>
-							</div>
-							<!-- End sidebar widget -->
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-categories">
+                                    <h3 class="sidebar-heading">Categories</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Photography <span>26</span></a></li>
+                                        <li><a href="">Equipment <span>54</span></a></li>
+                                        <li><a href="">Travel <span>17</span></a></li>
+                                        <li><a href="">Fashion <span>19</span></a></li>
+                                        <li><a href="">Food <span>67</span></a></li>
+                                        <li><a href="">Macro <span>67</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-						</div> <!-- /.col -->
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-post-list">
+                                    <h3 class="sidebar-heading">Most Popular</h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a
+                                                href=""
+                                                class="post-thumb bg-image"
+                                                style="background-image: url(/assets/img/blog/small/img-13.jpg); background-position: 50% 50%;"></a>
+                                            <div class="post-data">
+                                                <h5 class="post-title"><a href="blog-single.html">10 Top Choices for Aerial Photography</a></h5>
+                                                <!-- <span class="author">By: <a href="">Martin Vegas</a></span> -->
+                                                <span class="date">May 26, 2017</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href=""
+                                                class="post-thumb bg-image"
+                                                style="background-image: url(/assets/img/blog/small/img-14.jpg); background-position: 50% 50%;"></a>
+                                            <div class="post-data">
+                                                <h5 class="post-title"><a href="blog-single.html">How to Take Professional Travel Photos</a></h5>
+                                                <!-- <span class="author">By: <a href="">John Doe</a></span> -->
+                                                <span class="date">May 12, 2017</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href=""
+                                                class="post-thumb bg-image"
+                                                style="background-image: url(/assets/img/blog/small/img-15.jpg); background-position: 50% 50%;"></a>
+                                            <div class="post-data">
+                                                <h5 class="post-title">
+                                                    <a href="blog-single.html">5 Tips Your Camera Manual Never Told You About Portrait Photography</a>
+                                                </h5>
+                                                <!-- <span class="author">By: <a href="">Henry Harrison</a></span> -->
+                                                <span class="date">April 17, 2017</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href=""
+                                                class="post-thumb bg-image"
+                                                style="background-image: url(/assets/img/blog/small/img-10.jpg); background-position: 50% 50%;"></a>
+                                            <div class="post-data">
+                                                <h5 class="post-title">
+                                                    <a href="blog-single.html">Most Common Wedding Photography Mistakes Every Beginner Will Make</a>
+                                                </h5>
+                                                <!-- <span class="author">By: <a href="">Henry Harrison</a></span> -->
+                                                <span class="date">March 21, 2017</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-						<div class="col-sm-12">
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-comments-list">
+                                    <h3 class="sidebar-heading">Recent Comments</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="sidebar-comment-wrap">
+                                            <a
+                                                href="blog-single-no-sidebar.html"
+                                                class="sidebar-comment-avatar bg-image"
+                                                style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
+                                            <div class="sidebar-comment-meta">
+                                                <div class="sidebar-comment-data">
+                                                    <span class="author">By: <a href="">Martin Vegas</a></span>
+                                                    <span class="date">May 26, 2017</span>
+                                                </div>
+                                                <div class="sidebar-comment">
+                                                    <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                                    <a href="blog-single-no-sidebar.html" data-max-words="15"
+                                                        >Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis maurum
+                                                        entire satec tatus naite esek. Lacemus ante sider.</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
 
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-social">
-								<h3 class="sidebar-heading">Follow</h3>
-								<!-- Begin social buttons -->
-								<div class="social-buttons">
-									<ul>
-										<li><a href="https://www.facebook.com/themetorium" class="btn btn-social-min btn-facebook" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="https://twitter.com/Themetorium" class="btn btn-social-min btn-twitter" title="Follow me on Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="https://plus.google.com/+SiiliOnu" class="btn btn-social-min btn-google" title="Follow me on Google+" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-										<li><a href="https://www.pinterest.com/themetorium" class="btn btn-social-min btn-pinterest" title="Follow me on Pinterest" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
-										<li><a href="https://dribbble.com/Themetorium" class="btn btn-social-min btn-dribbble" title="Follow me on Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-										<li><a href="https://instagram.com" class="btn btn-social-min btn-instagram" title="Follow me on instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-									</ul>
-								</div>
-								<!-- End social buttons -->
-							</div>
-							<!-- End sidebar widget -->
+                                        <li class="sidebar-comment-wrap">
+                                            <a
+                                                href="blog-single-no-sidebar.html"
+                                                class="sidebar-comment-avatar bg-image"
+                                                style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
+                                            <div class="sidebar-comment-meta">
+                                                <div class="sidebar-comment-data">
+                                                    <span class="author">By: <a href="">David Bradley</a></span>
+                                                    <span class="date">May 26, 2017</span>
+                                                </div>
+                                                <div class="sidebar-comment">
+                                                    <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                                    <a href="blog-single-no-sidebar.html" data-max-words="15"
+                                                        >Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis sitamo
+                                                        egret laites mannis seti faktasi norem.</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
 
-						</div> <!-- /.col -->
+                                        <li class="sidebar-comment-wrap">
+                                            <a
+                                                href="blog-single-no-sidebar.html"
+                                                class="sidebar-comment-avatar bg-image"
+                                                style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
+                                            <div class="sidebar-comment-meta">
+                                                <div class="sidebar-comment-data">
+                                                    <span class="author">By: <a href="">Kate Dixon</a></span>
+                                                    <span class="date">May 26, 2017</span>
+                                                </div>
+                                                <div class="sidebar-comment">
+                                                    <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                                                    <a href="blog-single-no-sidebar.html" data-max-words="15"
+                                                        >Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset
+                                                        muita opimus necta vimavus canipantri levit naidum unimus.</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-						<div class="col-sm-12">
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-tags">
+                                    <h3 class="sidebar-heading">Popular Tags</h3>
+                                    <ul>
+                                        <li><a href="">#portfolio</a></li>
+                                        <li><a href="">#multipurpose</a></li>
+                                        <li><a href="">#minimal</a></li>
+                                        <li><a href="">#agency</a></li>
+                                        <li><a href="">#creatives</a></li>
+                                        <li><a href="">#freelancers</a></li>
+                                        <li><a href="">#design</a></li>
+                                        <li><a href="">#bootstrap</a></li>
+                                        <li><a href="">#responsive</a></li>
+                                        <li><a href="">#simple</a></li>
+                                        <li><a href="">#creative</a></li>
+                                        <li><a href="">#retina</a></li>
+                                        <li><a href="">#blog</a></li>
+                                        <li><a href="">#wordpress</a></li>
+                                        <li><a href="">#black &amp; white</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-search">
-								<h3 class="sidebar-heading">Search</h3>
-								<form id="blog-search-form" class="form-btn-inside" method="get" action="search-results.html">
-									<div class="form-group no-margin">
-										<input type="text" class="form-control" id="blog-search" name="search" placeholder="Search...">
-										<button type="submit"><i class="fas fa-search"></i></button>
-									</div>
-								</form>
-							</div>
-							<!-- End sidebar widget -->
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-photo-stream">
+                                    <h3 class="sidebar-heading"><i class="fab fa-instagram"></i> Instagram</h3>
 
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-categories">
-								<h3 class="sidebar-heading">Categories</h3>
-								<ul class="list-unstyled">
-									<li><a href="">Photography <span>26</span></a></li>
-									<li><a href="">Equipment <span>54</span></a></li>
-									<li><a href="">Travel <span>17</span></a></li>
-									<li><a href="">Fashion <span>19</span></a></li>
-									<li><a href="">Food <span>67</span></a></li>
-									<li><a href="">Macro <span>67</span></a></li>
-								</ul>
-							</div>
-							<!-- End sidebar widget -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-post-list">
-								<h3 class="sidebar-heading">Most Popular</h3>
-								<ul class="list-unstyled">
-									<li>
-										<a href="" class="post-thumb bg-image" style="background-image: url(/assets/img/blog/small/img-13.jpg); background-position: 50% 50%;"></a>
-										<div class="post-data">
-											<h5 class="post-title"><a href="blog-single.html">10 Top Choices for Aerial Photography</a></h5>
-											<!-- <span class="author">By: <a href="">Martin Vegas</a></span> -->
-											<span class="date">May 26, 2017</span>
-										</div>
-									</li>
-									<li>
-										<a href="" class="post-thumb bg-image" style="background-image: url(/assets/img/blog/small/img-14.jpg); background-position: 50% 50%;"></a>
-										<div class="post-data">
-											<h5 class="post-title"><a href="blog-single.html">How to Take Professional Travel Photos</a></h5>
-											<!-- <span class="author">By: <a href="">John Doe</a></span> -->
-											<span class="date">May 12, 2017</span>
-										</div>
-									</li>
-									<li>
-										<a href="" class="post-thumb bg-image" style="background-image: url(/assets/img/blog/small/img-15.jpg); background-position: 50% 50%;"></a>
-										<div class="post-data">
-											<h5 class="post-title"><a href="blog-single.html">5 Tips Your Camera Manual Never Told You About Portrait Photography</a></h5>
-											<!-- <span class="author">By: <a href="">Henry Harrison</a></span> -->
-											<span class="date">April 17, 2017</span>
-										</div>
-									</li>
-									<li>
-										<a href="" class="post-thumb bg-image" style="background-image: url(/assets/img/blog/small/img-10.jpg); background-position: 50% 50%;"></a>
-										<div class="post-data">
-											<h5 class="post-title"><a href="blog-single.html">Most Common Wedding Photography Mistakes Every Beginner Will Make</a></h5>
-											<!-- <span class="author">By: <a href="">Henry Harrison</a></span> -->
-											<span class="date">March 21, 2017</span>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- End sidebar widget -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-comments-list">
-								<h3 class="sidebar-heading">Recent Comments</h3>
-								<ul class="list-unstyled">
-									<li class="sidebar-comment-wrap">
-										<a href="blog-single-no-sidebar.html" class="sidebar-comment-avatar bg-image" style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
-										<div class="sidebar-comment-meta">
-											<div class="sidebar-comment-data">
-												<span class="author">By: <a href="">Martin Vegas</a></span>
-												<span class="date">May 26, 2017</span>
-											</div>
-											<div class="sidebar-comment">
-												<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-												<a href="blog-single-no-sidebar.html" data-max-words="15">Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis maurum entire satec tatus naite esek. Lacemus ante sider.</a>
-											</div>
-										</div>
-									</li>
-
-									<li class="sidebar-comment-wrap">
-										<a href="blog-single-no-sidebar.html" class="sidebar-comment-avatar bg-image" style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
-										<div class="sidebar-comment-meta">
-											<div class="sidebar-comment-data">
-												<span class="author">By: <a href="">David Bradley</a></span>
-												<span class="date">May 26, 2017</span>
-											</div>
-											<div class="sidebar-comment">
-												<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-												<a href="blog-single-no-sidebar.html" data-max-words="15">Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis sitamo egret laites mannis seti faktasi norem.</a>
-											</div>
-										</div>
-									</li>
-
-									<li class="sidebar-comment-wrap">
-										<a href="blog-single-no-sidebar.html" class="sidebar-comment-avatar bg-image" style="background-image: url(/assets/img/blog/small/avatar/avatar-1.jpg); background-position: 50% 50%;"></a>
-										<div class="sidebar-comment-meta">
-											<div class="sidebar-comment-data">
-												<span class="author">By: <a href="">Kate Dixon</a></span>
-												<span class="date">May 26, 2017</span>
-											</div>
-											<div class="sidebar-comment">
-												<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-												<a href="blog-single-no-sidebar.html" data-max-words="15">Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset muita opimus necta vimavus canipantri levit naidum unimus.</a>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- End sidebar widget -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-tags">
-								<h3 class="sidebar-heading">Popular Tags</h3>
-								<ul>
-									<li><a href="">#portfolio</a></li>
-									<li><a href="">#multipurpose</a></li>
-									<li><a href="">#minimal</a></li>
-									<li><a href="">#agency</a></li>
-									<li><a href="">#creatives</a></li>
-									<li><a href="">#freelancers</a></li>
-									<li><a href="">#design</a></li>
-									<li><a href="">#bootstrap</a></li>
-									<li><a href="">#responsive</a></li>
-									<li><a href="">#simple</a></li>
-									<li><a href="">#creative</a></li>
-									<li><a href="">#retina</a></li>
-									<li><a href="">#blog</a></li>
-									<li><a href="">#wordpress</a></li>
-									<li><a href="">#black &amp; white</a></li>
-								</ul>
-							</div>
-							<!-- End sidebar widget -->
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-photo-stream">
-								<h3 class="sidebar-heading"><i class="fab fa-instagram"></i> Instagram</h3>
-
-								<!-- Begin thumbnail list 
+                                    <!-- Begin thumbnail list 
 								==========================
 								* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
 								* Use class "gutter-1", "gutter-2", "gutter-3", "gutter-4" or "gutter-5" to add more space between items.
 								-->
-								<ul class="thumb-list col-4 gutter-5">
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-10.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-11.jpg);"></a></li>
-									<li><a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-12.jpg);"></a></li>
+                                    <ul class="thumb-list col-4 gutter-5">
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-1.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-10.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-11.jpg);"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="thumb-list-item bg-image" style="background-image: url(/assets/img/blog/small/img-12.jpg);"></a>
+                                        </li>
+                                    </ul>
+                                    <!-- End thumbnail list -->
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-								</ul>
-								<!-- End thumbnail list -->
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-subscribe">
+                                    <h3 class="sidebar-heading">Subscribe</h3>
+                                    <p class="small text-gray">
+                                        Subscribe to our newsletter and stay updated on the latest news! Do not worry, we will not send spam.
+                                    </p>
 
-							</div>
-							<!-- End sidebar widget -->
+                                    <!-- Begin subscribe form -->
+                                    <form id="sidebar-subscribe-form">
+                                        <div class="form-group no-margin">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="sidebar-subscribe"
+                                                name="subscribe"
+                                                placeholder="Enter your email address..."
+                                                required=""
+                                            />
+                                            <button type="submit" class="btn btn-primary btn-block btn-lg">Subscribe</button>
+                                        </div>
+                                    </form>
+                                    <!-- End subscribe form -->
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
 
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-subscribe">
-								<h3 class="sidebar-heading">Subscribe</h3>
-								<p class="small text-gray">Subscribe to our newsletter and stay updated on the latest news! Do not worry, we will not send spam.</p>
-
-								<!-- Begin subscribe form -->
-								<form id="sidebar-subscribe-form">
-									<div class="form-group no-margin">
-										<input type="email" class="form-control" id="sidebar-subscribe" name="subscribe" placeholder="Enter your email address..." required="">
-										<button type="submit" class="btn btn-primary btn-block btn-lg">Subscribe</button>
-									</div>
-								</form>
-								<!-- End subscribe form -->
-
-							</div>
-							<!-- End sidebar widget -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-12 col-sm-6">
-
-							<!-- Begin sidebar widget -->
-							<div class="sidebar-widget sidebar-meta">
-								<h3 class="sidebar-heading">Meta</h3>
-								<ul class="list-unstyled">
-									<li><a href="">Log In</a></li>
-									<li><a href="">Entries RSS</a></li>
-									<li><a href="">Comments RSS</a></li>
-									<li><a href="https://wordpress.org/">WordPress.org</a></li>
-								</ul>
-							</div>
-							<!-- End sidebar widget -->
-
-						</div> <!-- /.col -->
-
-					</div> <!-- /.row -->
-				</div>
-				<!-- End sidebar -->
-
-			</div> <!-- /.col (Sidebar column) -->
-
-		</div> <!-- /.row -->
-
-	</div> <!-- /.blog-list-inner -->
-</section>
-<!-- End blog list section -->
+                            <div class="col-md-12 col-sm-6">
+                                <!-- Begin sidebar widget -->
+                                <div class="sidebar-widget sidebar-meta">
+                                    <h3 class="sidebar-heading">Meta</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Log In</a></li>
+                                        <li><a href="">Entries RSS</a></li>
+                                        <li><a href="">Comments RSS</a></li>
+                                        <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End sidebar widget -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- End sidebar -->
+                </div>
+                <!-- /.col (Sidebar column) -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.blog-list-inner -->
+    </section>
+    <!-- End blog list section -->
 </BaseLayout>

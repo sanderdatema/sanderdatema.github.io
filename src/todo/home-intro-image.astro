@@ -1,41 +1,46 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- ==========================
+<BaseLayout title={title}>
+    <!-- ==========================
 ///// Begin intro section /////
 =========================== -->
-<section id="tt-intro" class="image-intro">
-	<div class="tt-intro-inner full-height-vh tt-wrap bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <section id="tt-intro" class="image-intro">
+        <div class="tt-intro-inner full-height-vh tt-wrap bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-		<!-- Element cover -->
-		<div class="cover bg-transparent-2-dark"></div>
+            <!-- Element cover -->
+            <div class="cover bg-transparent-2-dark"></div>
 
-		<!-- Begin intro caption 
+            <!-- Begin intro caption 
 		=========================
 		* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 		* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
 		-->
-		<div class="intro-caption caption-animate intro-caption-xxlg center-left">
-			<h1 class="intro-title">Sepia</h1>
-			<h2 class="intro-subtitle">Photography Portfolio Theme</h2>
+            <div class="intro-caption caption-animate intro-caption-xxlg center-left">
+                <h1 class="intro-title">Sepia</h1>
+                <h2 class="intro-subtitle">Photography Portfolio Theme</h2>
 
-			<p class="intro-description max-width-650">
-				Made for photographers, photo studios, design agencies. <br> 
-				Create your own unique and beautiful photography website!
-			</p>
+                <p class="intro-description max-width-650">
+                    Made for photographers, photo studios, design agencies. <br />
+                    Create your own unique and beautiful photography website!
+                </p>
 
-			<div class="margin-top-30">
-				<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-				<a href="categories-carousel.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
-			</div>
-		</div>
-		<!-- End intro caption -->
-		
-	</div> <!-- /.tt-intro-inner -->
-</section>
-<!-- End intro section -->
+                <div class="margin-top-30">
+                    <a
+                        href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                        class="btn btn-primary margin-top-5 margin-right-10"
+                        target="_blank">Buy It Now!</a
+                    >
+                    <a href="categories-carousel.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
+                </div>
+            </div>
+            <!-- End intro caption -->
+        </div>
+        <!-- /.tt-intro-inner -->
+    </section>
+    <!-- End intro section -->
 </BaseLayout>

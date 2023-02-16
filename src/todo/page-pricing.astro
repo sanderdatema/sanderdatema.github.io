@@ -1,193 +1,192 @@
 ---
-import HR from "../components/general/HR.astro";
+import HR from "../components/general/HR.astro"
 import TTHeadingWithColumns from "../components/general/TTHeadingWithColumns.astro"
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
-import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader size="lg">
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-<SectionPageHeader size="lg">
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-<PageHeaderInner>
-
-		<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 		===============================
 		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
-			<h1 class="page-header-title">Pricing</h1>
-			<HR size="short" />
-			<!-- <div class="page-header-description">
+            <div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
+                <h1 class="page-header-title">Pricing</h1>
+                <HR size="short" />
+                <!-- <div class="page-header-description">
 				<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.</p>
 			</div> -->
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-		</div>
-		<!-- End page header caption -->
-
-</PageHeaderInner>
-
-</SectionPageHeader>
-
-
-<!-- ===========================
+    <!-- ===========================
 ///// Begin prices section /////
 ============================ -->
-<section id="prices-section">
+    <section id="prices-section">
+        <TTHeadingWithColumns title="Please Choose Your Package">
+            <p>
+                Nunc euismod ipsum vel metus rhoncus, a accumsan sapien mollis. Donec malesuada lacus rhoncus ipsum dignissim, sed fringilla orci faucibus.
+                Proin non odio dui. Donec ut tristique dolor, at interdum sem. Quisque finibus viverra lectus vitae pulvinar.
+            </p>
 
-	<TTHeadingWithColumns title="Please Choose Your Package">
-		<p>Nunc euismod ipsum vel metus rhoncus, a accumsan sapien mollis. Donec malesuada lacus rhoncus ipsum dignissim, sed fringilla orci faucibus. Proin non odio dui. Donec ut tristique dolor, at interdum sem. Quisque finibus viverra lectus vitae pulvinar.</p>
+            <p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
+        </TTHeadingWithColumns>
 
-		<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
-	</TTHeadingWithColumns>
+        <div class="prices-section-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-	<div class="prices-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-
-		<!-- Begin price boxes container 
+            <!-- Begin price boxes container 
 		================================= -->
-		<div class="price-boxes-container margin-bottom-80">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="price-boxes-container margin-bottom-80">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <!-- Begin price box -->
+                        <div class="price-box">
+                            <div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-1.jpg);">
+                                <div class="price-heading-inner">
+                                    <i class="fas fa-umbrella"></i>
+                                    <h3 class="price-title">Studio</h3>
+                                    <div class="price-heading-text">Studio Photo Session</div>
+                                </div>
+                            </div>
+                            <div class="pr-box price-box-price">
+                                <div class="price"><span class="price-currency">$</span>59</div>
+                                <!-- <div class="price-tenure">Per 1 Month</div> -->
+                            </div>
+                            <div class="pr-box price-features">
+                                <ul class="list-unstyled">
+                                    <li>Ascimo Ellan Tareck</li>
+                                    <li>Fitrim Namzeck</li>
+                                    <li>Fartimo antera Maunos</li>
+                                </ul>
+                            </div>
+                            <div class="pr-box">
+                                <a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
+                                <a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
+                            </div>
+                        </div>
+                        <!-- End price box -->
+                    </div>
+                    <!-- /.col -->
 
-					<!-- Begin price box -->
-					<div class="price-box">
-						<div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-1.jpg);">
-							<div class="price-heading-inner">
-								<i class="fas fa-umbrella"></i>
-								<h3 class="price-title">Studio</h3>
-								<div class="price-heading-text">Studio Photo Session</div>
-							</div>
-						</div>
-						<div class="pr-box price-box-price">
-							<div class="price"><span class="price-currency">$</span>59</div>
-							<!-- <div class="price-tenure">Per 1 Month</div> -->
-						</div>
-						<div class="pr-box price-features">
-							<ul class="list-unstyled">
-								<li>Ascimo Ellan Tareck</li>
-								<li>Fitrim Namzeck</li>
-								<li>Fartimo antera Maunos</li>
-							</ul>
-						</div>
-						<div class="pr-box">
-							<a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
-							<a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
-						</div>
-					</div>
-					<!-- End price box -->
-					
-				</div> <!-- /.col -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <!-- Begin price box (featured) -->
+                        <div class="price-box price-box-featured">
+                            <div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-2.jpg);">
+                                <div class="price-heading-inner">
+                                    <i class="fas fa-tree"></i>
+                                    <h3 class="price-title">Outdoor</h3>
+                                    <div class="price-heading-text">Outdoor Photo Session</div>
+                                </div>
+                            </div>
+                            <div class="pr-box price-box-price">
+                                <div class="price"><span class="price-currency">$</span>89</div>
+                                <!-- <div class="price-tenure">Per 6 Month</div> -->
+                            </div>
+                            <div class="pr-box price-features">
+                                <ul class="list-unstyled">
+                                    <li>Cunning Fuziness</li>
+                                    <li>Lartem Sainter Omna</li>
+                                    <li>Bullerti Naiten</li>
+                                </ul>
+                            </div>
+                            <div class="pr-box">
+                                <a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
+                                <a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
+                            </div>
+                        </div>
+                        <!-- End price box -->
+                    </div>
+                    <!-- /.col -->
 
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					
-					<!-- Begin price box (featured) -->
-					<div class="price-box price-box-featured">
-						<div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-2.jpg);">
-							<div class="price-heading-inner">
-								<i class="fas fa-tree"></i>
-								<h3 class="price-title">Outdoor</h3>
-								<div class="price-heading-text">Outdoor Photo Session</div>
-							</div>
-						</div>
-						<div class="pr-box price-box-price">
-							<div class="price"><span class="price-currency">$</span>89</div>
-							<!-- <div class="price-tenure">Per 6 Month</div> -->
-						</div>
-						<div class="pr-box price-features">
-							<ul class="list-unstyled">
-								<li>Cunning Fuziness</li>
-								<li>Lartem Sainter Omna</li>
-								<li>Bullerti Naiten</li>
-							</ul>
-						</div>
-						<div class="pr-box">
-							<a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
-							<a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
-						</div>
-					</div>
-					<!-- End price box -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <!-- Begin price box -->
+                        <div class="price-box">
+                            <div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-3.jpg);">
+                                <div class="price-heading-inner">
+                                    <i class="fas fa-user"></i>
+                                    <h3 class="price-title">Personal</h3>
+                                    <div class="price-heading-text">Personal Photo Session</div>
+                                </div>
+                            </div>
+                            <div class="pr-box price-box-price">
+                                <div class="price"><span class="price-currency">$</span>129</div>
+                                <!-- <div class="price-tenure">Per 1 Year</div> -->
+                            </div>
+                            <div class="pr-box price-features">
+                                <ul class="list-unstyled">
+                                    <li>Artemize Naice Femme</li>
+                                    <li><strong>Putras Torrim</strong></li>
+                                    <li>10 Voites Trante</li>
+                                </ul>
+                            </div>
+                            <div class="pr-box">
+                                <a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
+                                <a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
+                            </div>
+                        </div>
+                        <!-- End price box -->
+                    </div>
+                    <!-- /.col -->
 
-				</div> <!-- /.col -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <!-- Begin price box -->
+                        <div class="price-box">
+                            <div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-4.jpg);">
+                                <div class="price-heading-inner">
+                                    <i class="fas fa-gem"></i>
+                                    <h3 class="price-title">Wedding</h3>
+                                    <div class="price-heading-text">Wedding Photo Session</div>
+                                </div>
+                            </div>
+                            <div class="pr-box price-box-price">
+                                <div class="price"><span class="price-currency">$</span>299</div>
+                                <!-- <div class="price-tenure">Per 1 Year</div> -->
+                            </div>
+                            <div class="pr-box price-features">
+                                <ul class="list-unstyled">
+                                    <li>Mollimo Namis Ferra</li>
+                                    <li><strong>Oppera Tulpas</strong></li>
+                                    <li><strong>Verrum Daster Hunza</strong></li>
+                                </ul>
+                            </div>
+                            <div class="pr-box">
+                                <a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
+                                <a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
+                            </div>
+                        </div>
+                        <!-- End price box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
 
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					
-					<!-- Begin price box -->
-					<div class="price-box">
-						<div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-3.jpg);">
-							<div class="price-heading-inner">
-								<i class="fas fa-user"></i>
-								<h3 class="price-title">Personal</h3>
-								<div class="price-heading-text">Personal Photo Session</div>
-							</div>
-						</div>
-						<div class="pr-box price-box-price">
-							<div class="price"><span class="price-currency">$</span>129</div>
-							<!-- <div class="price-tenure">Per 1 Year</div> -->
-						</div>
-						<div class="pr-box price-features">
-							<ul class="list-unstyled">
-								<li>Artemize Naice Femme</li>
-								<li><strong>Putras Torrim</strong></li>
-								<li>10 Voites Trante</li>
-							</ul>
-						</div>
-						<div class="pr-box">
-							<a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
-							<a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
-						</div>
-					</div>
-					<!-- End price box -->
-
-				</div> <!-- /.col -->
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					
-					<!-- Begin price box -->
-					<div class="price-box">
-						<div class="pr-box price-heading bg-image" style="background-image: url(/assets/img/misc/price-box-4.jpg);">
-							<div class="price-heading-inner">
-								<i class="fas fa-gem"></i>
-								<h3 class="price-title">Wedding</h3>
-								<div class="price-heading-text">Wedding Photo Session</div>
-							</div>
-						</div>
-						<div class="pr-box price-box-price">
-							<div class="price"><span class="price-currency">$</span>299</div>
-							<!-- <div class="price-tenure">Per 1 Year</div> -->
-						</div>
-						<div class="pr-box price-features">
-							<ul class="list-unstyled">
-								<li>Mollimo Namis Ferra</li>
-								<li><strong>Oppera Tulpas</strong></li>
-								<li><strong>Verrum Daster Hunza</strong></li>
-							</ul>
-						</div>
-						<div class="pr-box">
-							<a href="contact.html" class="btn btn-price-box btn-dark btn-lg">Purchase Now</a>
-							<a href="page-dummy-classic-sidebar-right.html" class="btn btn-link btn-lg btn-block">or Read More...</a>
-						</div>
-					</div>
-					<!-- End price box -->
-
-				</div> <!-- /.col -->
-			</div> <!-- /.row -->
-
-			<div class="row margin-top-70 margin-auto max-width-800">
-				<div class="col-md-12 text-center">
-					<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. 
-					Phasellus porta ornare enim ac euismod. Nulla fringilla 
-					lectus ac tincidunt viverra a accumsan <a href="#">sapien mollis</a>.</p>
-				</div> <!-- /.col -->
-			</div> <!-- /.row -->
-		</div>
-		<!-- End price boxes container -->
-
-	</div> <!-- /.prices-section-inner -->
-</section>
-<!-- End prices section -->
+                <div class="row margin-top-70 margin-auto max-width-800">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt
+                            viverra a accumsan <a href="#">sapien mollis</a>.
+                        </p>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- End price boxes container -->
+        </div>
+        <!-- /.prices-section-inner -->
+    </section>
+    <!-- End prices section -->
 </BaseLayout>

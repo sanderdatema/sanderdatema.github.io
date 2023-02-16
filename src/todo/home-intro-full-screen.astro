@@ -1,18 +1,18 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- ==========================
+<BaseLayout title={title}>
+    <!-- ==========================
 ///// Begin intro section /////
 =========================== -->
-<section id="tt-intro" class="gallery-list-carousel slideshow-intro">
-	<div class="tt-intro-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="gl-carousel-wrap no-padding">
-
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+    <section id="tt-intro" class="gallery-list-carousel slideshow-intro">
+        <div class="tt-intro-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="gl-carousel-wrap no-padding">
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -53,147 +53,162 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-full bg-dark" data-items="1" data-mouse-drag="false" data-loop="true" data-nav="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-full bg-dark"
+                    data-items="1"
+                    data-mouse-drag="false"
+                    data-loop="true"
+                    data-nav="true"
+                    data-animate-in="fadeIn"
+                    data-animate-out="fadeOut"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin intro caption 
+                        <!-- Begin intro caption 
 					=========================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
 					-->
-					<div class="intro-caption caption-animate intro-caption-xxlg center">
-						<h1 class="intro-title">Sepia</h1>
-						<h2 class="intro-subtitle">Photography Portfolio Theme</h2>
+                        <div class="intro-caption caption-animate intro-caption-xxlg center">
+                            <h1 class="intro-title">Sepia</h1>
+                            <h2 class="intro-subtitle">Photography Portfolio Theme</h2>
 
-						<p class="intro-description max-width-650">
-							Made for photographers, photo studios, design agencies. <br> 
-							Create your own unique and beautiful photography website!
-						</p>
+                            <p class="intro-description max-width-650">
+                                Made for photographers, photo studios, design agencies. <br />
+                                Create your own unique and beautiful photography website!
+                            </p>
 
-						<div class="margin-top-30">
-							<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-							<a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
-						</div>
-					</div>
-					<!-- End intro caption -->
+                            <div class="margin-top-30">
+                                <a
+                                    href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                    class="btn btn-primary margin-top-5 margin-right-10"
+                                    target="_blank">Buy It Now!</a
+                                >
+                                <a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
+                            </div>
+                        </div>
+                        <!-- End intro caption -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin intro caption 
+                        <!-- Begin intro caption 
 					=========================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
 					-->
-					<div class="intro-caption caption-animate intro-caption-xxlg center">
-						<h1 class="intro-title">Creative</h1>
-						<h2 class="intro-subtitle">Photography Portfolio Theme</h2>
+                        <div class="intro-caption caption-animate intro-caption-xxlg center">
+                            <h1 class="intro-title">Creative</h1>
+                            <h2 class="intro-subtitle">Photography Portfolio Theme</h2>
 
-						<p class="intro-description max-width-650">
-							Made for photographers, photo studios, design agencies. <br> 
-							Create your own unique and beautiful photography website!
-						</p>
+                            <p class="intro-description max-width-650">
+                                Made for photographers, photo studios, design agencies. <br />
+                                Create your own unique and beautiful photography website!
+                            </p>
 
-						<div class="margin-top-30">
-							<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-							<a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
-						</div>
-					</div>
-					<!-- End intro caption -->
+                            <div class="margin-top-30">
+                                <a
+                                    href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                    class="btn btn-primary margin-top-5 margin-right-10"
+                                    target="_blank">Buy It Now!</a
+                                >
+                                <a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
+                            </div>
+                        </div>
+                        <!-- End intro caption -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin intro caption 
+                        <!-- Begin intro caption 
 					=========================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
 					-->
-					<div class="intro-caption caption-animate intro-caption-xxlg center">
-						<h1 class="intro-title">Powerful</h1>
-						<h2 class="intro-subtitle">Photography Portfolio Theme</h2>
+                        <div class="intro-caption caption-animate intro-caption-xxlg center">
+                            <h1 class="intro-title">Powerful</h1>
+                            <h2 class="intro-subtitle">Photography Portfolio Theme</h2>
 
-						<p class="intro-description max-width-650">
-							Made for photographers, photo studios, design agencies. <br> 
-							Create your own unique and beautiful photography website!
-						</p>
+                            <p class="intro-description max-width-650">
+                                Made for photographers, photo studios, design agencies. <br />
+                                Create your own unique and beautiful photography website!
+                            </p>
 
-						<div class="margin-top-30">
-							<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-							<a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
-						</div>
-					</div>
-					<!-- End intro caption -->
+                            <div class="margin-top-30">
+                                <a
+                                    href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                    class="btn btn-primary margin-top-5 margin-right-10"
+                                    target="_blank">Buy It Now!</a
+                                >
+                                <a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
+                            </div>
+                        </div>
+                        <!-- End intro caption -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/intro/intro-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin intro caption 
+                        <!-- Begin intro caption 
 					=========================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
 					-->
-					<div class="intro-caption caption-animate intro-caption-xxlg center">
-						<h1 class="intro-title">Perfect</h1>
-						<h2 class="intro-subtitle">Photography Portfolio Theme</h2>
+                        <div class="intro-caption caption-animate intro-caption-xxlg center">
+                            <h1 class="intro-title">Perfect</h1>
+                            <h2 class="intro-subtitle">Photography Portfolio Theme</h2>
 
-						<p class="intro-description max-width-650">
-							Made for photographers, photo studios, design agencies. <br> 
-							Create your own unique and beautiful photography website!
-						</p>
+                            <p class="intro-description max-width-650">
+                                Made for photographers, photo studios, design agencies. <br />
+                                Create your own unique and beautiful photography website!
+                            </p>
 
-						<div class="margin-top-30">
-							<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-							<a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
-						</div>
-					</div>
-					<!-- End intro caption -->
+                            <div class="margin-top-30">
+                                <a
+                                    href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                    class="btn btn-primary margin-top-5 margin-right-10"
+                                    target="_blank">Buy It Now!</a
+                                >
+                                <a href="albums-grid.html" class="btn btn-white-bordered margin-top-5">Discover More</a>
+                            </div>
+                        </div>
+                        <!-- End intro caption -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<!-- <div class="cc-item">
+                    <!-- <div class="cc-item">
 						
 					<a class="owl-video" href="https://vimeo.com/99653121"></a>
 
@@ -211,13 +226,13 @@ const title = "Welcome to Sander Datema"
 							<a href="contact.html" class="btn btn-white-bordered margin-top-5">Contact</a>
 						</div>
 					</div> -->
-				<!-- End carousel item --> 
-
-			</div>
-			<!-- End content carousel -->
-
-		</div> <!-- /.gl-carousel-wrap -->
-	</div> <!-- /.tt-intro-inner -->
-</section>
-<!-- End intro section -->
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- /.gl-carousel-wrap -->
+        </div>
+        <!-- /.tt-intro-inner -->
+    </section>
+    <!-- End intro section -->
 </BaseLayout>

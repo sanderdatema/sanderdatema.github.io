@@ -1,286 +1,422 @@
 ---
-import HR from "../components/general/HR.astro";
+import HR from "../components/general/HR.astro"
 import TTHeading from "../components/general/TTHeading.astro"
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
-import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader>
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-	<SectionPageHeader>
-
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-<PageHeaderInner>
-
-		<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 		===============================
 		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
-			<h1 class="page-header-title">FAQ - Frequently Asked Questions</h1>
-			<HR size="short" />
-			<!-- <div class="page-header-description">
+            <div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
+                <h1 class="page-header-title">FAQ - Frequently Asked Questions</h1>
+                <HR size="short" />
+                <!-- <div class="page-header-description">
 				<p>A Collection Of Common Questions And Answers.</p>
 			</div> -->
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-		</div>
-		<!-- End page header caption -->
-
-</PageHeaderInner>
-
-</SectionPageHeader>
-
-
-<!-- ========================
+    <!-- ========================
 ///// Begin faq section /////
 ========================= -->
-<section id="faq-section">
-	<div class="faq-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		
-		<div class="row">
+    <section id="faq-section">
+        <div class="faq-section-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-			<div class="col-md-4 col-md-push-8">
-
-				<!-- Begin sidebar 
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <!-- Begin sidebar 
 				=================== -->
-				<div class="sidebar sidebar-right margin-bottom-50">
+                    <div class="sidebar sidebar-right margin-bottom-50">
+                        <TTHeading title="FAQ" subtitle="Most common questions and answers" size="sm" />
 
-					<TTHeading title="FAQ" subtitle="Most common questions and answers" size="sm" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nemo odit cupiditate nam maiores, accusantium quis doloribus
+                            expedita facilis illum aperiam modi laborum corporis quibusdam sapiente.
+                        </p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nemo odit cupiditate nam maiores, accusantium quis doloribus expedita facilis illum aperiam modi laborum corporis quibusdam sapiente.</p>
+                        <TTHeading title="Useful Links" size="xs" class="margin-top-60" />
 
-					<TTHeading title="Useful Links" size="xs" class="margin-top-60" />
+                        <ul class="list-unstyled">
+                            <li>- <a href="https://www.facebook.com/themetorium" target="_blank">facebook.com</a></li>
+                            <li>- <a href="https://twitter.com/Themetorium" target="_blank">twitter.com</a></li>
+                            <li>- <a href="https://www.pinterest.com/themetorium/" target="_blank">pinterest.com</a></li>
+                            <li>- <a href="https://dribbble.com/Themetorium" target="_blank">dribbble.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- End sidebar -->
+                </div>
+                <!-- /.col -->
 
-					<ul class="list-unstyled">
-						<li> - <a href="https://www.facebook.com/themetorium" target="_blank">facebook.com</a></li>
-						<li> - <a href="https://twitter.com/Themetorium" target="_blank">twitter.com</a></li>
-						<li> - <a href="https://www.pinterest.com/themetorium/" target="_blank">pinterest.com</a></li>
-						<li> - <a href="https://dribbble.com/Themetorium" target="_blank">dribbble.com</a></li>
-					</ul>
-
-				</div> 
-				<!-- End sidebar -->
-
-			</div> <!-- /.col -->
-
-			<div class="col-md-8 col-md-pull-4">
-
-				<!-- Begin accordion 
+                <div class="col-md-8 col-md-pull-4">
+                    <!-- Begin accordion 
 				===================== -->
-				<div class="panel-group accordion-wrap" id="accordion-76845678" role="tablist" aria-multiselectable="true">
+                    <div class="panel-group accordion-wrap" id="accordion-76845678" role="tablist" aria-multiselectable="true">
+                        <TTHeading title="General Questions:" class="margin-bottom-50" size="sm" />
 
-					<TTHeading title="General Questions:" class="margin-bottom-50" size="sm" />
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-1">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-1"
+                                        aria-expanded="true"
+                                        aria-controls="acc-76845678-collapse-1"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        How long have you been a photographer?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="acc-76845678-head-1">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-1">
-							<h4 class="panel-title">
-								<a class="bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-1" aria-expanded="true" aria-controls="acc-76845678-collapse-1"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									How long have you been a photographer?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="acc-76845678-head-1">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-2">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-2"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-2"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do you edit all of your photographs?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-2">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-2">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-2" aria-expanded="false" aria-controls="acc-76845678-collapse-2"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do you edit all of your photographs?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-2">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-3">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-3"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-3"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do you work with a second photographer?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-3">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-3">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-3" aria-expanded="false" aria-controls="acc-76845678-collapse-3"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do you work with a second photographer?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-3">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-4">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-4"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-4"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do you have an assistant?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-4">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-4">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-4" aria-expanded="false" aria-controls="acc-76845678-collapse-4"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do you have an assistant?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-4">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-5">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-5"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-5"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do you also provide video services?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-5">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-5">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-5" aria-expanded="false" aria-controls="acc-76845678-collapse-5"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do you also provide video services?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-5">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-6">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-6"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-6"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do you have past clients we can speak to as references?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-6">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-6">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-6" aria-expanded="false" aria-controls="acc-76845678-collapse-6"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do you have past clients we can speak to as references?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-6">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <TTHeading title="Pre-Order Questions:" size="sm" class="margin-bottom-50 margin-top-60" />
 
-					<TTHeading title="Pre-Order Questions:" size="sm" class="margin-bottom-50 margin-top-60" />
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-7">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-7"
+                                        aria-expanded="true"
+                                        aria-controls="acc-76845678-collapse-7"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Are our digital files watermarked?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-7">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-7">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-7" aria-expanded="true" aria-controls="acc-76845678-collapse-7"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Are our digital files watermarked?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-7">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-8">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-8"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-8"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        How many pictures will we receive?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-8">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-8">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-8" aria-expanded="false" aria-controls="acc-76845678-collapse-8"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									How many pictures will we receive?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-8">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-9">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-9"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-9"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        How long does it take before we receive our products and photographs?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-9">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-9">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-9" aria-expanded="false" aria-controls="acc-76845678-collapse-9"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									How long does it take before we receive our products and photographs?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-9">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-10">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-10"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-10"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do we get the copyright of the images?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-10">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-10">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-10" aria-expanded="false" aria-controls="acc-76845678-collapse-10"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do we get the copyright of the images?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-10">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-11">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-11"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-11"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        Do we receive the raw, unedited files?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-11">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                    put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                    wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-11">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-11" aria-expanded="false" aria-controls="acc-76845678-collapse-11"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									Do we receive the raw, unedited files?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-11">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-					</div>
+                        <div class="panel panel-default no-border">
+                            <div class="panel-heading" role="tab" id="acc-76845678-head-12">
+                                <h4 class="panel-title">
+                                    <a
+                                        class="collapsed bg-gray-2"
+                                        role="button"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-76845678"
+                                        href="#acc-76845678-collapse-12"
+                                        aria-expanded="false"
+                                        aria-controls="acc-76845678-collapse-12"
+                                        ><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
+                                        What is your pricing?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="acc-76845678-collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-12">
+                                <div class="panel-body no-border-top">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Lagilo ante quinoa nesciunt - <a href="page-pricing.html">My pricing list</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End accordion -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.faq-section-inner -->
+    </section>
+    <!-- End faq section -->
 
-					<div class="panel panel-default no-border">
-						<div class="panel-heading" role="tab" id="acc-76845678-head-12">
-							<h4 class="panel-title">
-								<a class="collapsed bg-gray-2" role="button" data-toggle="collapse" data-parent="#accordion-76845678" href="#acc-76845678-collapse-12" aria-expanded="false" aria-controls="acc-76845678-collapse-12"><span class="acc-arrow"><i class="fas fa-chevron-up"></i></span>
-									What is your pricing?
-								</a>
-							</h4>
-						</div>
-						<div id="acc-76845678-collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="acc-76845678-head-12">
-							<div class="panel-body no-border-top">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Lagilo ante quinoa nesciunt - <a href="page-pricing.html">My pricing list</a>.
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End accordion -->
-
-			</div> <!-- /.col -->
-		</div> <!-- /.row -->
-		
-	</div> <!-- /.faq-section-inner -->
-</section>
-<!-- End faq section -->
-
-<!-- ================================
+    <!-- ================================
 ///// Begin latest work cection /////
 ================================= -->
-<section id="latest-work-section" class="margin-top-40"> <!-- margin class is optional ) -->
+    <section id="latest-work-section" class="margin-top-40">
+        <!-- margin class is optional ) -->
 
-	<TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap alignment="center" padding />
+        <TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap alignment="center" padding />
 
-	<div class="latest-work-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+        <div class="latest-work-inner">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-		<!-- Begin project carousel 
+            <!-- Begin project carousel 
 		============================ -->
-		<div class="project-carousel">
-
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+            <div class="project-carousel">
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -321,141 +457,167 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-1 cc-hover-dark nav-outside-top" data-items="4" data-margin="0" data-dots="false" data-nav="true" data-nav-speed="800" data-mobile-portrait="1" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-1 cc-hover-dark nav-outside-top"
+                    data-items="4"
+                    data-margin="0"
+                    data-dots="false"
+                    data-nav="true"
+                    data-nav-speed="800"
+                    data-mobile-portrait="1"
+                    data-tablet-landscape="3"
+                    data-tablet-portrait="2"
+                    data-mobile-landscape="1"
+                    data-mobile-portrait="1"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Afternoon Photoshoot</h2>
-						<div class="cc-category"><span>Outdoor</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Afternoon Photoshoot</h2>
+                            <div class="cc-category"><span>Outdoor</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Black &amp; White</h2>
-						<div class="cc-category"><span>Models</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Black &amp; White</h2>
+                            <div class="cc-category"><span>Models</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400">
-						<h2 class="cc-title">One Day Shoot With Ordinary People</h2>
-						<div class="cc-category"><span>People</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <h2 class="cc-title">One Day Shoot With Ordinary People</h2>
+                            <div class="cc-category"><span>People</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Dancing Is Everything</h2>
-						<div class="cc-category"><span>People</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Dancing Is Everything</h2>
+                            <div class="cc-category"><span>People</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Redhead Beauty</h2>
-						<div class="cc-category"><span>Nature</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Redhead Beauty</h2>
+                            <div class="cc-category"><span>Nature</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(/assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Beautiful People</h2>
-						<div class="cc-category"><span>Nature</span></div>
-					</div>
-					<!-- End caption -->
-
-				</a>
-				<!-- End carousel item -->
-
-			</div>
-			<!-- End content carousel -->
-
-		</div>
-		<!-- End project carousel -->
-
-	</div> <!-- /.latest-work-inner -->
-</section>
-<!-- End latest work cection -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Beautiful People</h2>
+                            <div class="cc-category"><span>Nature</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- End project carousel -->
+        </div>
+        <!-- /.latest-work-inner -->
+    </section>
+    <!-- End latest work cection -->
 </BaseLayout>

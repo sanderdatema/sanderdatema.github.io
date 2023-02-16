@@ -1,21 +1,21 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content';
-import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection, getEntryBySlug } from "astro:content"
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 // Get all entries from a collection. Requires the name of the collection as an argument.
-const allPosts = await getCollection('posts');
-const pageTitle = "My Astro Learning Blog";
+const allPosts = await getCollection("posts")
+const pageTitle = "My Astro Learning Blog"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
-  <ul>
-    {
-      allPosts.map((post) => (
-        <li>
-          <a href={post.url}>{post.frontmatter.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+    <p>This is where I will post about my journey learning Astro.</p>
+    <ul>
+        {
+            allPosts.map((post) => (
+                <li>
+                    <a href={post.url}>{post.frontmatter.title}</a>
+                </li>
+            ))
+        }
+    </ul>
 </BaseLayout>

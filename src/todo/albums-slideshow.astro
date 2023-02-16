@@ -1,18 +1,20 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- =================================
+<BaseLayout title={title}>
+    <!-- =================================
 ///// Begin gallery list section /////
 ================================== -->
-<section id="gallery-list-section" class="gallery-list-carousel">
-	<div class="gallery-list-slideshow-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="gl-carousel-wrap no-padding"> <!-- Optional: add class "no-padding" to disable paddings -->
+    <section id="gallery-list-section" class="gallery-list-carousel">
+        <div class="gallery-list-slideshow-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="gl-carousel-wrap no-padding">
+                <!-- Optional: add class "no-padding" to disable paddings -->
 
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -53,203 +55,393 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-full nav-bottom-right bg-dark cc-hover-zoom" data-items="1" data-mouse-drag="false" data-loop="true" data-dots="false" data-nav="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-full nav-bottom-right bg-dark cc-hover-zoom"
+                    data-items="1"
+                    data-mouse-drag="false"
+                    data-loop="true"
+                    data-dots="false"
+                    data-nav="true"
+                    data-animate-in="fadeIn"
+                    data-animate-out="fadeOut"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
-						<h2 class="cc-title">Summer Beauty</h2>
-						
-						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-						<p class="cc-description">
-							Curabitur nec orci quis neque ultricies porta. Suspendisse blandit ipsum nec nibh.
-						</p>
+                        <div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
+                            <h2 class="cc-title">Summer Beauty</h2>
 
-						<a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
-					</div>
-					<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <p class="cc-description">Curabitur nec orci quis neque ultricies porta. Suspendisse blandit ipsum nec nibh.</p>
 
-					<!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
+                            <a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
+                        </div>
+                        <!-- End caption -->
+
+                        <!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
 					==========================================
 					* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
 					* Use class "tl-rotate" to rotate items randomly.
 					-->
-					<ul class="thumb-list col-3 tl-rotate">
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-					</ul>
-					<!-- End thumbnail list -->
+                        <ul class="thumb-list col-3 tl-rotate">
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                        </ul>
+                        <!-- End thumbnail list -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
-						<h2 class="cc-title">Happy People</h2>
-						
-						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-						<p class="cc-description">
-							Morbi elit metus, mollis eu vestibulum id, egestas id massa. Donec vehicula mollis justo aliquet laoreet.
-						</p>
+                        <div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
+                            <h2 class="cc-title">Happy People</h2>
 
-						<a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
-					</div>
-					<!-- End caption -->
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <p class="cc-description">
+                                Morbi elit metus, mollis eu vestibulum id, egestas id massa. Donec vehicula mollis justo aliquet laoreet.
+                            </p>
 
-					<!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
+                            <a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
+                        </div>
+                        <!-- End caption -->
+
+                        <!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
 					==========================================
 					* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
 					* Use class "tl-rotate" to rotate items randomly.
 					-->
-					<ul class="thumb-list col-3 tl-rotate">
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-					</ul>
-					<!-- End thumbnail list -->
+                        <ul class="thumb-list col-3 tl-rotate">
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                        </ul>
+                        <!-- End thumbnail list -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
-						<h2 class="cc-title">Little Angels</h2>
+                        <div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
+                            <h2 class="cc-title">Little Angels</h2>
 
-						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-						<p class="cc-description">
-							Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.
-						</p>
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <p class="cc-description">Sed at placerat odio, duis leo dui, porta in rutrum sit amet consequat.</p>
 
-						<a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
-					</div>
-					<!-- End caption -->
+                            <a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
+                        </div>
+                        <!-- End caption -->
 
-					<!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
+                        <!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
 					==========================================
 					* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
 					* Use class "tl-rotate" to rotate items randomly.
 					-->
-					<ul class="thumb-list col-3 tl-rotate">
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-					</ul>
-					<!-- End thumbnail list -->
+                        <ul class="thumb-list col-3 tl-rotate">
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                        </ul>
+                        <!-- End thumbnail list -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<div class="cc-item">
+                    <div class="cc-item">
+                        <!-- Element cover -->
+                        <span class="cover bg-transparent-4-dark"></span>
 
-					<!-- Element cover -->
-					<span class="cover bg-transparent-4-dark"></span>
+                        <!-- cc image -->
+                        <div
+                            class="cc-image bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/gallery-slideshow-1.jpg); background-position: 50% 50%;"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
-						<h2 class="cc-title">Black &amp; White</h2>
+                        <div class="cc-caption cc-caption-xxlg bottom-left caption-animate max-width-550">
+                            <h2 class="cc-title">Black &amp; White</h2>
 
-						<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-						<p class="cc-description">
-							Vivamus neque lectus, luctus et malesuada sed, pulvinar nec lacus.
-						</p>
+                            <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                            <p class="cc-description">Vivamus neque lectus, luctus et malesuada sed, pulvinar nec lacus.</p>
 
-						<a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
-					</div>
-					<!-- End caption -->
+                            <a href="gallery-single-carousel-center.html" class="btn btn-primary margin-top-25">View Gallery</a>
+                        </div>
+                        <!-- End caption -->
 
-					<!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
+                        <!-- Begin thumbnail list (album preview thumbnails) Not displayed on smaller screens!!!
 					==========================================
 					* Use class "col-2", "col-3", "col-4" "col-5" or "col-6" for thumbnail list columns.
 					* Use class "tl-rotate" to rotate items randomly.
 					-->
-					<ul class="thumb-list col-3 tl-rotate">
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-						<li><a href="gallery-single-carousel-center.html" class="thumb-list-item bg-image" style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a></li>
-					</ul>
-					<!-- End thumbnail list -->
+                        <ul class="thumb-list col-3 tl-rotate">
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="gallery-single-carousel-center.html"
+                                    class="thumb-list-item bg-image"
+                                    style="background-image: url(/assets/img/gallery/gallery-list/slideshow/small/gallery-single-1.jpg);"></a>
+                            </li>
+                        </ul>
+                        <!-- End thumbnail list -->
+                    </div>
+                    <!-- End carousel item -->
 
-				</div>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<!-- <div class="cc-item">
+                    <!-- <div class="cc-item">
 						
 					<a class="owl-video" href="https://vimeo.com/99653121"></a>
 
@@ -262,13 +454,13 @@ const title = "Welcome to Sander Datema"
 					</div>
 					
 				</div> -->
-				<!-- End carousel item --> 
-
-			</div>
-			<!-- End content carousel -->
-
-		</div> <!-- /.gl-carousel-wrap -->
-	</div> <!-- /.gallery-list-carousel-inner -->
-</section>
-<!-- End gallery list section -->
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- /.gl-carousel-wrap -->
+        </div>
+        <!-- /.gallery-list-carousel-inner -->
+    </section>
+    <!-- End gallery list section -->
 </BaseLayout>

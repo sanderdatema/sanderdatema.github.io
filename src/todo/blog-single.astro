@@ -1,35 +1,28 @@
 ---
-import Carousel from "../components/general/Carousel.astro";
-import CarouselItem from "../components/general/CarouselItem.astro";
-import SectionBlogSingle from "../components/sections/SectionBlogSingle.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Carousel from "../components/general/Carousel.astro"
+import CarouselItem from "../components/general/CarouselItem.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionBlogSingle from "../sections/SectionBlogSingle.astro"
 
-const title = "Welcome to Sander Datema";
-const categories = [
-  "Photography",
-  "Equipment",
-  "Travel",
-  "Fashion",
-  "Food",
-  "Macro",
-];
+const title = "Welcome to Sander Datema"
+const categories = ["Photography", "Equipment", "Travel", "Fashion", "Food", "Macro"]
 ---
 
 <BaseLayout title={title}>
-  <Carousel>
-    {
-      categories.map((category) => (
-        <CarouselItem
-          image="/assets/img/blog/list/categories-carousel/blog-cat-1.jpg"
-          category_link="blog-archive.html"
-          category_link_title="View all entries in this category"
-          category_title={category}
-          position="center"
-          size="sm"
-        />
-      ))
-    }
-  </Carousel>
+    <Carousel>
+        {
+            categories.map((category) => (
+                <CarouselItem
+                    image="/assets/img/blog/list/categories-carousel/blog-cat-1.jpg"
+                    category_link="blog-archive.html"
+                    category_link_title="View all entries in this category"
+                    category_title={category}
+                    position="center"
+                    size="sm"
+                />
+            ))
+        }
+    </Carousel>
 
-  <SectionBlogSingle wrap />
+    <SectionBlogSingle wrap />
 </BaseLayout>

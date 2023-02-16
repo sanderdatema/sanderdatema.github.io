@@ -1,570 +1,582 @@
 ---
 import TTHeading from "../components/general/TTHeading.astro"
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
-import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
+    <SectionPageHeader size="xlg">
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
-	<SectionPageHeader size="xlg">
-
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
-
-<PageHeaderInner>
-
-		<!-- Begin page header caption 
+        <PageHeaderInner>
+            <!-- Begin page header caption 
 		===============================
 		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
 		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
 		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
 		-->
-		<div class="page-header-caption parallax-5 fade-out-scroll-4">
-			<h1 class="page-header-title">The Coolest Photo Project I've Ever Created</h1>
-			<div class="page-header-category"><a href="albums-archive.html">Outdoor</a></div>
-		</div>
-		<!-- End page header caption -->
+            <div class="page-header-caption parallax-5 fade-out-scroll-4">
+                <h1 class="page-header-title">The Coolest Photo Project I've Ever Created</h1>
+                <div class="page-header-category"><a href="albums-archive.html">Outdoor</a></div>
+            </div>
+            <!-- End page header caption -->
+        </PageHeaderInner>
+        <!-- End page header inner -->
+    </SectionPageHeader>
 
-	</div>
-	<!-- End page header inner -->
-
-	</SectionPageHeader>
-
-
-<!-- ===================================
+    <!-- ===================================
 ///// Begin gallery single section /////
 ==================================== -->
-<section id="gallery-single-section" class="gallery-single-with-sidebar gs-sidebar-right">
-	<div class="gallery-single-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		
-		<div class="row">
-			<div class="col-lg-4 col-lg-push-8">
+    <section id="gallery-single-section" class="gallery-single-with-sidebar gs-sidebar-right">
+        <div class="gallery-single-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-				<!-- Begin gallery single sidebar 
+            <div class="row">
+                <div class="col-lg-4 col-lg-push-8">
+                    <!-- Begin gallery single sidebar 
 				================================== -->
-				<div class="gs-sidebar">
-						
-					<!-- Begin gallery single info -->
-					<div class="gs-sidebar-info">
-						<!-- <h1 class="gs-sidebar-title">The Coolest Photo Project I've Ever Created</h1> -->
+                    <div class="gs-sidebar">
+                        <!-- Begin gallery single info -->
+                        <div class="gs-sidebar-info">
+                            <!-- <h1 class="gs-sidebar-title">The Coolest Photo Project I've Ever Created</h1> -->
 
-						<!-- Begin gallery single credits -->
-						<div class="gallery-single-credits">
-							<dl>
-								<dt>Photo &amp; Edition</dt>
-								<dd>
-									<span>Peter Lorens</span>
-								</dd>
-							</dl>
-							<dl>
-								<dt>Model</dt>
-								<dd>
-									<span>Liselle Shmith</span>
-								</dd>
-							</dl>
-							<dl>
-								<dt>Makeup</dt>
-								<dd>
-									<span>Anna Vent</span>
-								</dd>
-							</dl>
-							<dl>
-								<dt>Location</dt>
-								<dd>
-									<span>Ontario, Canada</span>
-								</dd>
-							</dl>
-							<dl>
-								<dt>Client</dt>
-								<dd>
-									<span><a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" target="_blank">Themetorium</a></span>
-								</dd>
-							</dl>
-						</div>
-						<!-- End gallery single credits -->
+                            <!-- Begin gallery single credits -->
+                            <div class="gallery-single-credits">
+                                <dl>
+                                    <dt>Photo &amp; Edition</dt>
+                                    <dd>
+                                        <span>Peter Lorens</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Model</dt>
+                                    <dd>
+                                        <span>Liselle Shmith</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Makeup</dt>
+                                    <dd>
+                                        <span>Anna Vent</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Location</dt>
+                                    <dd>
+                                        <span>Ontario, Canada</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Client</dt>
+                                    <dd>
+                                        <span
+                                            ><a
+                                                href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                                target="_blank">Themetorium</a
+                                            ></span
+                                        >
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- End gallery single credits -->
 
-						<!-- Begin gallery single description -->
-						<div class="gs-sidebar-description">
-							<p>Integer porta pretium enim ut mollis. Etiam quis varius nibh. Nam posuere mauris nisi.</p>
+                            <!-- Begin gallery single description -->
+                            <div class="gs-sidebar-description">
+                                <p>Integer porta pretium enim ut mollis. Etiam quis varius nibh. Nam posuere mauris nisi.</p>
 
-							<p>Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum ut. Cras dolor dui, consequat.</p>
-						</div>
-						<!-- Begin gallery single description -->
+                                <p>
+                                    Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien,
+                                    iaculis eget gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum ut. Cras
+                                    dolor dui, consequat.
+                                </p>
+                            </div>
+                            <!-- Begin gallery single description -->
+                        </div>
+                        <!-- End gallery single info -->
 
-					</div>
-					<!-- End gallery single info -->
+                        <!-- Begin social buttons share -->
+                        <div class="social-buttons margin-top-40">
+                            <ul>
+                                <li><strong>Share:</strong></li>
+                                <li>
+                                    <a href="" class="btn btn-social-min btn-facebook btn-sm btn-rounded-full" title="Share on Facebook"
+                                        ><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-social-min btn-twitter btn-sm btn-rounded-full" title="Share on Twitter"
+                                        ><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-social-min btn-google btn-sm btn-rounded-full" title="Share on Google+"
+                                        ><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-social-min btn-pinterest btn-sm btn-rounded-full" title="Share on Pinterest"
+                                        ><i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End social buttons share -->
 
-					<!-- Begin social buttons share -->
-					<div class="social-buttons margin-top-40">
-						<ul>
-							<li><strong>Share:</strong> </li>
-							<li><a href="" class="btn btn-social-min btn-facebook btn-sm btn-rounded-full" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="" class="btn btn-social-min btn-twitter btn-sm btn-rounded-full" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="" class="btn btn-social-min btn-google btn-sm btn-rounded-full" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
-							<li><a href="" class="btn btn-social-min btn-pinterest btn-sm btn-rounded-full" title="Share on Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-						</ul>
-					</div>
-					<!-- End social buttons share -->
+                        <!-- Begin gallery meta -->
+                        <ul class="gallery-meta">
+                            <li>
+                                <!-- Begin favorite button -->
+                                <div class="favorite-btn">
+                                    <div class="fav-inner">
+                                        <div class="icon-heart">
+                                            <span class="icon-heart-empty"></span>
+                                            <span class="icon-heart-filled"></span>
+                                        </div>
+                                    </div>
+                                    <div class="fav-count">56</div>
+                                </div>
+                                <!-- End favorite button -->
+                            </li>
+                        </ul>
+                        <!-- End gallery meta -->
 
-					<!-- Begin gallery meta -->
-					<ul class="gallery-meta">
-						<li>
-							<!-- Begin favorite button -->
-							<div class="favorite-btn">
-								<div class="fav-inner">
-									<div class="icon-heart">
-										<span class="icon-heart-empty"></span>
-										<span class="icon-heart-filled"></span>
-									</div>
-								</div>
-								<div class="fav-count">56</div>
-							</div>
-							<!-- End favorite button -->
-						</li>
-					</ul>
-					<!-- End gallery meta -->
+                        <!-- Begin gallery single nav -->
+                        <div class="gallery-single-nav margin-top-50">
+                            <a href="" class="gsn-prew" title="Prew Project"><i class="fas fa-angle-left"></i></a>
+                            <a href="albums-grid.html" class="gsn-back" title="Back to albums"><i class="fas fa-th"></i></a>
+                            <a href="" class="gsn-next" title="Next Project"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                        <!-- End gallery single nav -->
+                    </div>
+                    <!-- End gallery single sidebar -->
+                </div>
+                <!-- /.col -->
 
-					<!-- Begin gallery single nav -->
-					<div class="gallery-single-nav margin-top-50">
-						<a href="" class="gsn-prew" title="Prew Project"><i class="fas fa-angle-left"></i></a>
-						<a href="albums-grid.html" class="gsn-back" title="Back to albums"><i class="fas fa-th"></i></a>
-						<a href="" class="gsn-next" title="Next Project"><i class="fas fa-angle-right"></i></a>
-					</div>
-					<!-- End gallery single nav -->
-
-				</div>
-				<!-- End gallery single sidebar -->
-
-			</div> <!-- /.col -->
-
-			<div class="col-lg-8 col-lg-pull-4">
-				
-				<div class="isotope-wrap">
-			
-					<!-- Begin isotope
+                <div class="col-lg-8 col-lg-pull-4">
+                    <div class="isotope-wrap">
+                        <!-- Begin isotope
 					===================
 					* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
 					* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 					-->
-					<div class="isotope col-3 gutter-3">
-
-						<!-- Begin isotope items wrap 
+                        <div class="isotope col-3 gutter-3">
+                            <!-- Begin isotope items wrap 
 						==============================
 						* Use classes "gsi-color", "gsi-zoom" or "gsi-simple" to change gallery single item cover variations.
 						-->
-						<div id="gallery" class="isotope-items-wrap lightgallery">
+                            <div id="gallery" class="isotope-items-wrap lightgallery">
+                                <!-- Grid sizer (do not remove!!!) -->
+                                <div class="grid-sizer"></div>
 
-							<!-- Grid sizer (do not remove!!!) -->
-							<div class="grid-sizer"></div>
-
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                        data-sub-html="<p>Yes, you can use image captions :)</p>"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg" data-sub-html="<p>Yes, you can use image captions :)</p>">
+                                        <!-- Gallery single item image caption -->
+                                        <div class="gsi-image-caption">Yes, you can use image captions :)</div>
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Gallery single item image caption -->
-									<div class="gsi-image-caption">Yes, you can use image captions :)</div>
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a href="https://www.youtube.com/watch?v=ls0ayO5FIro" class="gallery-single-item lg-trigger">
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="https://www.youtube.com/watch?v=ls0ayO5FIro" class="gallery-single-item lg-trigger">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-play"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-play"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a href="https://vimeo.com/20047720" class="gallery-single-item lg-trigger">
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="https://vimeo.com/20047720" class="gallery-single-item lg-trigger">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-play"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-play"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                        data-sub-html="<p>Another awesome image caption :)</p>"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg" data-sub-html="<p>Another awesome image caption :)</p>">
+                                        <!-- Gallery single item image caption -->
+                                        <div class="gsi-image-caption">Another awesome image caption :)</div>
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Gallery single item image caption -->
-									<div class="gsi-image-caption">Another awesome image caption :)</div>
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg">
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-							<!-- ===================== 
+                                <!-- ===================== 
 							/// Begin isotope item ///
 							========================== 
 							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
 							-->
-							<div class="isotope-item">
+                                <div class="isotope-item">
+                                    <!-- Begin gallery single item -->
+                                    <a
+                                        href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg"
+                                        class="gallery-single-item lg-trigger"
+                                        data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg"
+                                        data-sub-html="<p>Yes, you can use a little longer image captions. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</p>"
+                                    >
+                                        <!-- Begin gallery single item image -->
+                                        <img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="" />
+                                        <!-- End gallery single item image -->
 
-								<!-- Begin gallery single item -->
-								<a href="/assets/img/gallery/gallery-single/grid/big/gallery-single-big-1.jpg" class="gallery-single-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/grid/thumb/gallery-single-thumb-1.jpg" data-sub-html="<p>Yes, you can use a little longer image captions. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</p>">
+                                        <!-- Gallery single item image caption -->
+                                        <div class="gsi-image-caption">
+                                            You can use a little longer image captions. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.
+                                        </div>
 
-									<!-- Begin gallery single item image -->
-									<img src="/assets/img/gallery/gallery-single/grid/gallery-single-1.jpg" class="gs-item-image" alt="">
-									<!-- End gallery single item image -->
+                                        <!-- Gallery single item icon -->
+                                        <div class="gs-item-icon"><i class="fas fa-search"></i></div>
+                                    </a>
+                                    <!-- End gallery single item -->
+                                </div>
+                                <!-- End isotope item -->
+                            </div>
+                            <!-- End isotope items wrap -->
 
-									<!-- Gallery single item image caption -->
-									<div class="gsi-image-caption">You can use a little longer image captions. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</div>
-
-									<!-- Gallery single item icon -->
-									<div class="gs-item-icon"><i class="fas fa-search"></i></div>
-									
-								</a>
-								<!-- End gallery single item -->
-
-							</div>
-							<!-- End isotope item -->
-
-						</div>
-						<!-- End isotope items wrap -->
-
-
-						<!-- Begin isotope pagination 
+                            <!-- Begin isotope pagination 
 						============================== -->
-						<div class="isotope-pagination">
-							<div class="iso-load-more">
-								<a class="btn btn-dark-bordered btn-lg" href="">View More <i class="fas fa-refresh"></i></a>
-							</div>
-						</div>
-						<!-- End isotope pagination -->
+                            <div class="isotope-pagination">
+                                <div class="iso-load-more">
+                                    <a class="btn btn-dark-bordered btn-lg" href="">View More <i class="fas fa-refresh"></i></a>
+                                </div>
+                            </div>
+                            <!-- End isotope pagination -->
+                        </div>
+                        <!-- End isotope -->
+                    </div>
+                    <!-- /.isotope-wrap -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.tt-wrap -->
+    </section>
+    <!-- End gallery single section -->
 
-					</div>
-					<!-- End isotope -->
-
-				</div> <!-- /.isotope-wrap -->
-
-			</div> <!-- /.col -->
-		</div> <!-- /.row -->
-
-	</div> <!-- /.tt-wrap -->
-</section>
-<!-- End gallery single section -->
-
-
-<!-- ===================================
+    <!-- ===================================
 ///// Begin call to action section /////
 ==================================== -->
-<section class="call-to-action-section bg-gray-3 margin-top-60">
+    <section class="call-to-action-section bg-gray-3 margin-top-60">
+        <div
+            class="full-cover for-light-style bg-image"
+            style="background-image: url(/assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;"
+        >
+        </div>
+        <div class="full-cover for-dark-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;">
+        </div>
 
-	<div class="full-cover for-light-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;"></div>
-	<div class="full-cover for-dark-style bg-image" style="background-image: url(/assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;"></div>
+        <div class="call-to-action-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <TTHeading title="What Next?" subtitle="Interested in working with me?" wrap size="lg" alignment="center" />
 
-	<div class="call-to-action-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="row">
-			<div class="col-md-12 text-center">
+                    <div class="margin-top-30 max-width-1000 margin-auto">
+                        <p>
+                            Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada
+                            arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.
+                        </p>
 
-				<TTHeading title="What Next?" subtitle="Interested in working with me?" wrap size="lg" alignment="center" />
-
-				<div class="margin-top-30 max-width-1000 margin-auto">
-					<p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat, sem turpis dignissim ex, eu sollicitudin neque.</p>
-					
-					<div class="margin-top-30">
-						<a href="page-dummy-modern.html" class="btn btn-dark margin-top-5 margin-right-5">Read More</a>
-						<a href="contact.html" class="btn btn-primary margin-top-5">Let's Work Together!</a>
-					</div>
-				</div>
-
-			</div> <!-- /.col -->
-		</div> <!-- /.row -->
-	</div> <!-- /.call-to-action-inner -->
-</section>
-<!-- End call to action section -->
+                        <div class="margin-top-30">
+                            <a href="page-dummy-modern.html" class="btn btn-dark margin-top-5 margin-right-5">Read More</a>
+                            <a href="contact.html" class="btn btn-primary margin-top-5">Let's Work Together!</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.call-to-action-inner -->
+    </section>
+    <!-- End call to action section -->
 </BaseLayout>

@@ -1,192 +1,212 @@
 ---
-import HR from "../components/general/HR.astro";
-import Signature from "../components/general/Signature.astro";
+import HR from "../components/general/HR.astro"
+import Signature from "../components/general/Signature.astro"
 import TTHeading from "../components/general/TTHeading.astro"
-import BaseLayout from "../layouts/BaseLayout.astro";
-import SectionPageHeader from "../sections/SectionPageHeader.astro";
-import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
-import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro";
-import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import SectionPageHeader from "../sections/SectionPageHeader.astro"
+import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
+import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
+import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro"
 
 const title = "Welcome to Sander Datema"
 ---
+
 <BaseLayout title={title}>
-	<SectionPageHeader size="xlg" bg_transparent>
-	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="4" cover_type="dark" />
+    <SectionPageHeader size="xlg" bg_transparent>
+        <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="4" cover_type="dark" />
 
-<PageHeaderInner>
+        <PageHeaderInner>
+            <PageHeaderCaption size="xlg" parallax="4" fade_out="3">
+                <h1 class="page-header-title">Martin Vegas</h1>
+                <HR size="short" />
 
-		<PageHeaderCaption size="xlg" parallax="4" fade_out="3">
-			<h1 class="page-header-title">Martin Vegas</h1>
-			<HR size="short" />
-			
-			<!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-			<div class="page-header-description" data-max-words="40">
-				Artist &amp; Photographer
-			</div>
+                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
+                <div class="page-header-description" data-max-words="40">Artist &amp; Photographer</div>
+            </PageHeaderCaption>
+        </PageHeaderInner>
+    </SectionPageHeader>
 
-		</PageHeaderCaption>
-
-</PageHeaderInner>
-
-</SectionPageHeader>
-
-
-<!-- =============================
+    <!-- =============================
 ///// Begin about me section /////
 ============================== -->
-<section id="about-me-section">
-	<div class="about-me-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-			
-		<!-- ======================
+    <section id="about-me-section">
+        <div class="about-me-inner">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+
+            <!-- ======================
 		///// Begin split box /////
 		based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
 		======================= -->
-		<div class="split-box about-me">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="row-lg-height">
-
-						<!-- Column -->
-						<div class="col-lg-6 col-lg-height split-box-image no-padding bg-image" style="background-image: url(assets/img/misc/me-4.jpg); background-position: 50% 50%;">
-
-							<!-- Split box image height
+            <div class="split-box about-me">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row-lg-height">
+                            <!-- Column -->
+                            <div
+                                class="col-lg-6 col-lg-height split-box-image no-padding bg-image"
+                                style="background-image: url(assets/img/misc/me-4.jpg); background-position: 50% 50%;"
+                            >
+                                <!-- Split box image height
 							============================
 							* You can use prepared "padding-height-*" helper classes to set split box image height. Example: "padding-height-85" (useful if "split-box-content" contend/text is very short). Also you can use class "full-height-vh" for full height image. Find out "helper.css" file for more info. Note: class "sbi-height" is required.
 							-->
-							<div class="sbi-height padding-height-85"></div>
+                                <div class="sbi-height padding-height-85"></div>
+                            </div>
+                            <!-- /.col -->
 
-						</div> <!-- /.col -->
-
-						<!-- Column -->
-						<div class="col-lg-6 col-lg-height col-lg-middle no-padding">
-
-							<!-- Begin split box content 
+                            <!-- Column -->
+                            <div class="col-lg-6 col-lg-height col-lg-middle no-padding">
+                                <!-- Begin split box content 
 							============================= 
 							* Use class "shifted-left" or "shifted-right" to enable shifted content (do not use for long content).
 							-->
-							<div class="split-box-content sb-content-right">
-
-								<TTHeading title="Who I am?" subtitle="A little bit about me" />
-								<!-- Begin tt-heading 
+                                <div class="split-box-content sb-content-right">
+                                    <TTHeading title="Who I am?" subtitle="A little bit about me" />
+                                    <!-- Begin tt-heading 
 								====================== 
 								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
 								* Use class "text-center" or "text-right" to align tt-heading.
 								* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
 								-->
-								<div class="tt-heading">
-									<div class="tt-heading-inner">
-										<h1 class="tt-heading-title">Who I am?</h1>
-										<div class="tt-heading-subtitle">A little bit about me</div>
-										<HR size="short" />
-									</div> <!-- /.tt-heading-inner -->
-								</div>
-								<!-- End tt-heading -->
+                                    <div class="tt-heading">
+                                        <div class="tt-heading-inner">
+                                            <h1 class="tt-heading-title">Who I am?</h1>
+                                            <div class="tt-heading-subtitle">A little bit about me</div>
+                                            <HR size="short" />
+                                        </div>
+                                        <!-- /.tt-heading-inner -->
+                                    </div>
+                                    <!-- End tt-heading -->
 
-								<div class="margin-top-30">
-									<p>Hi, my name is <strong>Martin Vegas</strong>. I am an artist and photographer. Sollicitudin diam vitae, amet lacus donec eu, donec vulputate duis nullam nulla, suscipit nulla orci, ornare maecenas eget gravida.</p>
+                                    <div class="margin-top-30">
+                                        <p>
+                                            Hi, my name is <strong>Martin Vegas</strong>. I am an artist and photographer. Sollicitudin diam vitae, amet lacus
+                                            donec eu, donec vulputate duis nullam nulla, suscipit nulla orci, ornare maecenas eget gravida.
+                                        </p>
 
-									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Vivamus at nibh tincidunt, bibendum ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas enimoa.</p>
-								</div>
+                                        <p>
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Vivamus at nibh tincidunt, bibendum
+                                            ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas enimoa.
+                                        </p>
+                                    </div>
 
-								<Signature />
+                                    <Signature />
+                                </div>
+                                <!-- End split box content -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row-height -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- End split box -->
 
-							</div>
-							<!-- End split box content -->
-
-						</div> <!-- /.col -->
-
-					</div> <!-- /.row-height -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div>
-		<!-- End split box -->
-
-		<!-- ======================
+            <!-- ======================
 		///// Begin split box /////
 		based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
 		======================= -->
-		<div class="split-box what-i-do">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="row-lg-height">
-
-						<!-- Column -->
-						<div class="col-lg-6 col-lg-push-6 col-lg-height split-box-image no-padding bg-image" style="background-image: url(assets/img/misc/me-2.jpg); background-position: 50% 50%;">
-
-							<!-- Split box image height
+            <div class="split-box what-i-do">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row-lg-height">
+                            <!-- Column -->
+                            <div
+                                class="col-lg-6 col-lg-push-6 col-lg-height split-box-image no-padding bg-image"
+                                style="background-image: url(assets/img/misc/me-2.jpg); background-position: 50% 50%;"
+                            >
+                                <!-- Split box image height
 							============================
 							* You can use prepared "padding-height-*" helper classes to set split box image height. Example: "padding-height-85" (useful if "split-box-content" contend/text is very short). Also you can use class "full-height-vh" for full height image. Find out "helper.css" file for more info. Note: class "sbi-height" is required.
 							-->
-							<div class="sbi-height padding-height-85"></div>
+                                <div class="sbi-height padding-height-85"></div>
+                            </div>
+                            <!-- /.col -->
 
-						</div> <!-- /.col -->
+                            <!-- Column -->
+                            <div class="col-lg-6 col-lg-pull-6 col-lg-height col-lg-middle no-padding">
+                                <div
+                                    class="full-cover for-light-style bg-gray-3 bg-image"
+                                    style="background-image: url(assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;"
+                                >
+                                </div>
+                                <div
+                                    class="full-cover for-dark-style bg-gray-3 bg-image"
+                                    style="background-image: url(assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;"
+                                >
+                                </div>
 
-						<!-- Column -->
-						<div class="col-lg-6 col-lg-pull-6 col-lg-height col-lg-middle no-padding">
-
-							<div class="full-cover for-light-style bg-gray-3 bg-image" style="background-image: url(assets/img/pattern/bg-pattern-2-light.png); background-position: 50% 50%;"></div>
-							<div class="full-cover for-dark-style bg-gray-3 bg-image" style="background-image: url(assets/img/pattern/bg-pattern-2-dark.png); background-position: 50% 50%;"></div>
-
-							<!-- Begin split box content 
+                                <!-- Begin split box content 
 							============================= 
 							* Use class "shifted-left" or "shifted-right" to enable shifted content (do not use for long content).
 							-->
-							<div class="split-box-content sb-content-left">
-
-								<TTHeading title="Who I am?" subtitle="A little bit about me" />
-								<!-- Begin tt-heading 
+                                <div class="split-box-content sb-content-left">
+                                    <TTHeading title="Who I am?" subtitle="A little bit about me" />
+                                    <!-- Begin tt-heading 
 								====================== 
 								* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
 								* Use class "text-center" or "text-right" to align tt-heading.
 								* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
 								-->
-								<div class="tt-heading">
-									<div class="tt-heading-inner">
-										<h1 class="tt-heading-title">What I Do?</h1>
-										<div class="tt-heading-subtitle">A little bit of my work</div>
-										<HR size="short" />
-									</div> <!-- /.tt-heading-inner -->
-								</div>
-								<!-- End tt-heading -->
+                                    <div class="tt-heading">
+                                        <div class="tt-heading-inner">
+                                            <h1 class="tt-heading-title">What I Do?</h1>
+                                            <div class="tt-heading-subtitle">A little bit of my work</div>
+                                            <HR size="short" />
+                                        </div>
+                                        <!-- /.tt-heading-inner -->
+                                    </div>
+                                    <!-- End tt-heading -->
 
-								<div class="margin-top-30">
-									<p>Pellentesque nec convallis nisi, in mollis nulla. Aliquam eget elit risus. Quisque vitae commodo libero, eu efficitur ligula. Cras vulputate arcu id interdum pretium. Cras eu blandit massa, at semper est. Curabitur id blandit purus. Curabitur egestas, lacus quis facilisis tempor.</p>
+                                    <div class="margin-top-30">
+                                        <p>
+                                            Pellentesque nec convallis nisi, in mollis nulla. Aliquam eget elit risus. Quisque vitae commodo libero, eu
+                                            efficitur ligula. Cras vulputate arcu id interdum pretium. Cras eu blandit massa, at semper est. Curabitur id
+                                            blandit purus. Curabitur egestas, lacus quis facilisis tempor.
+                                        </p>
 
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								</div>
-								<a href="contact-fluid.html" class="btn btn-primary margin-top-20">Hire Me!</a>
-								<a href="categories-grid-fluid.html" class="btn btn-dark margin-top-20">View All My Work</a>
-							</div>
-							<!-- End split box content -->
+                                        <p>
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                        </p>
+                                    </div>
+                                    <a href="contact-fluid.html" class="btn btn-primary margin-top-20">Hire Me!</a>
+                                    <a href="categories-grid-fluid.html" class="btn btn-dark margin-top-20">View All My Work</a>
+                                </div>
+                                <!-- End split box content -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row-height -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- End split box -->
+        </div>
+        <!-- /.about-me-inner -->
+    </section>
+    <!-- End about me section -->
 
-						</div> <!-- /.col -->
-
-					</div> <!-- /.row-height -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div>
-		<!-- End split box -->
-
-	</div> <!-- /.about-me-inner -->
-</section>
-<!-- End about me section -->
-
-
-<!-- ================================
+    <!-- ================================
 ///// Begin latest work cection /////
 ================================= -->
-<section id="latest-work-section" class="margin-top-40"> <!-- margin class is optional ) -->
+    <section id="latest-work-section" class="margin-top-40">
+        <!-- margin class is optional ) -->
 
-	<TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap alignment="center" />
+        <TTHeading title="Latest Projects" subtitle="My latest photo projects" wrap alignment="center" />
 
-	<div class="latest-work-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+        <div class="latest-work-inner">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-		<!-- Begin project carousel 
+            <!-- Begin project carousel 
 		============================ -->
-		<div class="project-carousel">
-
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+            <div class="project-carousel">
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -227,141 +247,167 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel cc-height-1 cc-hover-dark nav-outside-top" data-items="4" data-margin="0" data-dots="false" data-nav="true" data-nav-speed="800" data-mobile-portrait="1" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel cc-height-1 cc-hover-dark nav-outside-top"
+                    data-items="4"
+                    data-margin="0"
+                    data-dots="false"
+                    data-nav="true"
+                    data-nav-speed="800"
+                    data-mobile-portrait="1"
+                    data-tablet-landscape="3"
+                    data-tablet-portrait="2"
+                    data-mobile-landscape="1"
+                    data-mobile-portrait="1"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Afternoon Photoshoot</h2>
-						<div class="cc-category"><span>Outdoor</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Afternoon Photoshoot</h2>
+                            <div class="cc-category"><span>Outdoor</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Black &amp; White</h2>
-						<div class="cc-category"><span>Models</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Black &amp; White</h2>
+                            <div class="cc-category"><span>Models</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400">
-						<h2 class="cc-title">One Day Shoot With Ordinary People</h2>
-						<div class="cc-category"><span>People</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <h2 class="cc-title">One Day Shoot With Ordinary People</h2>
+                            <div class="cc-category"><span>People</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Dancing Is Everything</h2>
-						<div class="cc-category"><span>People</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Dancing Is Everything</h2>
+                            <div class="cc-category"><span>People</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Redhead Beauty</h2>
-						<div class="cc-category"><span>Nature</span></div>
-					</div>
-					<!-- End caption -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Redhead Beauty</h2>
+                            <div class="cc-category"><span>Nature</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
 
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="gallery-single-grid.html" class="cc-item">
+                    <a href="gallery-single-grid.html" class="cc-item">
+                        <!-- cc image -->
+                        <div
+                            class="cc-image full-cover bg-image"
+                            style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc image -->
-					<div class="cc-image full-cover bg-image" style="background-image: url(assets/img/gallery/gallery-list/auto-width/gallery-auto-width-1.jpg);"></div>
-
-					<!-- Begin caption 
+                        <!-- Begin caption 
 					===================
 					* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
 					* Size classes: "cc-caption-xs", "cc-caption-sm", "cc-caption-lg", "cc-caption-xlg", "cc-caption-xxlg".
 					-->
-					<div class="cc-caption center max-width-400"> <!-- max width class is optional -->
-						<h2 class="cc-title">Beautiful People</h2>
-						<div class="cc-category"><span>Nature</span></div>
-					</div>
-					<!-- End caption -->
-
-				</a>
-				<!-- End carousel item -->
-
-			</div>
-			<!-- End content carousel -->
-
-		</div>
-		<!-- End project carousel -->
-
-	</div> <!-- /.latest-work-inner -->
-</section>
-<!-- End latest work cection -->
+                        <div class="cc-caption center max-width-400">
+                            <!-- max width class is optional -->
+                            <h2 class="cc-title">Beautiful People</h2>
+                            <div class="cc-category"><span>Nature</span></div>
+                        </div>
+                        <!-- End caption -->
+                    </a>
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
+            </div>
+            <!-- End project carousel -->
+        </div>
+        <!-- /.latest-work-inner -->
+    </section>
+    <!-- End latest work cection -->
 </BaseLayout>

@@ -1,42 +1,45 @@
 ---
-import TTHeading from '../components/general/TTHeading.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import TTHeading from "../components/general/TTHeading.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const { title } = Astro.props
 ---
+
 <BaseLayout title={title}>
-		<!-- =========================
+    <!-- =========================
 		///// Begin page section /////
 		========================== -->
-		<section id="page-section" class="page-classic">
-			<div class="page-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+    <section id="page-section" class="page-classic">
+        <div class="page-section-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
 
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12 no-padding margin-bottom-40">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 no-padding margin-bottom-40">
+                        <!-- Begin page content -->
+                        <div class="page-content">
+                            <TTHeading title="Sorry, page not found!" size="lg" />
 
-							<!-- Begin page content -->
-							<div class="page-content">
+                            <div class="margin-top-20">
+                                <p class="max-width-600">
+                                    Maecenas tempor viverra rutrum. Integer quis eros in libero molestie vulputate ut et orci integer condimentum.
+                                </p>
+                            </div>
 
-								<TTHeading title="Sorry, page not found!" size="lg" />
-
-								<div class="margin-top-20">
-									<p class="max-width-600">Maecenas tempor viverra rutrum. Integer quis eros in libero molestie vulputate ut et orci integer condimentum.</p>
-								</div>
-
-								<div class="margin-top-30">
-									<a href="index.html" class="btn btn-primary margin-top-5 margin-right-10">Go Home</a>
-									<a href="contact.html" class="btn btn-dark-bordered margin-top-5">Contact</a>
-								</div>
-
-							</div> 
-							<!-- End page content -->
-
-						</div> <!-- /.col -->
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-
-			</div> <!-- /.page-section-inner -->
-		</section>
-		<!-- End page section -->
+                            <div class="margin-top-30">
+                                <a href="index.html" class="btn btn-primary margin-top-5 margin-right-10">Go Home</a>
+                                <a href="contact.html" class="btn btn-dark-bordered margin-top-5">Contact</a>
+                            </div>
+                        </div>
+                        <!-- End page content -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.page-section-inner -->
+    </section>
+    <!-- End page section -->
 </BaseLayout>

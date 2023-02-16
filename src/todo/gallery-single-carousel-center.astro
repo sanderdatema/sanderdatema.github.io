@@ -1,25 +1,24 @@
 ---
-import TTHeading from "../components/general/TTHeading.astro";
+import TTHeading from "../components/general/TTHeading.astro"
 
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const title = "Welcome to Sander Datema"
 ---
-<BaseLayout title={title}>
 
-<!-- ===================================
+<BaseLayout title={title}>
+    <!-- ===================================
 ///// Begin gallery single section /////
 ==================================== -->
-<section id="gallery-single-section" class="gallery-single-carousel gs-carousel-center">
+    <section id="gallery-single-section" class="gallery-single-carousel gs-carousel-center">
+        <!-- Begin page background (usually the same as gallery featured image) -->
+        <div class="page-background bg-image" style="background-image: url(/assets/img/misc/page-bg-1.jpg);"></div>
+        <!-- End page background -->
 
-	<!-- Begin page background (usually the same as gallery featured image) -->
-	<div class="page-background bg-image" style="background-image: url(/assets/img/misc/page-bg-1.jpg);"></div>
-	<!-- End page background -->
-
-	<div class="gallery-single-carousel-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
-		<div class="gs-carousel-wrap">
-
-			<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+        <div class="gallery-single-carousel-inner tt-wrap">
+            <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag! ) -->
+            <div class="gs-carousel-wrap">
+                <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
 			====================================================================
 			* Use class "nav-outside" for outside nav (requires boxed layout).
 			* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
@@ -60,268 +59,360 @@ const title = "Welcome to Sander Datema"
 					data-dots="false"....................(true/false)
 					data-dots-speed="800"................(milliseconds)
 			-->
-			<div class="owl-carousel lightgallery cc-height-full owl-mousewheel nav-light cc-hover-light" data-items="3" data-center="true" data-margin="80" data-autowidth="true" data-loop="true" data-nav="true" data-nav-speed="800" data-dots="false">
-
-				<!-- Begin carousel item 
+                <div
+                    class="owl-carousel lightgallery cc-height-full owl-mousewheel nav-light cc-hover-light"
+                    data-items="3"
+                    data-center="true"
+                    data-margin="80"
+                    data-autowidth="true"
+                    data-loop="true"
+                    data-nav="true"
+                    data-nav-speed="800"
+                    data-dots="false"
+                >
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" class="cc-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg" data-sub-html="<p>Yes, you can use image captions :)</p>">
+                    <a
+                        href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg"
+                        class="cc-item lg-trigger"
+                        data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg"
+                        data-sub-html="<p>Yes, you can use image captions :)</p>"
+                    >
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
+                        <!-- Gallery single item image caption -->
+                        <div class="gsi-image-caption">Yes, you can use image captions :)</div>
+                    </a>
+                    <!-- End carousel item -->
 
-					<!-- Gallery single item image caption -->
-					<div class="gsi-image-caption">Yes, you can use image captions :)</div>
-
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" class="cc-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg">
+                    <a
+                        href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg"
+                        class="cc-item lg-trigger"
+                        data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg"
+                    >
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
+                    </a>
+                    <!-- End carousel item -->
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" class="cc-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg" data-sub-html="<p>You can use a little longer image captions as well. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</p>">
+                    <a
+                        href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg"
+                        class="cc-item lg-trigger"
+                        data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg"
+                        data-sub-html="<p>You can use a little longer image captions as well. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</p>"
+                    >
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
+                        <!-- Gallery single item image caption -->
+                        <div class="gsi-image-caption">
+                            You can use a little longer image captions as well. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.
+                        </div>
+                    </a>
+                    <!-- End carousel item -->
 
-					<!-- Gallery single item image caption -->
-					<div class="gsi-image-caption">You can use a little longer image captions as well. Pellentesque men egestas odio mi, vitae egestas massa elementum utesa.</div>
-
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" class="cc-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg">
+                    <a
+                        href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg"
+                        class="cc-item lg-trigger"
+                        data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg"
+                    >
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
+                    </a>
+                    <!-- End carousel item -->
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item 
+                    <!-- Begin carousel item 
 				========================= -->
-				<a href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" class="cc-item lg-trigger" data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg">
+                    <a
+                        href="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg"
+                        class="cc-item lg-trigger"
+                        data-exthumbnail="/assets/img/gallery/gallery-single/auto-width/thumb/gallery-auto-width-thumb-1.jpg"
+                    >
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
+                    </a>
+                    <!-- End carousel item -->
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
-
-				</a>
-				<!-- End carousel item -->
-
-				<!-- Begin carousel item (video). You can add your "Youtube" or "Vimeo" video link.
+                    <!-- Begin carousel item (video). You can add your "Youtube" or "Vimeo" video link.
 				================================= -->
-				<a href="https://vimeo.com/20047720" class="cc-item gs-carousel-item lg-trigger" data-sub-html="<p>Yes, you can use video captions. :)</p>">
+                    <a href="https://vimeo.com/20047720" class="cc-item gs-carousel-item lg-trigger" data-sub-html="<p>Yes, you can use video captions. :)</p>">
+                        <!-- Video play icon -->
+                        <div class="video-play-icon"></div>
 
-					<!-- Video play icon -->
-					<div class="video-play-icon"></div>
+                        <!-- cc auto width img -->
+                        <img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="" />
 
-					<!-- cc auto width img -->
-					<img class="cc-image cc-auto-width-img" src="/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg" alt="">
+                        <!-- cc auto width img for small devices -->
+                        <div
+                            class="cc-image cc-auto-width-img-bg bg-image"
+                            style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"
+                        >
+                        </div>
 
-					<!-- cc auto width img for small devices -->
-					<div class="cc-image cc-auto-width-img-bg bg-image" style="background-image: url(/assets/img/gallery/gallery-single/auto-width/gallery-auto-width-1.jpg);"></div>
+                        <!-- Gallery single item image caption -->
+                        <div class="gsi-image-caption">Yes, you can use video captions. :)</div>
+                    </a>
+                    <!-- End carousel item -->
+                </div>
+                <!-- End content carousel -->
 
-					<!-- Gallery single item image caption -->
-					<div class="gsi-image-caption">Yes, you can use video captions. :)</div>
-
-				</a>
-				<!-- End carousel item -->
-
-			</div>
-			<!-- End content carousel -->
-
-
-			<!-- Begin gallery meta 
+                <!-- Begin gallery meta 
 			======================== -->
-			<ul class="gallery-meta">
-				<li>
-					<a href="albums-carousel-no-crop.html" class="gm-go-back" title="Back to albums">
-						<i class="fas fa-th"></i>
-					</a>
-				</li>
-				<li>
-					<!-- Begin modal trigger -->
-					<div class="content-modal-trigger">
-						<a href="#0" class="content-modal-icon" title="Info" data-toggle="modal" data-target="#modal-78431234">
-							<i class="fas fa-info-circle"></i>
-						</a>
-					</div>
-					<!-- End modal trigger -->
+                <ul class="gallery-meta">
+                    <li>
+                        <a href="albums-carousel-no-crop.html" class="gm-go-back" title="Back to albums">
+                            <i class="fas fa-th"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Begin modal trigger -->
+                        <div class="content-modal-trigger">
+                            <a href="#0" class="content-modal-icon" title="Info" data-toggle="modal" data-target="#modal-78431234">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                        <!-- End modal trigger -->
 
-					<!-- Begin modal 
+                        <!-- Begin modal 
 					=================
 					* Use class "modal-center" to enable modal center position (use for short content only!).
 					* Use class "modal-left" to enable left sidebar modal.
 					* Use class "modal-right" to enable right sidebar modal.
 					-->
-					<div id="modal-78431234" class="modal modal-left fade" tabindex="-1" role="dialog" aria-hidden="false">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="tt-close-btn"></i></button>
-									<h4 class="modal-title">Info:</h4>
-								</div> <!-- /.modal-header -->
+                        <div id="modal-78431234" class="modal modal-left fade" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="tt-close-btn"></i></button>
+                                        <h4 class="modal-title">Info:</h4>
+                                    </div>
+                                    <!-- /.modal-header -->
 
-								<div class="modal-body">
-
-									<!-- Begin modal body image 
+                                    <div class="modal-body">
+                                        <!-- Begin modal body image 
 									============================
 									* Use class "modal-body-image-1" or "modal-body-image-2" to set modal body image style.
 									-->
-									<div class="modal-body-image-1 bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-1.jpg); background-position: 50% 50%;"></div>
-									<!-- End modal body image -->
+                                        <div
+                                            class="modal-body-image-1 bg-image"
+                                            style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-1.jpg); background-position: 50% 50%;"
+                                        >
+                                        </div>
+                                        <!-- End modal body image -->
 
-									<!-- Begin modal body content -->
-									<div class="modal-body-content">
-										
-										<TTHeading title="The Coolest Photo Project I've Ever Created" />
+                                        <!-- Begin modal body content -->
+                                        <div class="modal-body-content">
+                                            <TTHeading title="The Coolest Photo Project I've Ever Created" />
 
-										<div class="margin-top-20">
-											<p>Integer viverra arcu ac facilisis interdum. Proin dignissim sagittis tellus. Duis et pharetra est, vel ullamcorper libero. Fusce sed leo in dolor ornare fermentum. Sed facilisis eu justo at mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue malesuada eros, ut varius metus accumsan non. Pellentesque facilisis tortor risus, quis convallis nunc faucibus et. Proin egestas pulvinar sem, sit amet auctor ligula faucibus quis. Maecenas in libero nec turpis molestie dictum. Suspendisse id mi eget mi suscipit faucibus vitae eu metus.</p>
+                                            <div class="margin-top-20">
+                                                <p>
+                                                    Integer viverra arcu ac facilisis interdum. Proin dignissim sagittis tellus. Duis et pharetra est, vel
+                                                    ullamcorper libero. Fusce sed leo in dolor ornare fermentum. Sed facilisis eu justo at mattis. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Aliquam congue malesuada eros, ut varius metus accumsan non.
+                                                    Pellentesque facilisis tortor risus, quis convallis nunc faucibus et. Proin egestas pulvinar sem, sit amet
+                                                    auctor ligula faucibus quis. Maecenas in libero nec turpis molestie dictum. Suspendisse id mi eget mi
+                                                    suscipit faucibus vitae eu metus.
+                                                </p>
 
-											<p>Integer accumsan iaculis pharetra. Curabitur ultricies ut justo at hendrerit. Sed quis condimentum dui. In ac nunc leo. Quisque erat sem, consequat at rutrum at, ultricies nec sapien. Sed hendrerit libero augue, sit amet ultricies urna tincidunt at. In hac habitasse platea dictumst. Vivamus et sem nec velit scelerisque molestie. Suspendisse tempus posuere venenatis.</p>
-										</div>
+                                                <p>
+                                                    Integer accumsan iaculis pharetra. Curabitur ultricies ut justo at hendrerit. Sed quis condimentum dui. In
+                                                    ac nunc leo. Quisque erat sem, consequat at rutrum at, ultricies nec sapien. Sed hendrerit libero augue, sit
+                                                    amet ultricies urna tincidunt at. In hac habitasse platea dictumst. Vivamus et sem nec velit scelerisque
+                                                    molestie. Suspendisse tempus posuere venenatis.
+                                                </p>
+                                            </div>
 
-										<a href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium" class="btn btn-primary" target="_blank">Buy this theme!</a>
+                                            <a
+                                                href="https://themeforest.net/item/sepia-photography-portfolio-html-website-template/20195226?ref=Themetorium"
+                                                class="btn btn-primary"
+                                                target="_blank">Buy this theme!</a
+                                            >
 
-										<!-- Begin social buttons share -->
-										<div class="social-buttons margin-top-40">
-											<ul>
-												<li><strong>Share:</strong> </li>
-												<li><a href="" class="btn btn-social-min btn-facebook btn-sm btn-rounded-full" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-												<li><a href="" class="btn btn-social-min btn-twitter btn-sm btn-rounded-full" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
-												<li><a href="" class="btn btn-social-min btn-google btn-sm btn-rounded-full" title="Share on Google+"><i class="fab fa-google-plus-g"></i></a></li>
-												<li><a href="" class="btn btn-social-min btn-pinterest btn-sm btn-rounded-full" title="Share on Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-											</ul>
-										</div>
-										<!-- End social buttons share -->
+                                            <!-- Begin social buttons share -->
+                                            <div class="social-buttons margin-top-40">
+                                                <ul>
+                                                    <li><strong>Share:</strong></li>
+                                                    <li>
+                                                        <a href="" class="btn btn-social-min btn-facebook btn-sm btn-rounded-full" title="Share on Facebook"
+                                                            ><i class="fab fa-facebook-f"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="btn btn-social-min btn-twitter btn-sm btn-rounded-full" title="Share on Twitter"
+                                                            ><i class="fab fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="btn btn-social-min btn-google btn-sm btn-rounded-full" title="Share on Google+"
+                                                            ><i class="fab fa-google-plus-g"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="btn btn-social-min btn-pinterest btn-sm btn-rounded-full" title="Share on Pinterest"
+                                                            ><i class="fab fa-pinterest-p"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- End social buttons share -->
+                                        </div>
+                                        <!-- End modal body content -->
+                                    </div>
+                                    <!-- /.modal-body -->
 
-									</div>
-									<!-- End modal body content -->
+                                    <div class="modal-footer">&copy; Sepia 2017 / All rights reserved</div>
+                                    <!-- /.modal-footer -->
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- End modal -->
+                    </li>
+                    <li>
+                        <!-- Begin content share trigger  -->
+                        <div class="content-share-trigger">
+                            <a href="#0" class="content-share-icon" title="Share this gallery" data-toggle="modal" data-target="#modal-67306173">
+                                <i class="fas fa-share-alt"></i>
+                            </a>
+                        </div>
+                        <!-- End content share trigger -->
 
-								</div> <!-- /.modal-body -->
-
-								<div class="modal-footer">
-									&copy; Sepia 2017 / All rights reserved
-								</div> <!-- /.modal-footer -->
-
-							</div> <!-- /.modal-content -->
-						</div> <!-- /.modal-dialog -->
-					</div>
-					<!-- End modal -->
-				</li>
-				<li>
-					<!-- Begin content share trigger  -->
-					<div class="content-share-trigger">
-						<a href="#0" class="content-share-icon" title="Share this gallery" data-toggle="modal" data-target="#modal-67306173">
-							<i class="fas fa-share-alt"></i>
-						</a>
-					</div>
-					<!-- End content share trigger -->
-
-					<!-- Begin modal 
+                        <!-- Begin modal 
 					=================
 					* Use class "modal-center" to enable modal center position (use for short content only!).
 					* Use class "modal-left" to enable left sidebar modal.
 					* Use class "modal-right" to enable right sidebar modal.
 					-->
-					<div id="modal-67306173" class="modal modal-center fade" tabindex="-1" role="dialog" aria-hidden="false">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="tt-close-btn"></i></button>
-									<h4 class="modal-title">Share This Gallery:</h4>
-								</div> <!-- /.modal-header -->
+                        <div id="modal-67306173" class="modal modal-center fade" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="tt-close-btn"></i></button>
+                                        <h4 class="modal-title">Share This Gallery:</h4>
+                                    </div>
+                                    <!-- /.modal-header -->
 
-								<div class="modal-body">
-
-									<!-- Begin modal body image 
+                                    <div class="modal-body">
+                                        <!-- Begin modal body image 
 									============================
 									* Use class "modal-body-image-1" or "modal-body-image-2" to set modal body image style.
 									-->
-									<div class="modal-body-image-1 bg-image" style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-1.jpg); background-position: 50% 50%;"></div>
-									<!-- End modal body image -->
+                                        <div
+                                            class="modal-body-image-1 bg-image"
+                                            style="background-image: url(/assets/img/gallery/gallery-list/gallery-list-1.jpg); background-position: 50% 50%;"
+                                        >
+                                        </div>
+                                        <!-- End modal body image -->
 
-									<!-- Begin modal body content -->
-									<div class="modal-body-content">
+                                        <!-- Begin modal body content -->
+                                        <div class="modal-body-content">
+                                            <!-- Begin modal share -->
+                                            <div class="modal-share">
+                                                <!-- Begin social buttons -->
+                                                <div class="social-buttons">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#0" class="btn btn-social-min btn-facebook btn-rounded-full" title="Share on facebook"
+                                                                ><i class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#0" class="btn btn-social-min btn-twitter btn-rounded-full" title="Share on twitter"
+                                                                ><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#0" class="btn btn-social-min btn-google btn-rounded-full" title="Share on google+"
+                                                                ><i class="fab fa-google-plus-g"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#0" class="btn btn-social-min btn-pinterest btn-rounded-full" title="Share on pinterest"
+                                                                ><i class="fab fa-pinterest-p"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- End social buttons -->
 
-										<!-- Begin modal share -->
-										<div class="modal-share">
+                                                <!-- modal share grab link -->
+                                                <input
+                                                    class="grab-link"
+                                                    type="text"
+                                                    readonly=""
+                                                    value="https://yoursite.com/your-gallery-link/"
+                                                    onclick="this.select()"
+                                                />
+                                            </div>
+                                            <!-- End modal share -->
+                                        </div>
+                                        <!-- End modal body content -->
+                                    </div>
+                                    <!-- /.modal-body -->
 
-											<!-- Begin social buttons -->
-											<div class="social-buttons">
-												<ul>
-													<li><a href="#0" class="btn btn-social-min btn-facebook btn-rounded-full" title="Share on facebook"><i class="fab fa-facebook-f"></i></a></li>
-													<li><a href="#0" class="btn btn-social-min btn-twitter btn-rounded-full" title="Share on twitter"><i class="fab fa-twitter"></i></a></li>
-													<li><a href="#0" class="btn btn-social-min btn-google btn-rounded-full" title="Share on google+"><i class="fab fa-google-plus-g"></i></a></li>
-													<li><a href="#0" class="btn btn-social-min btn-pinterest btn-rounded-full" title="Share on pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-												</ul>
-											</div>
-											<!-- End social buttons -->
-
-											<!-- modal share grab link -->
-											<input class="grab-link" type="text" readonly="" value="https://yoursite.com/your-gallery-link/" onclick="this.select()">
-
-										</div>
-										<!-- End modal share -->
-
-									</div>
-									<!-- End modal body content -->
-
-								</div> <!-- /.modal-body -->
-
-								<div class="modal-footer">
-									&copy; Sepia 2017 / All rights reserved
-								</div> <!-- /.modal-footer -->
-
-							</div> <!-- /.modal-content -->
-						</div> <!-- /.modal-dialog -->
-					</div>
-					<!-- End modal -->
-				</li>
-				<li>
-					<!-- Begin favorite button -->
-					<div class="favorite-btn">
-						<div class="fav-inner">
-							<div class="icon-heart">
-								<span class="icon-heart-empty"></span>
-								<span class="icon-heart-filled"></span>
-							</div>
-						</div>
-						<div class="fav-count">47</div>
-					</div>
-					<!-- End favorite button -->
-				</li>
-			</ul>
-			<!-- End gallery meta -->
-
-		</div> <!-- /.gs-carousel-wrap -->
-	</div> <!-- /.tt-wrap -->
-</section>
-<!-- End gallery single section -->
+                                    <div class="modal-footer">&copy; Sepia 2017 / All rights reserved</div>
+                                    <!-- /.modal-footer -->
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- End modal -->
+                    </li>
+                    <li>
+                        <!-- Begin favorite button -->
+                        <div class="favorite-btn">
+                            <div class="fav-inner">
+                                <div class="icon-heart">
+                                    <span class="icon-heart-empty"></span>
+                                    <span class="icon-heart-filled"></span>
+                                </div>
+                            </div>
+                            <div class="fav-count">47</div>
+                        </div>
+                        <!-- End favorite button -->
+                    </li>
+                </ul>
+                <!-- End gallery meta -->
+            </div>
+            <!-- /.gs-carousel-wrap -->
+        </div>
+        <!-- /.tt-wrap -->
+    </section>
+    <!-- End gallery single section -->
 </BaseLayout>
