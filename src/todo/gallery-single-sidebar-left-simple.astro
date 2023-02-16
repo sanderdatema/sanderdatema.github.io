@@ -1,19 +1,15 @@
 ---
 import TTHeading from "../components/general/TTHeading.astro"
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionPageHeader from "../sections/SectionPageHeader.astro";
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
 
 const title = "Welcome to Sander Datema"
 ---
 <BaseLayout title={title}>
 
-<!-- ========================
-///// Begin page header /////
-=============================
-* Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
-* Use class "ph-center" or "ph-right" to align page header caption.
--->
-<section id="page-header" class="ph-xlg">
+	<SectionPageHeader size="xlg">
+
 	<PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
 	<!-- Begin page header inner -->
@@ -34,8 +30,7 @@ const title = "Welcome to Sander Datema"
 	</div>
 	<!-- End page header inner -->
 
-</section>
-<!-- End page header -->
+	</SectionPageHeader>
 
 
 <!-- ===================================

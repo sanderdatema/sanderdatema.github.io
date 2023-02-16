@@ -1,18 +1,14 @@
 ---
 import HR from '../components/general/HR.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionPageHeader from '../sections/SectionPageHeader.astro';
 
 const title = "Welcome to Sander Datema"
 ---
 <BaseLayout title={title}>
 
-<!-- ========================
-///// Begin page header /////
-=============================
-* Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
-* Use class "ph-center" or "ph-right" to align page header caption.
--->
-<section id="page-header" class="ph-xlg">
+	<SectionPageHeader size="xlg">
+
 
 	<!-- Element cover 
 	===================
@@ -75,8 +71,7 @@ const title = "Welcome to Sander Datema"
 	</div> 
 	<!-- End page header inner -->
 
-</section>
-<!-- End page header -->
+	</SectionPageHeader>
 
 
 <!-- =================================
