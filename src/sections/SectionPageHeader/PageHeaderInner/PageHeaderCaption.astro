@@ -1,0 +1,14 @@
+---
+const { size, parallax, fade_out } = Astro.props
+---
+
+<!-- Begin page header caption 
+===============================
+* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
+* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
+* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
+-->
+<div class:list={["page-header-caption", `ph-caption-${size}`, `parallax-${parallax}`, `fade-out-scroll-${fade_out}`]}>
+    <slot />
+</div>
+<!-- End page header caption -->

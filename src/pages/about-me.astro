@@ -6,6 +6,7 @@ import SectionLatestWork from "../sections/SectionLatestWork.astro"
 import HR from "../components/general/HR.astro"
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
+import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro"
 
 const title = "Welcome to Sander Datema"
 ---
@@ -15,20 +16,13 @@ const title = "Welcome to Sander Datema"
         <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
         <PageHeaderInner>
-            <!-- Begin page header caption 
-            ===============================
-            * Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
-            * Use class "parallax-1" up to "parallax-6" to enable parallax effect.
-            * Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
-            -->
-            <div class="page-header-caption ph-caption-lg parallax-3 fade-out-scroll-4">
+            <PageHeaderCaption size="lg" parallax="3" fade_out="4">
                 <h1 class="page-header-title">Martin Vegas</h1>
                 <HR size="short" />
 
                 <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
                 <div class="page-header-description" data-max-words="40">Artist &amp; Photographer</div>
-            </div>
-            <!-- End page header caption -->
+            </PageHeaderCaption>
         </PageHeaderInner>
     </SectionPageHeader>
 

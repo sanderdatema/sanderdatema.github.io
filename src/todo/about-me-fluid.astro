@@ -6,6 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionPageHeader from "../sections/SectionPageHeader.astro";
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro";
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro";
+import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro";
 
 const title = "Welcome to Sander Datema"
 ---
@@ -15,13 +16,7 @@ const title = "Welcome to Sander Datema"
 
 <PageHeaderInner>
 
-		<!-- Begin page header caption 
-		===============================
-		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
-		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
-		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
-		-->
-		<div class="page-header-caption ph-caption-xlg parallax-4 fade-out-scroll-3">
+		<PageHeaderCaption size="xlg" parallax="4" fade_out="3">
 			<h1 class="page-header-title">Martin Vegas</h1>
 			<HR size="short" />
 			
@@ -30,8 +25,7 @@ const title = "Welcome to Sander Datema"
 				Artist &amp; Photographer
 			</div>
 
-		</div>
-		<!-- End page header caption -->
+		</PageHeaderCaption>
 
 </PageHeaderInner>
 
