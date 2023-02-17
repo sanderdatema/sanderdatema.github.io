@@ -4,6 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import SectionPageHeader from "../sections/SectionPageHeader.astro"
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
+import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro"
+import PageHeaderDescription from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption/PageHeaderDescription.astro"
 
 const title = "Welcome to Sander Datema"
 ---
@@ -13,24 +15,17 @@ const title = "Welcome to Sander Datema"
         <PageHeaderImage parallax_style="3" background_image="/assets/img/misc/page-header-bg-1.jpg" cover_style="5" cover_type="dark" />
 
         <PageHeaderInner>
-            <!-- Begin page header caption 
-		===============================
-		* Use classes "ph-caption-xs", "ph-caption-sm", "ph-caption-lg" or "ph-caption-xlg" to set page header size.
-		* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
-		* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
-		-->
-            <div class="page-header-caption parallax-4 fade-out-scroll-4">
+            <PageHeaderCaption parallax="4" fade_out="4">
                 <h1 class="page-header-title">The Coolest Photo Project I've Ever Created</h1>
                 <div class="page-header-category"><a href="albums-archive.html">Outdoor</a></div>
 
-                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                <div class="page-header-description" data-max-words="40">
+                <PageHeaderDescription max_words="40">
                     <p>
                         Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget
                         gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum ut. Cras dolor dui consequat
                         massi.
                     </p>
-                </div>
+                </PageHeaderDescription>
 
                 <!-- Begin modal trigger -->
                 <a href="#0" class="ph-more-info-trigger" data-toggle="modal" data-target="#modal-67230981"
@@ -143,8 +138,7 @@ const title = "Welcome to Sander Datema"
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- End modal -->
-            </div>
-            <!-- End page header caption -->
+            </PageHeaderCaption>
 
             <!-- Begin gallery single nav -->
             <div class="gallery-single-nav parallax-2 fade-out-scroll-4">

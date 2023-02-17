@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import SectionPageHeader from "../sections/SectionPageHeader.astro"
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
+import PageHeaderDescription from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption/PageHeaderDescription.astro"
 
 const title = "Welcome to Sander Datema"
 ---
@@ -22,12 +23,12 @@ const title = "Welcome to Sander Datema"
             <div class="page-header-caption ph-caption-lg parallax-4 fade-out-scroll-3">
                 <h1 class="page-header-title">Dummy Page</h1>
                 <HR size="short" />
-                <div class="page-header-description">
+                <PageHeaderDescription>
                     <p>
                         Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget
                         gravida euismod, dapibus vitae turpis. Pellentesque men egestas odio mi, vitae egestas massa elementum.
                     </p>
-                </div>
+                </PageHeaderDescription>
             </div>
             <!-- End page header caption -->
         </PageHeaderInner>

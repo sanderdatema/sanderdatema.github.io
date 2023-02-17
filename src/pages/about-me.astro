@@ -7,6 +7,7 @@ import HR from "../components/general/HR.astro"
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
 import PageHeaderCaption from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption.astro"
+import PageHeaderDescription from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption/PageHeaderDescription.astro"
 
 const title = "Welcome to Sander Datema"
 ---
@@ -20,8 +21,7 @@ const title = "Welcome to Sander Datema"
                 <h1 class="page-header-title">Martin Vegas</h1>
                 <HR size="short" />
 
-                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                <div class="page-header-description" data-max-words="40">Artist &amp; Photographer</div>
+                <PageHeaderDescription max_words="40">Artist &amp; Photographer</PageHeaderDescription>
             </PageHeaderCaption>
         </PageHeaderInner>
     </SectionPageHeader>

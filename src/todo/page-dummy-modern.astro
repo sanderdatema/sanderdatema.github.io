@@ -5,6 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import SectionPageHeader from "../sections/SectionPageHeader.astro"
 import PageHeaderImage from "../sections/SectionPageHeader/PageHeaderImage.astro"
 import PageHeaderInner from "../sections/SectionPageHeader/PageHeaderInner.astro"
+import PageHeaderDescription from "../sections/SectionPageHeader/PageHeaderInner/PageHeaderCaption/PageHeaderDescription.astro"
 
 const title = "Welcome to Sander Datema"
 ---
@@ -24,13 +25,12 @@ const title = "Welcome to Sander Datema"
                 <h1 class="page-header-title">Dummy Page</h1>
                 <HR size="short" />
 
-                <!-- Use data attributes to set text maximum characters or words (example: data-max-characters="120" or data-max-words="40") -->
-                <div class="page-header-description" data-max-words="40">
+                <PageHeaderDescription max_words="40">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloribus natus porro, laudantium tenetur explicabo laborum aliquam
                         maxime iusto, similique distinctio sint praesentium! Nobis molestiae modi, assumenda pariatur eum neque.
                     </p>
-                </div>
+                </PageHeaderDescription>
             </div>
             <!-- End page header caption -->
         </PageHeaderInner>
