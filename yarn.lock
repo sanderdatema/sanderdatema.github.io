@@ -1563,9 +1563,9 @@ fast-glob@3.2.12, fast-glob@^3.2.11:
     micromatch "^4.0.4"
 
 fast-xml-parser@^4.0.8:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.1.1.tgz#28c878b7f1eb4555fa898f1c715adf9d4007306e"
-  integrity sha512-4gAP5PvNyrqePBOIIcpaEeE+nKBry1n6qTQiJsE59sLP0OC+YwhU7/XVmLLEMexbiluFQX1yEYm82Pk9B7xEiw==
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.2.4.tgz#6e846ede1e56ad9e5ef07d8720809edf0ed07e9b"
+  integrity sha512-fbfMDvgBNIdDJLdLOwacjFAPYt67tr31H9ZhWSm45CDAxvd0I6WTlSOUo7K2P/K5sA5JgMKG64PI3DMcaFdWpQ==
   dependencies:
     strnum "^1.0.5"
 
